@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Main/swiper/swiper-bundle.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight&family=Raleway:ital,wght@0,800;1,300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+    <header>
+        <div class="main-top">
+            <div  class="logo-icons"  >
+                <div class="logo">
+                    <a class="logo-txt" >Qizilim.az</a>
+
+                </div>
+                <div class="icons">
+                    <!-- <input type="search" class="search-box" name="search" id="search"> -->
+                    
+                    <a class="icons-top-a" href="#" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
+                    </a>
+
+                    <a class="icons-top-a" href="# " >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                      <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                    </svg>
+                    </a>
+                    <a class="icons-top-a" href="#" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                      </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="second-top">
+            <div class="texts-in-nd-top">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Son Elanlar </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="stores.html">Mağazalar</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Üzüklər</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Seplər</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="#">Sırğalar</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Dəstlər</a>
+                        </li>                        
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Qolbaqlar</a>
+                        </li>
+                        <li class="nav-item">
+
+                          <a class="nav-link"  id="detailed-search" href="#">                          
+                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="currentColor" class="bi bi-filter-square" viewBox="0 0 16 16">
+                            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                            <path d="M6 11.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                          </svg>Axtarış</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </nav>
+
+            </div>
+        </div>
+        <div class="filter-area" id="filter-area" >
+          <div class="filter-content"  >
+
+            <div class="filter-options">
+              <div class="content-filter-div" >
+                <select class="tm-selector"  name="Mok" id="" >
+                  <option value="asd" disabled="disabled" selected="true" >Nov</option>
+                  <option value="asd" >Hamsı</option>
+
+                  <option value="asd">Sep</option>
+                  <option value="asd">Uzuk</option>
+                  <option value="asd">Qolbaq</option>
+                  <option value="asd">Toy desti</option>
+                  <option value="asd">Bla  bla</option>
+                  <option value="asd">Bla bla</option>
+                  <option value="asd">Bla bla</option>
+                  <option value="asd">Bla bla</option>
+
+                </select>
+              </div>  
+            </div>
+            <div class="filter-options degree">
+              <div class="content-filter-div" >
+                <label class="filter-header"  >Əyyar : </label>
+                <div class="radio-filter" >
+                  <input type="checkbox" class="radio-filter_input"   name="diamond" id="myRadio1"><label class="radio-filter_label"    for="myRadio1" >583</label>
+                  <input type="checkbox" class="radio-filter_input"   name="diamond" id="myRadio2"><label class="radio-filter_label"   for="myRadio2" > 585 </label>
+                  <input type="checkbox" class="radio-filter_input"   name="diamond" id="myRadio3"><label class="radio-filter_label"   for="myRadio3" > 750</label>
+                  <input type="checkbox" class="radio-filter_input"   name="diamond" id="myRadio4"><label class="radio-filter_label"    for="myRadio4" >916</label>
+                </div>
+              </div>
+                  
+
+
+
+
+              </div>
+              <div class="filter-options">
+                <div class="content-filter-div" >
+                  <label class="filter-header" >Çəki(qram) : </label>
+                  <div class="input_number_div" >
+                     <input class="input_number"  type="number" name="min-price" placeholder="Min"  id="input_number_min">
+                     <input class="input_number"  type="number" name="min-price"  placeholder="Max" id="">
+                  </div>
+               </div>
+                
+                
+               </div>
+              
+              <div class="filter-options">
+                <div class="content-filter-div" >
+                  <label class="filter-header" >Qizil rengi : </label>
+                  <div class="radio-filter" >
+                    <input type="checkbox" class="radio-filter_input"   name="diamond" id="myRadio1"><label class="radio-filter_label"    for="myRadio1" >Ag</label>
+                    <input type="checkbox" class="radio-filter_input"   name="diamond" id="myRadio2"><label class="radio-filter_label"   for="myRadio2" >Sari</label>
+                    <input type="checkbox" class="radio-filter_input"   name="diamond" id="myRadio3"><label class="radio-filter_label"   for="myRadio3" >Rose</label>
+                  </div>
+                </div>
+               </div>
+
+
+              
+              
+               
+               <div class="filter-options">
+                 <div class="content-filter-div" >
+                   <label class="filter-header" >Qiymət(Azn) : </label>
+                   <div class="input_number_div" >
+                      <input class="input_number"  type="number" name="min-price" placeholder="Min"  id="input_number_min">
+                      <input class="input_number"  type="number" name="min-price"  placeholder="Max" id="">
+                   </div>
+                </div>
+                 
+                 
+                </div>
+                
+                <div class="filter-options">
+                  <div class="content-filter-div" >
+
+                    <select name="Mok"  class="tm-selector" id="" >
+                      <option value="asd" disabled="disabled" selected="true" >Ticarət Mərkəzi</option>
+                      <option value="asd">Moskva T.M.</option>
+                      <option value="asd">Lacin T.M.</option>
+                      <option value="asd">Mekezi univermaq T.M.</option>
+                      <option value="asd">Moskva T.M.</option>
+                      <option value="asd">Moskva T.M.</option>
+
+                    </select>
+                  </div>
+              
+            </div>
+            
+            
+            <div class="filter-options">
+              <div class="content-filter-div" >
+
+                <label class="filter-header" >Brilliant : </label>
+                <div class="radio-filter" >
+                  <input type="radio" class="radio-filter_input"   name="diamond" id="myRadio1"><label class="radio-filter_label"    for="myRadio1" >Hamsi</label>
+                  <input type="radio" class="radio-filter_input"   name="diamond" id="myRadio2"><label class="radio-filter_label"   for="myRadio2" > Var </label>
+                  <input type="radio" class="radio-filter_input"   name="diamond" id="myRadio3"><label class="radio-filter_label"   for="myRadio3" > Yox </label>
+                </div>
+              </div>
+               
+              
+            </div>
+            <div class="filter-options">
+              <div class="content-filter-div" >                
+                <label class="filter-header" >Catdrilma : </label>
+                <div class="radio-filter" >
+                  <input type="radio" class="radio-filter_input"   name="diamond" id="myRadio1"><label class="radio-filter_label"    for="myRadio1" >Hamsi</label>
+                  <input type="radio" class="radio-filter_input"   name="diamond" id="myRadio2"><label class="radio-filter_label"   for="myRadio2" > Var </label>
+                  <input type="radio" class="radio-filter_input"   name="diamond" id="myRadio3"><label class="radio-filter_label"   for="myRadio3" > Yox </label>
+                </div>
+              </div>
+               
+            </div>
+            <div class="submit-div" >
+              <button  class="filter-sumbit" type="submit">Axtar</button>
+            </div>
+          </div>
+
+            
+          </div>
+          
+        </div>
+        
+      </header>
+      
+      <div class="sr-area-div swiper mySwiper">
+        
+          <div class="sr-content swiper-wrapper">
+            <div class="swiper-slide">
+            <div class="brands-carousel-img">
+              <img class="sr-img-brand"  src="../Main/images/brands/brnd-2.jpg" alt="">
+              <span class="brands-store-name" >Store Name</span>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="brands-carousel-img">
+              <img class="sr-img-brand"  src="../Main/images/brands/brnd-3.jpg" alt="">
+              <span class="brands-store-name" >Store Name</span>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="brands-carousel-img">
+              <img class="sr-img-brand"  src="../Main/images/brands/brnd-1.jpg" alt="">
+              <span class="brands-store-name" >Store Name</span>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="brands-carousel-img">
+              <img class="sr-img-brand"  src="../Main/images/brands/brnd-4.jpg" alt="">
+              <span class="brands-store-name" >Store Name</span>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="brands-carousel-img">
+              <img class="sr-img-brand"  src="../Main/images/brands/brnd-2.jpg" alt="">
+              <span class="brands-store-name" >Store Name</span>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="brands-carousel-img">
+              <img class="sr-img-brand"  src="../Main/images/brands/brnd-1.jpg" alt="">
+              <span class="brands-store-name" >Store Name</span>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="brands-carousel-img">
+              <img class="sr-img-brand"  src="../Main/images/brands/brnd-4.jpg" alt="">
+              <span class="brands-store-name" >Store Name</span>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="brands-carousel-img">
+              <img class="sr-img-brand"  src="../Main/images/brands/brnd-3.jpg" alt="">
+              <span class="brands-store-name" >Store Name</span>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="brands-carousel-img">
+              <img class="sr-img-brand"  src="../Main/images/brands/brnd-1.jpg" alt="">
+              <span class="brands-store-name" >Store Name</span>
+            </div>
+            </div>
+          </div>
+        
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      
+      
+      <div class="vip-products-text-area">
+        <div class="vip-child-div" >
+          <div class="vip-text">Premium Mağazalar</div>
+          <div class="all-vip-btn"><button class="btn-shw-all-vip" >Butun Premium Mağazalar</button></div>
+        </div>
+      </div>
+      
+      <div class="stores-area-main">
+        <div class="store-card-main">
+          <div class="store-card">
+
+
+              <div class="img-card">
+                <img class="store-card-img premium" src="../Main/images/brands/brnd-1.jpg" alt="">
+                <img  class="premium-icon" src="../Main/images/asist-imgs/premium.png">
+              </div>
+              <div class="bottom-card premium-bottom">
+                <div class="store-card-name-main">
+                  <div class="store-card-name">
+
+                    <span class="store-name" ><a href="#" class="store-name-link-a" >Store Name</a></span><i<span class="point-of-store" ><img src="../Main/images/asist-imgs/pngwing.com (4).png" class="star-img-point"  alt=""><span class="total" >4.2</span></span>
+                  </div>
+                </div>
+
+                <div class="social-medias">
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/instagram.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/tiktok.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/whatsapp.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/phone.png" > @haciefv0</a></span>
+                </div>
+                <div class="location-store-card">
+                  <div class="main-tm-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+                    </svg>
+                    <span class="" >Moskva T/M</span>
+                  </div>
+                  <div class="detailed-location">
+                    2ci mertebe
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+        </div>
+        
+
+
+        <div class="store-card-main">
+          <div class="store-card">
+
+
+              <div class="img-card">
+                <img class="store-card-img premium" src="../Main/images/brands/brnd-1.jpg" alt="">
+                <img  class="premium-icon" src="../Main/images/asist-imgs/premium.png">
+              </div>
+              <div class="bottom-card premium-bottom">
+                <div class="store-card-name-main">
+                  <div class="store-card-name">
+
+                    <span class="store-name" ><a href="#" class="store-name-link-a" >Store Name</a></span><i<span class="point-of-store" ><img src="../Main/images/asist-imgs/pngwing.com (4).png" class="star-img-point"  alt=""><span class="total" >4.2</span></span>
+                  </div>
+                </div>
+
+                <div class="social-medias">
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/instagram.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/tiktok.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/whatsapp.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/phone.png" > @haciefv0</a></span>
+                </div>
+                <div class="location-store-card">
+                  <div class="main-tm-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+                    </svg>
+                    <span class="" >Moskva T/M</span>
+                  </div>
+                  <div class="detailed-location">
+                    2ci mertebe
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="store-card-main">
+          <div class="store-card">
+
+
+              <div class="img-card">
+                <img class="store-card-img premium" src="../Main/images/brands/brnd-1.jpg" alt="">
+                <div class="premium-icon-div">
+
+                  <img  class="premium-icon" src="../Main/images/asist-imgs/premium.png">
+                </div>
+              </div>
+              <div class="bottom-card premium-bottom">
+                <div class="store-card-name-main">
+                  <div class="store-card-name">
+
+                    <span class="store-name" ><a href="#" class="store-name-link-a" >Store Name</a></span><i<span class="point-of-store" ><img src="../Main/images/asist-imgs/pngwing.com (4).png" class="star-img-point"  alt="" class="total" >4.2</span></span>
+                  </div>
+                </div>
+
+                <div class="social-medias">
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/instagram.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/tiktok.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/whatsapp.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/phone.png" > @haciefv0</a></span>
+                </div>
+                <div class="location-store-card">
+                  <div class="main-tm-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+                    </svg>
+                    <span class="" >Moskva T/M</span>
+                  </div>
+                  <div class="detailed-location">
+                    2ci mertebe
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+        </div>
+
+
+        <div class="store-card-main">
+          <div class="store-card">
+
+
+              <div class="img-card">
+                <img class="store-card-img premium" src="../Main/images/brands/brnd-1.jpg" alt="">
+                <img  class="premium-icon" src="../Main/images/asist-imgs/premium.png">
+              </div>
+              <div class="bottom-card premium-bottom">
+                <div class="store-card-name-main">
+                  <div class="store-card-name">
+
+                    <span class="store-name" ><a href="#" class="store-name-link-a" >Store Name</a></span><i<span class="point-of-store" ><img src="../Main/images/asist-imgs/pngwing.com (4).png" class="star-img-point"  alt=""><span class="total" >4.2</span></span>
+                  </div>
+                </div>
+
+                <div class="social-medias">
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/instagram.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/tiktok.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/whatsapp.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/phone.png" > @haciefv0</a></span>
+                </div>
+                <div class="location-store-card">
+                  <div class="main-tm-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+                    </svg>
+                    <span class="" >Moskva T/M</span>
+                  </div>
+                  <div class="detailed-location">
+                    2ci mertebe
+                  </div>
+                </div>
+                
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+        <!-- All stores -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="vip-products-text-area">
+        <div class="vip-child-div" >
+          <div class="vip-text">Premium Mağazalar</div>
+          <div class="all-vip-btn"><button class="btn-shw-all-vip" >Butun Premium Mağazalar</button></div>
+        </div>
+      </div>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="stores-area-main">
+        <div class="store-card-main">
+          <div class="store-card">
+
+
+              <div class="img-card">
+                <img class="store-card-img" src="../Main/images/brands/brnd-1.jpg" alt="">
+              </div>
+              <div class="bottom-card">
+                <div class="store-card-name-main">
+                  <div class="store-card-name">
+
+                    <span class="store-name" ><a href="#" class="store-name-link-a" >Store Name</a></span><i<span class="point-of-store" ><img src="../Main/images/asist-imgs/pngwing.com (4).png" class="star-img-point"  alt=""><span class="total" >4.2</span></span>
+                  </div>
+                </div>
+
+                <div class="social-medias">
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/instagram.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/tiktok.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/whatsapp.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/phone.png" > @haciefv0</a></span>
+                </div>
+                <div class="location-store-card">
+                  <div class="main-tm-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+                    </svg>
+                    <span class="" >Moskva T/M</span>
+                  </div>
+                  <div class="detailed-location">
+                    2ci mertebe
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+        </div>
+        
+
+
+        <div class="store-card-main">
+          <div class="store-card">
+
+
+              <div class="img-card">
+                <img class="store-card-img" src="../Main/images/brands/brnd-1.jpg" alt="">
+              </div>
+              <div class="bottom-card">
+                <div class="store-card-name-main">
+                  <div class="store-card-name">
+
+                    <span class="store-name" ><a href="#" class="store-name-link-a" >Store Name</a></span><i<span class="point-of-store" ><img src="../Main/images/asist-imgs/pngwing.com (4).png" class="star-img-point"  alt=""><span class="total" >4.2</span></span>
+                  </div>
+                </div>
+
+                <div class="social-medias">
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/instagram.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/tiktok.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/whatsapp.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/phone.png" > @haciefv0</a></span>
+                </div>
+                <div class="location-store-card">
+                  <div class="main-tm-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+                    </svg>
+                    <span class="" >Moskva T/M</span>
+                  </div>
+                  <div class="detailed-location">
+                    2ci mertebe
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="store-card-main">
+          <div class="store-card">
+
+
+              <div class="img-card">
+                <img class="store-card-img" src="../Main/images/brands/brnd-1.jpg" alt="">
+              </div>
+              <div class="bottom-card">
+                <div class="store-card-name-main">
+                  <div class="store-card-name">
+
+                    <span class="store-name" ><a href="#" class="store-name-link-a" >Store Name</a></span><i<span class="point-of-store" ><img src="../Main/images/asist-imgs/pngwing.com (4).png" class="star-img-point"  alt="" class="total" >4.2</span></span>
+                  </div>
+                </div>
+
+                <div class="social-medias">
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/instagram.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/tiktok.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/whatsapp.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/phone.png" > @haciefv0</a></span>
+                </div>
+                <div class="location-store-card">
+                  <div class="main-tm-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+                    </svg>
+                    <span class="" >Moskva T/M</span>
+                  </div>
+                  <div class="detailed-location">
+                    2ci mertebe
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+        </div>
+
+
+        <div class="store-card-main">
+          <div class="store-card">
+
+
+              <div class="img-card">
+                <img class="store-card-img" src="../Main/images/brands/brnd-1.jpg" alt="">
+              </div>
+              <div class="bottom-card">
+                <div class="store-card-name-main">
+                  <div class="store-card-name">
+
+                    <span class="store-name" ><a href="#" class="store-name-link-a" >Store Name</a></span><i<span class="point-of-store" ><img src="../Main/images/asist-imgs/pngwing.com (4).png" class="star-img-point"  alt=""><span class="total" >4.2</span></span>
+                  </div>
+                </div>
+
+                <div class="social-medias">
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/instagram.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/tiktok.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/whatsapp.png" > @haciefv0</a></span>
+                  <span class="sep-soical-medias" ><a href="#" > <img  class="social-media-logos" src="../Main/images/asist-imgs/phone.png" > @haciefv0</a></span>
+                </div>
+                <div class="location-store-card">
+                  <div class="main-tm-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+                    </svg>
+                    <span class="" >Moskva T/M</span>
+                  </div>
+                  <div class="detailed-location">
+                    2ci mertebe
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+        </div>
+
+
+
+
+        <!-- All stores -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+      </div>
+
+      
+      
+      
+      
+
+
+
+
+
+</body>
+<script src="../Main/swiper/swiper-bundle.min.js"></script>
+<script src="../Main/index.js"></script>
+
+
+</html>
