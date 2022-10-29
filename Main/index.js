@@ -75,6 +75,71 @@ function showAll(){
 document.getElementById("show-all-button").addEventListener("click",showAll)
 // showAllBtn.addEventListener("click",showAll)
 // 
-
-
-
+// Product Page
+var swiper = new Swiper(".mySwiper", {
+  loop: true,
+  spaceBetween: 40,
+  slidesPerView: 5,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+  
+});
+var ProductImgMain =document.getElementById("ProductImgMain")
+  var smallImg = document.getElementsByClassName("small-prdct-img")
+  ProductImgMain.src=smallImg[0].src;
+  smallImg[0].onclick = function(){
+    ProductImgMain.src=smallImg[0].src;
+  }
+  smallImg[1].onclick = function(){
+    ProductImgMain.src=smallImg[1].src;
+  }
+  smallImg[2].onclick = function(){
+    ProductImgMain.src=smallImg[2].src;
+  }
+  smallImg[3].onclick = function(){
+    ProductImgMain.src=smallImg[3].src;
+  }
+  smallImg[4].onclick = function(){
+    ProductImgMain.src=smallImg[4].src;
+  }
+  smallImg[5].onclick = function(){
+    ProductImgMain.src=smallImg[5].src;
+  }
+  smallImg[6].onclick = function(){
+    ProductImgMain.src=smallImg[6].src;
+  }
+  smallImg[7].onclick = function(){
+    ProductImgMain.src=smallImg[7].src;
+  }
+  smallImg[8].onclick = function(){
+    ProductImgMain.src=smallImg[8].src;
+  }
+  smallImg[9].onclick = function(){
+    ProductImgMain.src=smallImg[9].src;
+  }
+  smallImg[10].onclick = function(){
+    ProductImgMain.src=smallImg[10].src;
+  }
+  smallImg[11].onclick = function(){
+    ProductImgMain.src=smallImg[11].src;
+  }
+  smallImg[12].onclick = function(){
+    ProductImgMain.src=smallImg[12].src;
+  }
+  smallImg[13].onclick = function(){
+    ProductImgMain.src=smallImg[13].src;
+  }
+  smallImg[14].onclick = function(){
+    ProductImgMain.src=smallImg[14].src;
+  }
