@@ -96,7 +96,8 @@ var swiper2 = new Swiper(".mySwiper2", {
   
 });
 var ProductImgMain =document.getElementById("ProductImgMain")
-  var smallImg = document.getElementsByClassName("small-prdct-img")
+  var smallImg = document.querySelectorAll(".small-prdct-img")
+  console.log(smallImg)
   ProductImgMain.src=smallImg[0].src;
   smallImg[0].onclick = function(){
     ProductImgMain.src=smallImg[0].src;
