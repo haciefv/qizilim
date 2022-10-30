@@ -72,8 +72,9 @@ function showAll(){
   console.log(buttons)
 
 }
-document.getElementById("show-all-button").addEventListener("click",showAll)
-// showAllBtn.addEventListener("click",showAll)
+window.onload = ( ) => {
+  showAll()
+}
 // 
 // Product Page
 var swiper = new Swiper(".mySwiper", {

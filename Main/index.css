@@ -4,7 +4,7 @@ body {
   padding: 0px;
   margin: 0px;
   font-size: 20px;
-  min-height: 200vh;
+  height: fit-content;
   font-family: "Cabin", Sans-serif;
 }
 
@@ -103,7 +103,17 @@ body {
   padding: 0px 10px;
   box-sizing: border-box;
 }
-
+.addditional-information {
+  margin-top: 10px;
+}
+.add-information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 950px;
+  margin: 0 auto;
+}
 #hamburger-menu h3 {
   color: #c1957c;
   font-size: 2.2rem;
@@ -118,8 +128,10 @@ body {
   line-height: 3rem;
 }
 .image {
-  width: 100%;
-  height: 440px;
+  width: 50%;
+    height: fit-content;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 .image img {
   width: 100%;
@@ -153,9 +165,54 @@ body {
     align-items: center;
   }
 }
+@media (max-width: 375px) {
+  .last-added-products-div {
+    flex-direction: column;
+  }
+  .icons-in-header {
+    flex-direction: column !important;
+  }
+  .vip-products-div {
+    flex-direction: column;
+  }
+  .second-top {
+    display: none;
+  }
+  .sr-area-div {
+    width: 300px;
+  }
+  .sr-img-brand {
+    width: 60px;
+  }
+  #hamburger-menu #sidebar-menu {
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 580px) {
+  .add-information {
+    justify-content: center;
+  }
+  .must-read-div {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  .send-message-wp-div {
+    flex: 1 1 auto;
+  }
+}
+@media screen and (max-width: 665px) {
+  .price-header-main {
+    flex-direction: column;
+
+  }
+}
 @media screen and (max-width: 965px) {
   #hamburger-menu #sidebar-menu {
     z-index: 9999;
+  }
+  .shop-container {
+    justify-content: center !important;
+    align-items: center !important;
   }
   .main-top{
     display: flex;
@@ -498,9 +555,9 @@ body {
   margin-left: 1%;
 }
 .sr-area-div {
-  padding: 25px 15px;
-  width: 950px;
-  margin: 0 auto;
+  padding: 25px 15px !important;
+  max-width: 950px; 
+  margin: 0 auto !important;
 }
 
 .vip-products-text-area {
@@ -547,12 +604,13 @@ body {
 .vip-products-div {
   flex-wrap: wrap;
  
-  max-width: 95vw;
+  max-width: 950px;
   margin: 0 auto;
   border: 1px solid #c1957c;
   height: fit-content;
   display: flex;
   justify-content: center;
+  padding-bottom: 15px;
 }
 .vip-product-card {
   cursor: pointer;
@@ -590,9 +648,6 @@ body {
   width: 100%;
   height: 200px;
 }
-.prdct-details {
-  margin-left: 15px;
-}
 .price {
   margin: 5px 0 8px 0;
   font-size: 18px;
@@ -611,20 +666,21 @@ body {
   /* font-size: 15px; */
   /* height: 20px; */
   width: 90px;
-  border-radius: 15px;
   text-align: center;
   display: inline-block;
-  padding: 6px;
+  padding: 3px;
   margin-right: 6px;
   background-color: rgb(124, 206, 0);
 }
 .header-prdct {
   margin-top: 10px;
   font-size: 16px;
+  padding-left: 8px;
 }
 .card-date-inf {
   font-size: 14px;
   margin-top: 14px;
+  padding-left: 8px;
 }
 .show-vip-all {
   width: 98%;
@@ -645,7 +701,7 @@ body {
 }
 .last-added-products-div {
   flex-wrap: wrap;
-  max-width: 95vw;
+  max-width: 950px;
   margin: 0 auto;
   border: 1px solid #c1957c;
   /* height: 1500px; */
@@ -685,30 +741,10 @@ body {
 }
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 375px) {
-  .last-added-products-div {
-    flex-direction: column;
-  }
-  .vip-products-div {
-    flex-direction: column;
-  }
-  .second-top {
-    display: none;
-  }
-  .sr-area-div {
-    width: 300px;
-  }
-  .sr-img-brand {
-    width: 60px;
-  }
-  #hamburger-menu #sidebar-menu {
-    z-index: 1;
-  }
-}
 
 .products-container {
-  max-width: 100%;
- 
+  max-width: 950px;
+ margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1046,7 +1082,10 @@ header {
 .price-header-main {
   max-width: 95vw;
   margin: 0 auto;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  justify-content: space-between;
 }
 .price-azn {
   color: rgba(75, 75, 75, 0.471);
@@ -1062,7 +1101,7 @@ header {
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   /* position: absolute; */
-  margin: 25px auto;
+
   line-height: 35px;
   font-size: 35px;
   padding: 15px;
@@ -1081,15 +1120,23 @@ header {
   vertical-align: top;
   display: inline-block;
   margin-left: 25px;
+  text-align: center;
   /* width: 700px; */
   /* height: 100px; */
 }
 .icons-in-header {
   /* background-color: #000000; */
-  height: 35px;
+  height: fit-content;
+  display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
 }
 .options-for-store-main {
   display: inline-block;
+  margin: 8px;
 }
 .option-for-store-button {
   width: auto;
@@ -1099,6 +1146,7 @@ header {
 .product-details {
   max-width: 95vw;
   margin: 0 auto;
+  margin-top: 15px;
 }
 
 .shop-details {
@@ -1107,9 +1155,11 @@ header {
 }
 .shop-details-main {
   display: flex;
-  width: 100%;
-  justify-content: center;
+  max-width: 950px;
+  margin: 0 auto;
+  flex-direction: column;
   flex-wrap: wrap;
+  
 }
 .shop-image {
   display: block;
@@ -1165,8 +1215,7 @@ header {
 }
 .contact-infos-main {
   margin-top: 35px;
-  max-width: 95vw;
-  margin: 0 auto;
+  max-width: 370px;
   /* height: 300px; */
   border: 1px solid #c1957c;
   /* border-style:ridge; */
@@ -1208,13 +1257,21 @@ header {
   text-decoration: none;
   color: #444444;
 }
+.shop-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+}
 .sep-product-details {
   vertical-align: top;
   width: 630px;
   top: 0;
   display: inline-block;
   margin-left: 20px;
-  height: 450px;
+  height: fit-content;
   margin-top: 30px;
 }
 .properties {
@@ -1249,6 +1306,7 @@ header {
   border: 3px dashed red;
   width: 255px;
   padding: 5px;
+  
 }
 
 .same-ads-div {
@@ -1260,6 +1318,8 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 950px;
+  margin: 0 auto;
   padding-bottom: 20px;
  
 }
@@ -1278,7 +1338,7 @@ header {
   padding: 10px;
   vertical-align: top;
   margin: 20px 20px;
-  height: 40px;
+  height: fit-content;
   background-color: #c1957c;
   text-align: center;
   width: 180px;
@@ -1286,9 +1346,7 @@ header {
 }
 .send-message-wp-a {
   display: block;
-  transform: translateY(-17px);
   padding: 5px;
-  margin-top: 10px;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
