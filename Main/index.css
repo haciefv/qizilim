@@ -591,22 +591,29 @@ box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
     display: inline-block;
 
 }
-.weight{
+.weight-carat{
+    vertical-align: top;
     display: inline-block;
     font-size: 15px;
     font-weight: 600;
+    margin-right: 5px;
 }
 .prob{
-    /* padding:2px ; */
+    letter-spacing: 2px;
+    vertical-align: top;
+    transform: translateY(10px);
+    transform: translateX(-14px);
+    /* padding: 2px; */
     color: #ffff;
-    font-weight: 600;
-    /* font-size: 15px; */
+    /* font-weight: 600; */
+    font-size: 15px;
     /* height: 20px; */
     width: 90px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     text-align: center;
     display: inline-block;
     background-color: rgb(124, 206, 0);
+    width: 101px;
 }
 .header-prdct{
     margin-top: 10px;
@@ -1049,9 +1056,16 @@ box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
 .img-prdct-row{
     width: 940px;
 }
-.big-prdct-img{
-    height: 440px;
+.prdct-img-show{
+    text-align: center;
 }
+.big-prdct-img {
+    margin: 0 auto;
+    max-width: 940px;
+    height: 440px;
+    width: auto;
+    text-align: center;
+    background: #c1957c;}
 .small-img-row{
     display: flex;
     justify-content: flex-start;
@@ -1152,6 +1166,11 @@ box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
     margin: 25px auto;
 
 }
+.addditional-information{
+    font-size: 16px;
+    width: 400px;
+    margin-top: 15px;
+}
 .products-details{
     width: 940px;
 }
@@ -1173,12 +1192,12 @@ box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
 }
 .img-of-brand{
     margin: 0 auto;
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: auto;
     border-radius: 50%
 }
 .name-of-store{
-    font-size: 30px;
+    font-size: 24px;
     padding: 25px;
     color: #c1957c;
     display:flex;
@@ -1186,13 +1205,13 @@ box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
     justify-content: space-around;
 }
 .name-of-store-main{
-    
-    width: 270px;
+    margin: 0 auto;
+    width: 220px;
 }
 .awm-name{
 
     border-radius: 0 35px 0 35px;
-    width: 240px;
+    width: 190px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     margin: 0 auto;
     background-color: #c1957c;
@@ -1200,7 +1219,7 @@ box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
 }
 .awm-name a{
     position: absolute;
-    width: 240px;
+    width: 190px;
     display: flex;
     justify-content: center;
     margin: 15px auto;
@@ -1219,21 +1238,23 @@ box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
 }
 .contact-infos-main{
    
-    margin-top:35px ;
+    width: 220px;
+    margin-top: 35px;
     /* height: 300px; */
-    border: 1px solid  #c1957c;
-    /* border-style:ridge; */
+    border: 1px solid #c1957c;
+    /* border-style: ridge; */
+    margin: 20px auto;
 }
 .contact-info{
 
-    width: 220px;
+    width: 200px;
     margin: 20px auto;
 }
 .contact-infos-main:last-child{
     margin-bottom: 15px;
 }
 .contact-info-header{
-    font-size: 25px;
+    font-size: 21px;
     display: flex;
     justify-content: center;
 }
@@ -1251,13 +1272,13 @@ box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
 }
 
 .contact-info img{
-    width: 35px;
+    width: 22px;
 
 }
 .contact-info a{
     transform: translateY(-5px);
-    font-size: 25px;
-    margin-left: 8px;
+    font-size: 18px;
+    margin-left: 6px;
     text-decoration: none;
     color:#444444;
 }
@@ -1274,6 +1295,10 @@ box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
     background-color: #ffffff;
     padding: 10px;
     border-radius: 15px;
+}
+.propertied-div-fs{
+    font-size: 15px;
+    width: 400px;
 }
 .categories{
     width: 200px;
@@ -1319,6 +1344,10 @@ box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
     color: #ffffff;
 }
 .fieldset_name{border: 1px dashed #c1957c;}
+.attch-to-shop-page{
+    text-decoration: none;
+    color: #afafaf;
+}
 .send-message-wp-div{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     padding: 10px;
@@ -1342,4 +1371,124 @@ box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
 .send-message-wp-a img{
     width: 20px;
 
+}
+/* Shop page */
+.banner-shop-page{
+    width: 940px;
+    margin: 20px auto;
+}
+.banner-area{
+    width: 940px;
+    height: 250px;
+}
+.shop-details-main-div{
+    
+    background-color: #c1957c43;
+    
+    width: 940px;
+    margin: 10px auto;
+}
+.shop-details-img-follow-div{
+    display: inline-block;
+
+    margin: 20px 0;
+}
+.shop-page-img{
+    width: 150px;
+    border-radius: 50%;
+}
+.shop-img-div{
+    display: inline-block;
+    
+    width: 180px;
+}
+.shop-img{
+    margin: 0 auto;
+}
+.shop-page-img{
+    display: flex;
+    margin: 0 auto;
+}
+.follow-button-div{
+    width: 150px;
+    margin: 20px auto;
+}
+.follow-button-buton{
+    display: flex;
+    justify-content: space-around;
+    /* width: 120px; */
+    margin: 0 auto;
+    border-radius: 10PX;
+    font-size: 18px;
+    padding: 8px 20px;
+    border: 0px;
+    background-color: #5292e7;
+    color: #ffffff;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.shop-details-name-description{
+    width: 400px;
+    border-right:  1px solid rgb(146, 144, 144);
+    display: inline-block;
+    margin: 20px 0;
+}
+.shop-details-name-description{
+    margin: 20px 20px;
+    
+    vertical-align: top;
+}
+.shop-name-div{
+    font-style:italic;
+    font-size: 25px;
+    color: #2d2d2d;
+}
+.follower-counter-div{
+    color: #6a6a6a;
+
+    margin-top: 8px;
+    font-size:15px ;
+}
+.follower-counter-span{
+    margin-right: 5px;
+}
+.shop-description-div{
+    margin-top: 10px;
+    width: 380px;    
+}
+.shop-contact-details-div{
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 20px;
+}
+.shop-contact-header{
+    margin-top: 5px;
+}
+.shop-contact-loaction{
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 8px 15px;
+    background-color: #959595;
+}
+.shop-page-contact-list-ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.shop-page-contacts-li{
+    padding-top: 10px ;
+}
+
+.shop-page-contacts-li a{
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    color: #000000;
+}
+.shop-list-li-img{
+    margin-right: 5px;
+    width: 18px;
 }
