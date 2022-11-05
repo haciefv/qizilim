@@ -1249,6 +1249,7 @@ body {
 .container {
   width: 250px;
   overflow: hidden;
+  visibility: hidden;
   /* margin: 0 30px; */
   position: relative;
   display: flex;
@@ -1257,7 +1258,11 @@ body {
   border: 1px solid #e6e6e6;
   border-radius: 10px;
 }
-
+.show {
+  visibility: visible;
+  transition: all 1s;
+  transition-delay: 450ms;
+}
 .container:focus {
   outline: none;
 }
@@ -1316,11 +1321,14 @@ body {
     background-color: rgb(124, 206, 0);
     width: 101px;
 }
-.price {
+.price-vip {
   margin: 5px 0 8px 0;
   font-size: 18px;
   font-weight: bold;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
 .weight {
     vertical-align: top;
@@ -1747,21 +1755,18 @@ font-size: 0.8rem;
 }
 .brands-carousel-img:hover  .sr-img-brand{
     /* right: 2px; */
-
-
-    transition-duration: 0.4s;
-    border: 1px solid #c1957c;
-    margin-bottom:7px ;
-
+  
+    transform: scale(1.1);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    transition: transform .4s ease-in-out;
 }
 .brands-carousel-img:hover{
     
     /* cursor: pointer; */
     /* padding: 10px; */
     /* text-align: center; */
-    margin-bottom:   24px  ;
 
+  
     /* scroll-snap-align: start; */
     /* background-color: #4b3b31; */
     /* width: 130px; */

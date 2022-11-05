@@ -79,24 +79,17 @@ var swiper2 = new Swiper(".mySwiper2", {
 
 // let i=0
 
-function showAll(){
-// document.querySelector(".disabled-ads").style.display="block"
-// document.getElementById("show-all-button").style.display="none"
-//  showAllDiv.style.display="none"
- console.log("okay")
- var buttons = document.getElementsByClassName('disabled-ads');
- 
-for(let i=0; i<buttons.length; i++){
-    // buttons[i].style.backgroundColor="yellow"
-    // buttons[i].classList.toggle("disabled-ads")
-    // buttons[i].classList.add(`${i}`)
-    buttons[i].style.display="block";
-    console.log(i)
-}
-console.log(buttons.length)
-console.log(buttons)
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      entry.target.classList.add('show')
+    }
+  })
+})
 
-}
+const hiddenElements = document.querySelectorAll('.container');
+
+hiddenElements.forEach(el => observer.observe(el))
 // document.getElementById("show-all-button").addEventListener("click",showAll)
 // showAllBtn.addEventListener("click",showAll)
 // 
