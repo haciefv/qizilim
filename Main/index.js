@@ -45,59 +45,36 @@ function followReaction(){
 
 }
 
-let followButton = document.getElementById("follow-button")
-followButton.addEventListener("click", followReaction)
-
+// let followButton = document.getElementById("follow-button")
+// followButton.addEventListener("click", followReaction)
 
 
 var swiper = new Swiper(".mySwiper", {
-    
-  slidesPerView: 5,
-  spaceBetween: 30,
-  slidesPerGroup: 1,
   loop: true,
-  centerSlide: "true",
-  fade:"true",
-  gragCursor:"true",
-  loopFillGroupWithBlank: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+  spaceBetween: 40,
+  slidesPerView: 5,
+  freeMode: true,
+  watchSlidesProgress: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-});
-var menuButton = document.querySelector('.menu-button');
-var openMenu = function () {
-  swiper.slidePrev();
-};
-var swiper = new Swiper('.swiper', {
-  slidesPerView: 'auto',
-  initialSlide: 1,
-  resistanceRatio: 0,
-  slideToClickedSlide: true,
-  on: {
-    slideChangeTransitionStart: function () {
-      var slider = this;
-      if (slider.activeIndex === 0) {
-        menuButton.classList.add('cross');
-        // required because of slideToClickedSlide
-        menuButton.removeEventListener('click', openMenu, true);
-      } else {
-        menuButton.classList.remove('cross');
-      }
-    },
-    slideChangeTransitionEnd: function () {
-      var slider = this;
-      if (slider.activeIndex === 1) {
-        menuButton.addEventListener('click', openMenu, true);
-      }
-    },
+  thumbs: {
+    swiper: swiper,
   },
 });
-
+var swiper2 = new Swiper(".mySwiper2", {
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+  
+});
 
 
 // let i=0
@@ -120,21 +97,20 @@ console.log(buttons.length)
 console.log(buttons)
 
 }
-window.onload = ( ) => {
-  showAll()
-}
+// document.getElementById("show-all-button").addEventListener("click",showAll)
+// showAllBtn.addEventListener("click",showAll)
 // 
 
-const closedBtn = document.getElementById("close-menu-btn");
-const openBtn = document.querySelector(".menu-icon");
-const menu = document.getElementById("main-menu");
+// const closedBtn = document.getElementById("close-menu-btn");
+// const openBtn = document.querySelector(".menu-icon");
+// const menu = document.getElementById("main-menu");
 
-closedBtn.addEventListener("click", function () {
-  menu.style.left = "-100%";
-});
-openBtn.addEventListener("click", function () {
-  menu.style.left = "0";
-});
+// closedBtn.addEventListener("click", function () {
+//   menu.style.left = "-100%";
+// });
+// openBtn.addEventListener("click", function () {
+//   menu.style.left = "0";
+// });
 // shop checkbox registrartion
 function shopInfoDetails() {
   // Get the checkbox
