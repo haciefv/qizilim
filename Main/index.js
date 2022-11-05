@@ -135,56 +135,6 @@ closedBtn.addEventListener("click", function () {
 openBtn.addEventListener("click", function () {
   menu.style.left = "0";
 });
-<<<<<<< HEAD
-var ProductImgMain =document.getElementById("ProductImgMain")
-  var smallImg = document.querySelectorAll(".small-prdct-img")
-  console.log(smallImg)
-  ProductImgMain.src=smallImg[0].src;
-  smallImg[0].onclick = function(){
-    ProductImgMain.src=smallImg[0].src;
-  }
-  smallImg[1].onclick = function(){
-    ProductImgMain.src=smallImg[1].src;
-  }
-  smallImg[2].onclick = function(){
-    ProductImgMain.src=smallImg[2].src;
-  }
-  smallImg[3].onclick = function(){
-    ProductImgMain.src=smallImg[3].src;
-  }
-  smallImg[4].onclick = function(){
-    ProductImgMain.src=smallImg[4].src;
-  }
-  smallImg[5].onclick = function(){
-    ProductImgMain.src=smallImg[5].src;
-  }
-  smallImg[6].onclick = function(){
-    ProductImgMain.src=smallImg[6].src;
-  }
-  smallImg[7].onclick = function(){
-    ProductImgMain.src=smallImg[7].src;
-  }
-  smallImg[8].onclick = function(){
-    ProductImgMain.src=smallImg[8].src;
-  }
-  smallImg[9].onclick = function(){
-    ProductImgMain.src=smallImg[9].src;
-  }
-  smallImg[10].onclick = function(){
-    ProductImgMain.src=smallImg[10].src;
-  }
-  smallImg[11].onclick = function(){
-    ProductImgMain.src=smallImg[11].src;
-  }
-  smallImg[12].onclick = function(){
-    ProductImgMain.src=smallImg[12].src;
-  }
-  smallImg[13].onclick = function(){
-    ProductImgMain.src=smallImg[13].src;
-  }
-  smallImg[14].onclick = function(){
-    ProductImgMain.src=smallImg[14].src;
-=======
 // shop checkbox registrartion
 function shopInfoDetails() {
   // Get the checkbox
@@ -197,7 +147,6 @@ function shopInfoDetails() {
     text.style.display = "block";
   } else {
     text.style.display = "none";
->>>>>>> 2cd87d827ccbf9fc03645f3cccac1fc8a1bd1147
   }
   console.log("sadasd")
 }
