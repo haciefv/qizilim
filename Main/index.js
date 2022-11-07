@@ -90,20 +90,7 @@ const observer = new IntersectionObserver(entries => {
 const hiddenElements = document.querySelectorAll('.container');
 
 hiddenElements.forEach(el => observer.observe(el))
-// document.getElementById("show-all-button").addEventListener("click",showAll)
-// showAllBtn.addEventListener("click",showAll)
-// 
 
-// const closedBtn = document.getElementById("close-menu-btn");
-// const openBtn = document.querySelector(".menu-icon");
-// const menu = document.getElementById("main-menu");
-
-// closedBtn.addEventListener("click", function () {
-//   menu.style.left = "-100%";
-// });
-// openBtn.addEventListener("click", function () {
-//   menu.style.left = "0";
-// });
 // shop checkbox registrartion
 function shopInfoDetails() {
   // Get the checkbox
