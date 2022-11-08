@@ -20,7 +20,7 @@ console.log('ali')
 
 
 
-document.getElementById("detailed-search").addEventListener("click",filterShower)
+document.querySelector("#main-menu #detailed-search").addEventListener("click",filterShower)
 
 function followReaction(){
   document.getElementById("follow-button").classList.toggle("follow-button-buton-followed")

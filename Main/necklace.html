@@ -150,16 +150,16 @@
 
           </td>
           <td>
-            <label class="filter-header">Əyyar : </label>
+            <label class="filter-header">Əyyar : <span id="adjust"></span></label>
             <div class="radio-filter">
               
-              <input type="checkbox" class="radio-filter_input" name="diamond" id="myRadio1"><label
+              <input type="checkbox" class="radio-filter_input adjust" name="diamond" id="myRadio1"><label
                 class="radio-filter_label" for="myRadio1">583</label>
-              <input type="checkbox" class="radio-filter_input" name="diamond" id="myRadio2"><label
+              <input type="checkbox" class="radio-filter_input adjust" name="diamond" id="myRadio2"><label
                 class="radio-filter_label" for="myRadio2"> 585 </label>
-              <input type="checkbox" class="radio-filter_input" name="diamond" id="myRadio3"><label
+              <input type="checkbox" class="radio-filter_input adjust" name="diamond" id="myRadio3"><label
                 class="radio-filter_label" for="myRadio3"> 750</label>
-              <input type="checkbox" class="radio-filter_input" name="diamond" id="myRadio4"><label
+              <input type="checkbox" class="radio-filter_input adjust" name="diamond" id="myRadio4"><label
                 class="radio-filter_label" for="myRadio4">916</label>
             </div>
 
@@ -205,14 +205,14 @@
           </td>
           <td>
 
-            <label class="filter-header" id="gColor">Qizil rengi : </label>
+            <label class="filter-header" id="gColor">Qizil rengi : <span id="selected_color_text"></span></label>
             <div class="radio-filter">
-              <input type="checkbox" class="radio-filter_input" name="g-color" id="g-color1">
+              <input type="checkbox" class="radio-filter_input color" name="g-color" id="g-color1">
               <label
                 class="radio-filter_label" for="g-color1">Ag</label>
-              <input type="checkbox" class="radio-filter_input" name="g-color" id="g-color2"><label
+              <input type="checkbox" class="radio-filter_input color" name="g-color" id="g-color2"><label
                 class="radio-filter_label" for="g-color2">Sari</label>
-              <input type="checkbox" class="radio-filter_input" name="g-color" id="g-color3"><label
+              <input type="checkbox" class="radio-filter_input color" name="g-color" id="g-color3"><label
                 class="radio-filter_label" for="g-color3">Rose</label>
             </div>  
 
@@ -537,14 +537,28 @@
 
         </div>
         <script src="../Main/swiper/swiper-bundle.min.js"></script>
-       
+        <script src="../Main/index.js"></script>
 
 <script>
   const userEmail = localStorage.getItem('Email');
   const hamburgerMenu = document.getElementById("hamburger-menu");
+  const radiosAdjust = document.querySelectorAll('.adjust');
+   const AdjustText = document.getElementById('adjust');
+  const colors = document.querySelectorAll('.color');
+  const selectedColorText = document.getElementById('selected_color_text');
   const sidebarMenu = document.getElementById('main-menu');
   const searchButton = document.querySelector('.search');
   const closeSearchBtn = document.querySelector('.close-search');
+  colors.forEach(color => {
+    color.addEventListener('click' ,() => {
+      selectedColorText.innerHTML = color.nextElementSibling.innerHTML;
+    })
+  })
+   radiosAdjust.forEach(radioAdjust => {
+    radioAdjust.addEventListener('click' ,(e) => {
+      AdjustText.innerHTML = radioAdjust.nextElementSibling.innerHTML
+    })
+   })
   closeSearchBtn.addEventListener('click' ,() => document.querySelector('.search-container').style.top = "-100%")
   searchButton.addEventListener('click', () => document.querySelector('.search-container').style.top = "0");
   hamburgerMenu.addEventListener('click', (e) =>  {
@@ -567,7 +581,7 @@ sidebarMenu.style.left = "0"
    }
 
 </script>
-<script src="../Main/index.js"></script>
+
 </body>
 
 
