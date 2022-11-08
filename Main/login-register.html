@@ -24,7 +24,7 @@
         <h1>Daxil ol</h1>
         <form method="post">
           <div class="txt_field">
-            <input class="txt-field-input" type="text" required>
+            <input class="txt-field-input" id="emailText" type="text" required>
             <span></span>
             <label class="txt-field-label">Email ünvanı</label>
           </div>
@@ -38,7 +38,7 @@
               Şifrəni unutdum
             </a>
           </div>
-          <input type="submit" value="Daxil ol">
+          <input type="submit" id="submit" value="Daxil ol">
           <div class="signup_link">
             Hesabin yoxdur? <a href="#" class="register-btn">Qeydiyyatdan kec</a>
           </div>
@@ -224,6 +224,13 @@
           const registersBtn = document.querySelectorAll(".register-btn");
           const signinBtn = document.querySelector('.signin-btn');
           const email = document.getElementById('email');
+          const emailText = document.getElementById('emailText');
+          const submitBtn = document.getElementById('submit');
+          submitBtn.addEventListener('click' ,(e) => {
+            e.preventDefault();
+            const email = localStorage.setItem("Email", emailText.value);
+          
+          })
           email.addEventListener('keyup' ,(e) => console.log(e.target.value.length))
 email.addEventListener('focus' ,() => {
   document.getElementById('email_txt').style.top = "-5px";
@@ -258,6 +265,20 @@ email.addEventListener('focusout', () => {
             document.querySelector('.login_register_forgot').querySelector('.center').style.display = "none";
             document.querySelector('.login_register_forgot').querySelector('.center').nextElementSibling.style.display = "block"
           })
+          function shopInfoDetails() {
+  // Get the checkbox
+  var checkBox = document.getElementById("shopCheckbox");
+  // Get the output text
+  
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    document.getElementById("shopInfoRegister").style.display = "block";
+  } else {
+    document.getElementById("shopInfoRegister").style.display = "none";
+  }
+
+}
         </script>
     
 </body>

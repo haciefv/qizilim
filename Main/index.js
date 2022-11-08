@@ -1,7 +1,8 @@
+
 function filterShower() {
   coFilters = document.getElementById("filter-area")
   let disp = getComputedStyle(coFilters).display
-
+console.log('ali')
   // .classList
   // coFilters.toggle("filter-block")
   // console.log("AS")
@@ -80,6 +81,9 @@ var swiper2 = new Swiper(".mySwiper2", {
 
 // let i=0
 
+
+
+const hiddenElements = document.querySelectorAll('.container');
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if(entry.isIntersecting) {
@@ -88,25 +92,10 @@ const observer = new IntersectionObserver(entries => {
   })
 })
 
-const hiddenElements = document.querySelectorAll('.container');
-
 hiddenElements.forEach(el => observer.observe(el))
 
 // shop checkbox registrartion
-function shopInfoDetails() {
-  // Get the checkbox
-  var checkBox = document.getElementById("shopCheckbox");
-  // Get the output text
-  
 
-  // If the checkbox is checked, display the output text
-  if (checkBox.checked == true){
-    document.getElementById("shopInfoRegister").style.display = "block";
-  } else {
-    document.getElementById("shopInfoRegister").style.display = "none";
-  }
-
-}
 
 var selectField = document.getElementById("selectField")
 var selectText = document.getElementById("selectText")
