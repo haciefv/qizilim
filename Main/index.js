@@ -18,6 +18,7 @@ function filterShower() {
 }
 
 
+
 document.getElementById("detailed-search").addEventListener("click",filterShower)
 
 function followReaction(){
@@ -96,13 +97,43 @@ function shopInfoDetails() {
   // Get the checkbox
   var checkBox = document.getElementById("shopCheckbox");
   // Get the output text
-  var text = document.getElementById("shopInfoRegister");
+  
 
   // If the checkbox is checked, display the output text
   if (checkBox.checked == true){
-    text.style.display = "block";
+    document.getElementById("shopInfoRegister").style.display = "block";
   } else {
-    text.style.display = "none";
+    document.getElementById("shopInfoRegister").style.display = "none";
   }
-  console.log("sadasd")
+
 }
+
+var selectField = document.getElementById("selectField")
+var selectText = document.getElementById("selectText")
+var options = document.getElementsByClassName("tm-list-li")
+
+var tmList = document.getElementById("tmListUl")
+
+
+document.getElementById("selectField").addEventListener("click",function(){
+    tmList.classList.toggle("tm-hide")}
+)
+
+
+
+
+
+function tmSelectorExpand(){
+  document.getElementById("tmListUl").classList.toggle("tm-hide")
+
+}
+function  optionSelector(){
+  console.log()
+  console.log(this.textContent)
+    document.getElementById("selectText").innerText=this.querySelector("p").innerHTML
+  }
+
+
+
+
+  

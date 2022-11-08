@@ -144,12 +144,12 @@
           <div class="content-filter-div">
             <label class="filter-header">Qizil rengi : </label>
             <div class="radio-filter">
-              <input type="checkbox" class="radio-filter_input" gColor="Ag" name="diamond" id="myRadio1">
-              <label class="radio-filter_label" for="myRadio1">Ag</label>
-              <input type="checkbox" class="radio-filter_input"gColor="Sari" name="diamond" id="myRadio2">
-              <label class="radio-filter_label" for="myRadio2">Sari</label>
-              <input type="checkbox" class="radio-filter_input" gColor="Rose" name="diamond" id="myRadio3">
-              <label class="radio-filter_label" for="myRadio3">Rose</label>
+              <input type="checkbox" class="radio-filter_input" name="diamond" id="myRadio1"><label
+                class="radio-filter_label" for="myRadio1">Ag</label>
+              <input type="checkbox" class="radio-filter_input" name="diamond" id="myRadio2"><label
+                class="radio-filter_label" for="myRadio2">Sari</label>
+              <input type="checkbox" class="radio-filter_input" name="diamond" id="myRadio3"><label
+                class="radio-filter_label" for="myRadio3">Rose</label>
             </div>
           </div>
         </div>
@@ -174,8 +174,8 @@
           <div class="content-filter-div">
             <label class="filter-header">Qiymət(Azn) : </label>
             <div class="input_number_div">
-              <input class="input_number" type="number" name="min-price" placeholder="Min" min="0" id="input_number_min">
-              <input class="input_number" type="number" name="min-price" placeholder="Max" min="0" id="">
+              <input class="input_number" type="number" name="min-price" placeholder="Min" id="input_number_min">
+              <input class="input_number" type="number" name="min-price" placeholder="Max" id="">
             </div>
           </div>
 
@@ -240,11 +240,24 @@
     </div>
 
   </header>
-      <form action="" method="post">
-        
-      </form>
 
-     
+      <div id="center" class="center">
+        <h1>Şifrəni bərpa et</h1>
+        <form method="post" action="new-pswrd.html">
+          <div class="txt_field">
+            <input class="txt-field-input" type="text" required>
+            <span></span>
+            <label class="txt-field-label">Otp kodu</label>
+          </div>
+
+          <input id="psswrd-recover-btn"  type="submit" value="Bərpa mesajı al">
+          <div class="signup_link">
+            Hesabin yoxdur? <a href="register.html">Qeydiyyatdan kec</a>
+          </div>
+        </form>
+      </div>
+
+
 
 
 
@@ -340,8 +353,6 @@
            <p>Copyright &copy; 2021 Foolish Developer</p>
         </div>
         </footer>
-        <!-- Script -->
-        <script src="index.js"></script>
     
 </body>
 </html>
