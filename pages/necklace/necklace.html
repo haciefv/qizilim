@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../../Main/global.css">
+    <link rel="stylesheet" href="../../Main/search.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../Main/swiper/swiper-bundle.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight&family=Raleway:ital,wght@0,800;1,300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <div class="search-container">
+    <button class="close-search">
+      <i class="fa-solid fa-xmark" style="font-size: 40px; color: #fff;"></i>
+    </button>
+    <form class="search-box">
+      <button style="background: none; border: none; padding: 0"><i class="fa-solid fa-magnifying-glass" style="font-size: 30px;"></i></button>
+      <input style="vertical-align: 4px; width: 255px;" type="search" name="focus" placeholder="Search" id="search-input" value="">
+    </form>
+  </div>
+  <header>
+    <div class="main-top">
+        <nav id="sidebar-menu">
+          <ul>
+            <li><a href="../main/index.html">Son Elanlar</a></li>
+            <li><a href="#">Premium elanlar</a></li>
+            <!-- <li><a href="stores.html">Magazalar</a></li> -->
+            <li><a href="necklace.html">Haqqımızda</a></li>
+         
+            <!-- <li><a href="#">Sirgalar</a></li>
+            <li><a href="#">Destler</a></li> -->
+            <li><a class="nav-link" id="detailed-search" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="currentColor"
+                  class="bi bi-filter-square" viewBox="0 0 16 16">
+                  <path
+                    d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                  <path
+                    d="M6 11.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                </svg> Axtarış</a></li>
+          </ul>
+        </nav>
+      </label>
+        <div  class="logo-icons"  >
+
+            <div class="logo">
+
+                <a class="gra-logo-gra" >Qizilim.az</a>
+
+            </div>
+            
+        
+            <div class="icons">
+                <!-- <input type="search" class="search-box" name="search" id="search"> -->
+                
+                <a class="icons-top-a search" href="#" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                </a>
+
+                <a class="icons-top-a" href="# " >
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                </svg>
+                </a>
+                <a class="icons-top-a" id="loginRegister" href="#" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                  </svg>
+                </a>
+                <a class="icons-top-a" id="user" href="store-own-page.html" style="font-size: 14px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; width: 80px;">
+            
+                </a>
+                 <input type="checkbox" id="hamburger-input" class="burger-shower" />
+      <label id="hamburger-menu" for="hamburger-input">
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="second-top">
+      <nav id="main-menu">
+        <div id="close-menu-btn">
+          <img src="https://www.svgrepo.com/show/178323/cross-close.svg" width="15px" height="15px" alt="">
+         </div>
+         <ul>
+          <li><a href="index.html">Son Elanlar</a></li>
+          <li><a href="#">Premium elanlar</a></li>
+          <!-- <li><a href="stores.html">Magazalar</a></li> -->
+          <li><a href="necklace.html">Haqqımızda</a></li>
+       
+          <!-- <li><a href="#">Sirgalar</a></li>
+          <li><a href="#">Destler</a></li> -->
+          <li><a class="nav-link" id="detailed-search" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="currentColor"
+                class="bi bi-filter-square" viewBox="0 0 16 16">
+                <path
+                  d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                <path
+                  d="M6 11.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+              </svg> Axtarış</a></li>
+        </ul>
+      </nav>         
+                </div>
+
+              </nav>
+
+        </div>
+    </div>
+    <div class="filter-area" id="filter-area">
+      <table> 
+        <tr>
+          <td>
+            <details class="custom-select type">
+            	<summary class="radios">
+            		<input type="radio" name="item-type" id="default" title-type="Nov" checked>
+            		<input type="radio" name="item-type" id="item1" title-type="Sep">
+            		<input type="radio" name="item-type" id="item2" title-type="Uzuk">
+            		<input type="radio" name="item-type" id="item3" title-type="Qolbaq">
+            		<input type="radio" name="item-type" id="item4" title-type="Dest">
+            		<input type="radio" name="item-type" id="item5" title-type="Lorem">
+            	</summary>
+            	<ul class="selector-list">
+              
+            		<li>
+            			<label class="selector-label" for="item1">Sep</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item2">Uzuk</label>
+            		</li>
+                <li>
+            			<label class="selector-label" for="item3">Qolbaq</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item4">Dest</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item5">Lorem</label>
+            		</li>
+            	</ul>
+            </details>
+
+          </td>
+          <td>
+            <label class="filter-header">Əyyar : <span id="adjust"></span></label>
+            <div class="radio-filter">
+              
+              <input type="checkbox" class="radio-filter_input adjust" name="diamond" id="myRadio1"><label
+                class="radio-filter_label" for="myRadio1">583</label>
+              <input type="checkbox" class="radio-filter_input adjust" name="diamond" id="myRadio2"><label
+                class="radio-filter_label" for="myRadio2"> 585 </label>
+              <input type="checkbox" class="radio-filter_input adjust" name="diamond" id="myRadio3"><label
+                class="radio-filter_label" for="myRadio3"> 750</label>
+              <input type="checkbox" class="radio-filter_input adjust" name="diamond" id="myRadio4"><label
+                class="radio-filter_label" for="myRadio4">916</label>
+            </div>
+
+          </td>
+          <td>
+            <label class="filter-header">Çəki <span class="fltr-header-detail">(qram)</span> : </label>
+            <div class="input_number_div">
+              <input class="input_number" type="number" name="min-price" placeholder="Min" id="input_number_min">
+              <input class="input_number" type="number" name="min-price" placeholder="Max" id="">
+            </div>
+            
+          </td>
+        </tr>
+        
+
+        <tr>
+          <td>
+
+            <details class="custom-select diamond">
+            	<summary class="radios">
+            		<input type="radio" name="item-diamond" id="default" title-diamond="Brilliant" checked>
+            		<input type="radio" name="item-diamond" id="item31" title-diamond="Hamsi">
+            		<input type="radio" name="item-diamond" id="item32" title-diamond="Var">
+            		<input type="radio" name="item-diamond" id="item33" title-diamond="Yox">
+
+            	</summary>
+            	<ul class="selector-list">
+                <li>
+            			<label class="selector-label" for="item31">Hamsi</label>
+            		</li>
+              
+            		<li>
+            			<label class="selector-label" for="item32">Var</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item33">Yox</label>
+            		</li>
+
+
+            	</ul>
+            </details>
+
+          </td>
+          <td>
+
+            <label class="filter-header" id="gColor">Qizil rengi : <span id="selected_color_text"></span></label>
+            <div class="radio-filter">
+              <input type="checkbox" class="radio-filter_input color" name="g-color" id="g-color1">
+              <label
+                class="radio-filter_label" for="g-color1">Ag</label>
+              <input type="checkbox" class="radio-filter_input color" name="g-color" id="g-color2"><label
+                class="radio-filter_label" for="g-color2">Sari</label>
+              <input type="checkbox" class="radio-filter_input color" name="g-color" id="g-color3"><label
+                class="radio-filter_label" for="g-color3">Rose</label>
+            </div>  
+
+          </td>
+          <td>
+            <label class="filter-header">Qiymət <span class="fltr-header-detail">(Azn)</span>: </label>
+            <div class="input_number_div">
+              <input class="input_number" type="number" name="min-price" placeholder="Min" id="input_number_min">
+              <input class="input_number" type="number" name="min-price" placeholder="Max" id="">
+            </div>
+            
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <details class="custom-select loc">
+            	<summary class="radios">
+            		<input type="radio" name="item-loc" id="default" title-loc="Ticarət Mərkəzi" checked>
+            		<input type="radio" name="item-loc" id="item11" title-loc="Ticarət mərkəzləri">
+            		<input type="radio" name="item-loc" id="item12" title-loc="Moska T/M">
+            		<input type="radio" name="item-loc" id="item13" title-loc="Mərkəzi Univermaq T/M">
+            		<input type="radio" name="item-loc" id="item14" title-loc="Laçın T/M">
+            		<input type="radio" name="item-loc" id="item15" title-loc="Diger
+                ">
+            	</summary>
+            	<ul class="selector-list">
+              
+            		<li>
+            			<label class="selector-label" for="item12">Moska T/M</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item13">Mərkəzi Univermaq T/M</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item14">Laçın T/M</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item15">Diger</label>
+            		</li>
+            	</ul>
+            </details>
+
+          </td>
+          <td>
+            <details class="custom-select delivery">
+            	<summary class="radios">
+            		<input type="radio" name="item-delivery" id="default" title-delivery="Catdrilma" checked>
+            		<input type="radio" name="item-delivery" id="item21" title-delivery="Hamsi">
+            		<input type="radio" name="item-delivery" id="item22" title-delivery="Var">
+            		<input type="radio" name="item-delivery" id="item23" title-delivery="Yox">
+            	</summary>
+            	<ul class="selector-list">
+                
+              
+            		<li>
+            			<label class="selector-label" for="item21">Hamsi</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item22">Var</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item23">Yox</label>
+            		</li>
+
+            	</ul>
+            </details>
+
+          </td>
+          <td>
+            <div class="submit-div">
+              <button class="filter-sumbit" type="submit">Axtar</button>
+            </div>
+            
+          </td>
+        </tr>
+      </table>
+
+
+    </div>
+
+    </div>
+    
+  </header>
+  
+  <div class="sr-area-div swiper mySwiper">
+    
+      <div class="sr-content swiper-wrapper">
+        <div class="swiper-slide">
+        <div class="brands-carousel-img">
+          <img class="sr-img-brand"  src="../../Main/images/brands/brnd-2.jpg" alt="">
+          <span class="brands-store-name" >Store Name</span></a>
+        </div>
+        </div>
+        <div class="swiper-slide">
+        <div class="brands-carousel-img">
+          <img class="sr-img-brand"  src="../../Main/images/brands/brnd-3.jpg" alt="">
+          <span class="brands-store-name" >Store Name</span></a>
+        </div>
+        </div>
+        <div class="swiper-slide">
+        <div class="brands-carousel-img">
+          <img class="sr-img-brand"  src="../../Main/images/brands/brnd-1.jpg" alt="">
+          <span class="brands-store-name" >Store Name</span></a>
+        </div>
+        </div>
+        <div class="swiper-slide">
+        <div class="brands-carousel-img">
+          <img class="sr-img-brand"  src="../../Main/images/brands/brnd-4.jpg" alt="">
+          <span class="brands-store-name" >Store Name</span></a>
+        </div>
+        </div>
+        <div class="swiper-slide">
+        <div class="brands-carousel-img">
+          <img class="sr-img-brand"  src="../../Main/images/brands/brnd-2.jpg" alt="">
+          <span class="brands-store-name" >Store Name</span></a>
+        </div>
+        </div>
+        <div class="swiper-slide">
+        <div class="brands-carousel-img">
+          <img class="sr-img-brand"  src="../../Main/images/brands/brnd-1.jpg" alt="">
+          <span class="brands-store-name" >Store Name</span></a>
+        </div>
+        </div>
+        <div class="swiper-slide">
+        <div class="brands-carousel-img">
+          <img class="sr-img-brand"  src="../../Main/images/brands/brnd-4.jpg" alt="">
+          <span class="brands-store-name" >Store Name</span></a>
+        </div>
+        </div>
+        <div class="swiper-slide">
+        <div class="brands-carousel-img">
+          <img class="sr-img-brand"  src="../../Main/images/brands/brnd-3.jpg" alt="">
+          <span class="brands-store-name" >Store Name</span></a>
+        </div>
+        </div>
+        <div class="swiper-slide">
+        <div class="brands-carousel-img">
+          <img class="sr-img-brand"  src="../../Main/images/brands/brnd-1.jpg" alt="">
+          <span class="brands-store-name" >Store Name</span></a>
+        </div>
+        </div>
+      </div>
+    
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+      
+      
+        
+        <div class="vip-products-text-area">
+          <div class="vip-child-div" >
+            <div class="vip-text">VIP elanlar</div>
+            <div class="all-vip-btn"><button class="btn-shw-all-vip" >Butun Vip Elanlar</button></div>
+          </div>
+        </div>
+        <div class="products-container">
+
+
+          <div class="product-box">
+
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../../Main/images/products/New/2.jfif" alt="" >
+            </div>
+            
+
+              <div class="prdct-details"  >
+                <div class="price-vip"><span>450 AZN</span> <i class="fa-solid fa-gem" style="color: #C1957C;"></i></div>
+              <div class="detail-inf">
+                <div class="prob">583°(10K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+
+          </div>
+        <div class="product-box">
+
+          <div class="img-prdct-card">
+            <img class="img-prdct" src="../../Main/images/products/New/2.jfif" alt="" >
+          </div>
+          
+
+            <div class="prdct-details"  >
+              <div class="price-vip"><span>450 AZN</span> <i class="fa-solid fa-gem" style="color: #C1957C;"></i></div>
+            <div class="detail-inf">
+              <div class="prob">583°(10K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+
+        </div>
+
+
+        
+
+      <div class="product-box">
+
+        <div class="img-prdct-card">
+          <img class="img-prdct" src="../../Main/images/products/New/2.jfif" alt="" >
+        </div>
+        
+
+          <div class="prdct-details"  >
+            <div class="price-vip"><span>450 AZN</span> <i class="fa-solid fa-gem" style="color: #C1957C;"></i></div>
+          <div class="detail-inf">
+            <div class="prob">583°(10K)</div>
+            <div class="weight">4.2gr</div>
+          </div>
+          <div class="header-prdct">Alyans uzuk en son model BAki</div>
+          <div class="card-date-inf">14.02.2022 18:45</div>  
+        </div>
+
+      </div>
+
+
+      
+
+   
+
+    <div class="product-box">
+
+      <div class="img-prdct-card">
+        <img class="img-prdct" src="../../Main/images/products/New/2.jfif" alt="" >
+      </div>
+      
+
+        <div class="prdct-details"  >
+          <div class="price-vip"><span>450 AZN</span> <i class="fa-solid fa-gem" style="color: #C1957C;"></i></div>
+        <div class="detail-inf">
+          <div class="prob">583°(10K)</div>
+          <div class="weight">4.2gr</div>
+        </div>
+        <div class="header-prdct">Alyans uzuk en son model BAki</div>
+        <div class="card-date-inf">14.02.2022 18:45</div>  
+      </div>
+
+    </div>
+
+
+    
+
+                    
+    <div class="product-box">
+
+      <div class="img-prdct-card">
+        <img class="img-prdct" src="../../Main/images/products/New/2.jfif" alt="" >
+      </div>
+      
+
+        <div class="prdct-details"  >
+          <div class="price-vip"><span>450 AZN</span> <i class="fa-solid fa-gem" style="color: #C1957C;"></i></div>
+        <div class="detail-inf">
+          <div class="prob">583°(10K)</div>
+          <div class="weight">4.2gr</div>
+        </div>
+        <div class="header-prdct">Alyans uzuk en son model BAki</div>
+        <div class="card-date-inf">14.02.2022 18:45</div>  
+      </div>
+    </div>
+          <div class="product-box">
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../../Main/images/products/New/2.jfif" alt="" >
+            </div>
+             <div class="prdct-details"  >
+                <div class="price-vip"><span>450 AZN</span> <i class="fa-solid fa-gem" style="color: #C1957C;"></i></div>
+              <div class="detail-inf">
+                <div class="prob">583°(10K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+          </div>
+        </div>
+          <div class="vip-products-text-area">
+            <div class="vip-child-div" >
+              <div class="vip-text">Son elanlar</div>
+              <div class="all-vip-btn"><button class="btn-shw-all-vip" >Butun son Elanlar</button></div>
+            </div>
+          </div>
+        </div>
+        <script src="../../Main/swiper/swiper-bundle.min.js"></script>      
+        <script src="../../Main/global.js"></script>
+        <script src="./necklace.js"></script>
+        
+</body>
+</html>

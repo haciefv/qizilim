@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Main/swiper/swiper-bundle.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight&family=Raleway:ital,wght@0,800;1,300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+  <header>
+    <div class="main-top">
+      <div class="logo-icons">
+        <div class="logo">
+          <a class="logo-txt">Qizilim.az</a>
+        </div>
+        <div class="icons">
+          <!-- <input type="search" class="search-box" name="search" id="search"> -->
+
+          <a class="icons-top-a" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+          </a>
+
+          <a class="icons-top-a" href="# ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart"
+              viewBox="0 0 16 16">
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+            </svg>
+          </a>
+          <a class="icons-top-a" href="login-register.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+            </svg>
+          </a>
+          <a class="icons-top-a menu-icon" href="#">
+            <ion-icon name="menu-outline"></ion-icon>
+          </a>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="second-top">
+      <nav id="main-menu">
+        <div id="close-menu-btn">
+          <ion-icon name="close-outline"></ion-icon>
+        </div>
+        <ul>
+          <li><a href="index.html">Son Elanlar</a></li>
+          <li><a href="stores.html">Magazalar</a></li>
+          <li><a href="necklace.html">Uzukler</a></li>
+          <li><a href="#">Sepler</a></li>
+          <li><a href="#">Sirgalar</a></li>
+          <li><a href="#">Destler</a></li>
+          <li><a class="  nav-link" id="detailed-search" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="currentColor"
+                class="bi bi-filter-square" viewBox="0 0 16 16">
+                <path
+                  d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                <path
+                  d="M6 11.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+              </svg> Axtarış</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+
+
+    </div>
+    <div class="filter-area" id="filter-area">
+      <div class="filter-content">
+
+        <div class="filter-options">
+          <div class="content-filter-div">
+            <select class="tm-selector" name="Mok" id="">
+              <option value="asd" disabled="disabled" selected="true">Nov</option>
+              <option value="asd">Hamsı</option>
+
+              <option value="asd">Sep</option>
+              <option value="asd">Uzuk</option>
+              <option value="asd">Qolbaq</option>
+              <option value="asd">Toy desti</option>
+              <option value="asd">Bla bla</option>
+              <option value="asd">Bla bla</option>
+              <option value="asd">Bla bla</option>
+              <option value="asd">Bla bla</option>
+
+            </select>
+          </div>
+        </div>
+        <div class="filter-options degree">
+          <div class="content-filter-div">
+            <label class="filter-header">Əyyar : </label>
+            <div class="radio-filter">
+              <input type="checkbox" class="radio-filter_input" name="diamond" id="myRadio1"><label
+                class="radio-filter_label" for="myRadio1">583</label>
+              <input type="checkbox" class="radio-filter_input" name="diamond" id="myRadio2"><label
+                class="radio-filter_label" for="myRadio2"> 585 </label>
+              <input type="checkbox" class="radio-filter_input" name="diamond" id="myRadio3"><label
+                class="radio-filter_label" for="myRadio3"> 750</label>
+              <input type="checkbox" class="radio-filter_input" name="diamond" id="myRadio4"><label
+                class="radio-filter_label" for="myRadio4">916</label>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+        <div class="filter-options">
+          <div class="content-filter-div">
+            <label class="filter-header">Çəki(qram) : </label>
+            <div class="input_number_div">
+              <input class="input_number" type="number" name="min-price" placeholder="Min" id="input_number_min">
+              <input class="input_number" type="number" name="min-price" placeholder="Max" id="">
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="filter-options">
+          <div class="content-filter-div">
+            <label class="filter-header">Qizil rengi : </label>
+            <div class="radio-filter">
+              <input type="checkbox" class="radio-filter_input" name="diamond" id="myRadio1"><label
+                class="radio-filter_label" for="myRadio1">Ag</label>
+              <input type="checkbox" class="radio-filter_input" name="diamond" id="myRadio2"><label
+                class="radio-filter_label" for="myRadio2">Sari</label>
+              <input type="checkbox" class="radio-filter_input" name="diamond" id="myRadio3"><label
+                class="radio-filter_label" for="myRadio3">Rose</label>
+            </div>
+          </div>
+        </div>
+
+
+        <input type="checkbox" id="hamburger-input" class="burger-shower" />
+        <label id="hamburger-menu" for="hamburger-input">
+          <nav id="sidebar-menu">
+            <h3>Menu</h3>
+            <ul>
+              <li><a href="#">Son Elanlar</a></li>
+              <li><a href="#">Magazalar</a></li>
+              <li><a href="necklace.html">Blog</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </label>
+
+
+        <div class="filter-options">
+          <div class="content-filter-div">
+            <label class="filter-header">Qiymət(Azn) : </label>
+            <div class="input_number_div">
+              <input class="input_number" type="number" name="min-price" placeholder="Min" id="input_number_min">
+              <input class="input_number" type="number" name="min-price" placeholder="Max" id="">
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="filter-options">
+          <div class="content-filter-div">
+
+            <select name="Mok" class="tm-selector" id="">
+              <option value="asd" disabled="disabled" selected="true">Ticarət Mərkəzi</option>
+              <option value="asd">Moskva T.M.</option>
+              <option value="asd">Lacin T.M.</option>
+              <option value="asd">Mekezi univermaq T.M.</option>
+              <option value="asd">Moskva T.M.</option>
+              <option value="asd">Moskva T.M.</option>
+
+            </select>
+          </div>
+
+        </div>
+
+
+        <div class="filter-options">
+          <div class="content-filter-div">
+
+            <label class="filter-header">Brilliant : </label>
+            <div class="radio-filter">
+              <input type="radio" class="radio-filter_input" name="diamond" id="myRadio1"><label
+                class="radio-filter_label" for="myRadio1">Hamsi</label>
+              <input type="radio" class="radio-filter_input" name="diamond" id="myRadio2"><label
+                class="radio-filter_label" for="myRadio2"> Var </label>
+              <input type="radio" class="radio-filter_input" name="diamond" id="myRadio3"><label
+                class="radio-filter_label" for="myRadio3"> Yox </label>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="filter-options">
+          <div class="content-filter-div">
+            <label class="filter-header">Catdrilma : </label>
+            <div class="radio-filter">
+              <input type="radio" class="radio-filter_input" name="diamond" id="myRadio1"><label
+                class="radio-filter_label" for="myRadio1">Hamsi</label>
+              <input type="radio" class="radio-filter_input" name="diamond" id="myRadio2"><label
+                class="radio-filter_label" for="myRadio2"> Var </label>
+              <input type="radio" class="radio-filter_input" name="diamond" id="myRadio3"><label
+                class="radio-filter_label" for="myRadio3"> Yox </label>
+            </div>
+          </div>
+
+        </div>
+        <div class="submit-div">
+          <button class="filter-sumbit" type="submit">Axtar</button>
+        </div>
+      </div>
+
+
+    </div>
+
+    </div>
+
+  </header>
+      
+      <div class="sr-area-div swiper mySwiper">
+        
+          <div class="sr-content swiper-wrapper">
+            <div class="swiper-slide">
+            <div class="brands-carousel-img">
+              <img class="sr-img-brand"  src="../Main/images/brands/brnd-2.jpg" alt="">
+              <span class="brands-store-name" >Store Name</span>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="brands-carousel-img">
+              <img class="sr-img-brand"  src="../Main/images/brands/brnd-3.jpg" alt="">
+              <span class="brands-store-name" >Store Name</span>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="brands-carousel-img">
+              <img class="sr-img-brand"  src="../Main/images/brands/brnd-1.jpg" alt="">
+              <span class="brands-store-name" >Store Name</span>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="brands-carousel-img">
+              <img class="sr-img-brand"  src="../Main/images/brands/brnd-4.jpg" alt="">
+              <span class="brands-store-name" >Store Name</span>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="brands-carousel-img">
+              <img class="sr-img-brand"  src="../Main/images/brands/brnd-2.jpg" alt="">
+              <span class="brands-store-name" >Store Name</span>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="brands-carousel-img">
+              <img class="sr-img-brand"  src="../Main/images/brands/brnd-1.jpg" alt="">
+              <span class="brands-store-name" >Store Name</span>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="brands-carousel-img">
+              <img class="sr-img-brand"  src="../Main/images/brands/brnd-4.jpg" alt="">
+              <span class="brands-store-name" >Store Name</span>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="brands-carousel-img">
+              <img class="sr-img-brand"  src="../Main/images/brands/brnd-3.jpg" alt="">
+              <span class="brands-store-name" >Store Name</span>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="brands-carousel-img">
+              <img class="sr-img-brand"  src="../Main/images/brands/brnd-1.jpg" alt="">
+              <span class="brands-store-name" >Store Name</span>
+            </div>
+            </div>
+          </div>
+        
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      
+      
+        
+        <div class="vip-products-text-area">
+          <div class="vip-child-div" >
+            <div class="vip-text">VIP elanlar</div>
+            <div class="all-vip-btn"><button class="btn-shw-all-vip" >Butun Vip Elanlar</button></div>
+          </div>
+
+        </div>
+          <div class="vip-products-div">
+            <div class="vip-product-card">
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/1.jfif" alt="" >
+              </div>
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">916°(22K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+              
+            </div>
+
+            <div class="vip-product-card">
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/2.jfif" alt="" >
+              </div>
+              
+
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">583°(10K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+            </div>
+
+            <div class="vip-product-card">
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/3.jfif" alt="" >
+              </div>
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">750°(18K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+              
+            </div>
+
+            <div class="vip-product-card">
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/4.jpg" alt="" >
+              </div>
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">585°(14K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+              
+            </div>
+
+
+            <div class="vip-product-card">
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/1.jfif" alt="" >
+              </div>
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">916°(22K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+              
+            </div>
+
+            <div class="vip-product-card">
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/2.jfif" alt="" >
+              </div>
+              
+
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">583°(10K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+            </div>
+
+            <div class="vip-product-card">
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/3.jfif" alt="" >
+              </div>
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">750°(18K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+              
+            </div>
+
+            <div class="vip-product-card">
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/4.jpg" alt="" >
+              </div>
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">585°(14K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+              
+            </div>
+          </div>
+          <div class="banner-test">
+
+          </div>
+
+
+          <div class="vip-products-text-area">
+            <div class="vip-child-div" >
+              <div class="vip-text">Son elanlar</div>
+              <div class="all-vip-btn"><button class="btn-shw-all-vip" >Butun son Elanlar</button></div>
+            </div>
+          </div>
+        <div class="last-added-products-area">
+          <div class="last-added-products-div">
+            <div class="vip-product-card">
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/1.jfif" alt="" >
+              </div>
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">916°(22K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+              
+            </div>
+
+            <div class="vip-product-card">
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/2.jfif" alt="" >
+              </div>
+              
+
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">583°(10K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+            </div>
+
+            <div class="vip-product-card">
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/3.jfif" alt="" >
+              </div>
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">750°(18K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+              
+            </div>
+
+            <div class="vip-product-card">
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/4.jpg" alt="" >
+              </div>
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">585°(14K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+              
+            </div>
+
+
+            <div class="vip-product-card">
+                            <div class="brilliant-icon-div">
+                <svg  class="brilliant-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
+                </svg>
+              </div>
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/1.jfif" alt="" >
+              </div>
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">916°(22K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+              
+            </div>
+
+            <div class="vip-product-card">
+                            <div class="brilliant-icon-div">
+                <svg  class="brilliant-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
+                </svg>
+              </div>
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/2.jfif" alt="" >
+              </div>
+              
+
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">583°(10K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+            </div>
+
+            <div class="vip-product-card">
+                            <div class="brilliant-icon-div">
+                <svg  class="brilliant-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
+                </svg>
+              </div>
+              
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/3.jfif" alt="" >
+              </div>
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">750°(18K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+              
+            </div>
+
+            <div class="vip-product-card">
+                            <div class="brilliant-icon-div">
+                <svg  class="brilliant-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
+                </svg>
+              </div>
+              
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/4.jpg" alt="" >
+              </div>
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">585°(14K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+              
+            </div>
+
+            <div class="vip-product-card">
+              
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/1.jfif" alt="" >
+              </div>
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">916°(22K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+              
+            </div>
+
+            <div class="vip-product-card">
+              
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/2.jfif" alt="" >
+              </div>
+              
+
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">583°(10K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+            </div>
+
+            <div class="vip-product-card">
+              
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/3.jfif" alt="" >
+              </div>
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">750°(18K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+              
+            </div>
+
+            <div class="vip-product-card">
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/4.jpg" alt="" >
+              </div>
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">585°(14K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+              
+            </div>
+
+
+            <div class="vip-product-card">
+              <div class="brilliant-icon-div">
+                <svg  class="brilliant-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
+                </svg>
+              </div>
+              <div class="img-prdct-card">
+                
+                <img class="img-prdct" src="../Main/images/products/New/1.jfif" alt="" >
+              </div>
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">916°(22K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+              
+            </div>
+
+            <div class="vip-product-card">
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/2.jfif" alt="" >
+              </div>
+              
+
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">583°(10K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+            </div>
+
+            <div class="vip-product-card">
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/3.jfif" alt="" >
+              </div>
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">750°(18K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+              
+            </div>
+
+            <div class="vip-product-card">
+              <div class="img-prdct-card">
+                <img class="img-prdct" src="../Main/images/products/New/4.jpg" alt="" >
+              </div>
+              
+              <div class="prdct-details"  >
+                <div class="price">450azn</div>
+              <div class="detail-inf">
+                <div class="prob">585°(14K)</div>
+                <div class="weight">4.2gr</div>
+              </div>
+              <div class="header-prdct">Alyans uzuk en son model BAki</div>
+              <div class="card-date-inf">14.02.2022 18:45</div>  
+            </div>
+              
+          </div>
+
+          <!-- Disabled-ads -->
+                
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/3.jfif" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">750°(18K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/4.jpg" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">585°(14K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="brilliant-icon-div">
+              <svg  class="brilliant-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
+              </svg>
+            </div>
+            <div class="img-prdct-card">
+              
+              <img class="img-prdct" src="../Main/images/products/New/1.jfif" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">916°(22K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/2.jfif" alt="" >
+            </div>
+            
+
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">583°(10K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/3.jfif" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">750°(18K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/4.jpg" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">585°(14K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/3.jfif" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">750°(18K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/4.jpg" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">585°(14K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="brilliant-icon-div">
+              <svg  class="brilliant-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
+              </svg>
+            </div>
+            <div class="img-prdct-card">
+              
+              <img class="img-prdct" src="../Main/images/products/New/1.jfif" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">916°(22K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/2.jfif" alt="" >
+            </div>
+            
+
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">583°(10K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/3.jfif" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">750°(18K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/4.jpg" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">585°(14K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/3.jfif" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">750°(18K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/4.jpg" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">585°(14K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="brilliant-icon-div">
+              <svg  class="brilliant-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
+              </svg>
+            </div>
+            <div class="img-prdct-card">
+              
+              <img class="img-prdct" src="../Main/images/products/New/1.jfif" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">916°(22K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/2.jfif" alt="" >
+            </div>
+            
+
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">583°(10K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/3.jfif" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">750°(18K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/4.jpg" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">585°(14K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/3.jfif" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">750°(18K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/4.jpg" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">585°(14K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="brilliant-icon-div">
+              <svg  class="brilliant-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
+              </svg>
+            </div>
+            <div class="img-prdct-card">
+              
+              <img class="img-prdct" src="../Main/images/products/New/1.jfif" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">916°(22K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/2.jfif" alt="" >
+            </div>
+            
+
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">583°(10K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/3.jfif" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">750°(18K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/4.jpg" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">585°(14K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/3.jfif" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">750°(18K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/4.jpg" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">585°(14K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="brilliant-icon-div">
+              <svg  class="brilliant-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
+              </svg>
+            </div>
+            <div class="img-prdct-card">
+              
+              <img class="img-prdct" src="../Main/images/products/New/1.jfif" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">916°(22K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/2.jfif" alt="" >
+            </div>
+            
+
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">583°(10K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/3.jfif" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">750°(18K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/4.jpg" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">585°(14K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/3.jfif" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">750°(18K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+          <div class="vip-product-card disabled-ads" id="disabled-ads" >
+            <div class="img-prdct-card">
+              <img class="img-prdct" src="../Main/images/products/New/4.jpg" alt="" >
+            </div>
+            
+            <div class="prdct-details"  >
+              <div class="price">450azn</div>
+            <div class="detail-inf">
+              <div class="prob">585°(14K)</div>
+              <div class="weight">4.2gr</div>
+            </div>
+            <div class="header-prdct">Alyans uzuk en son model BAki</div>
+            <div class="card-date-inf">14.02.2022 18:45</div>  
+          </div>
+            
+          </div>
+
+
+                <div class="show-all-btn-div" >
+                  <button class="show-all-button"id="show-all-button"  >Hamsini goster</button>
+                </div>
+
+
+
+<!-- Dsiabled-ads  -->
+                  
+
+
+
+
+              </div>
+
+
+          </div>
+          
+
+        </div>
+        <!-- Live Chat -->
+        <a href="https://wa.me/qr/X2QHOXJA3CFLC1" >
+
+          <div class="fixed-contact-btn">
+            <div class="img-fixed-whatsapp-main">
+              <img class="img-fixed-whatsapp"  src="../Main/images/asist-imgs/whatsapp.png" alt="">
+            </div>
+            <div class="live-text-wp"><img class="red-dot-live" src="../Main/images/asist-imgs/red-dot2.png" alt=""> <span class="live-chat-text" >Live Chat</span></div>
+  
+          </div>
+        </a>
+      
+      
+      
+      
+
+
+
+
+
+</body>
+<script src="../Main/swiper/swiper-bundle.min.js"></script>
+<script src="./global.js"></script>
+
+
+</html>
