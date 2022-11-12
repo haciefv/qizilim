@@ -25,13 +25,15 @@ $(document).ready(function () {
       sync2.find(".owl-item").eq(0).addClass("current");
     })
     .owlCarousel({
+     
       items: slidesPerPage,
       dots: false,
-      nav: false,
+      nav: true,
       smartSpeed: 200,
       slideSpeed: 500,
       slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
       responsiveRefreshRate: 100,
+      
     })
     .on("changed.owl.carousel", syncPosition2);
 
@@ -114,7 +116,7 @@ const searchButton = document.querySelector(".search");
 const closeSearchBtn = document.querySelector(".close-search");
 closeSearchBtn.addEventListener(
   "click",
-  () => (document.querySelector(".search-container").style.top = "-100%")
+  () => (document.querySelector(".search-container").style.top = "-1000%")
 );
 searchButton.addEventListener(
   "click",

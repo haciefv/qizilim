@@ -13,7 +13,27 @@
     text-align: center;
   }
   #sync2 {
-    height: 160px;
+    max-width: 940px;
+    margin: 0 auto;
+    height: 220px;
+  }
+  #sync2 .owl-next {
+    position: absolute;
+    top: 40%;
+    right: 0; 
+    padding: 15px !important;
+    background-color: #C1957C;
+    color: #fff;
+    font-size: 25px;
+  }
+  #sync2 .owl-prev {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    padding: 15px !important;
+    background-color: #C1957C;
+    color: #fff;
+    font-size: 25px;
   }
   #sync2 .item {
     background: #c9c9c9;
@@ -40,7 +60,17 @@
     transition: all 0.3s ease;
   }
   #sync1 .owl-nav button {
-    background-color: #C1957C !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  }
+  #sync1 .owl-nav button svg path{
+    stroke: #C1957C !important;
   }
   #sync2 .owl-item .small-prdct-img-col{
     margin: 0 10px;
@@ -59,7 +89,7 @@
   }
   #sync1.owl-theme .owl-next,
   #sync1.owl-theme .owl-prev {
-    width: 22px;
+    width: 34px;
     height: 40px;
     margin-top: -20px;
     position: absolute;
@@ -70,4 +100,16 @@
   }
   #sync1.owl-theme .owl-next {
     right: 10px;
+  }
+
+  @media screen and (max-width: 500px) {
+    #sync2 :is(.owl-next, .owl-prev) {
+      top: 25%;
+    }
+    #sync2 .owl-next {
+      right: 10px;
+    }
+    #sync2 .owl-prev {
+      left: 10px;
+    }
   }

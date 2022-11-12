@@ -54,10 +54,12 @@ function followReaction(){
 
 
 const hiddenElements = document.querySelectorAll('.container');
+const loadings = document.querySelectorAll('.loading');
+
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if(entry.isIntersecting) {
-      entry.target.classList.add('show')
+      entry.target.classList.add('show') 
     }
   })
 })
@@ -85,6 +87,7 @@ var swiper2 = new Swiper(".mySwiper2", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  
   thumbs: {
     swiper: swiper,
   },

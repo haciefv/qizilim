@@ -30,7 +30,7 @@ radiosAdjust.forEach((radioAdjust) => {
 });
 closeSearchBtn.addEventListener(
   "click",
-  () => (document.querySelector(".search-container").style.top = "-100%")
+  () => (document.querySelector(".search-container").style.top = "-1000%")
 );
 searchButton.addEventListener(
   "click",
