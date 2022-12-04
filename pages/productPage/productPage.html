@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="../../Main/global.css">
+    <link rel="stylesheet" href="../../Main/carousel.css">
+    <link rel="stylesheet" href="../../Main/search.css">
+  
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+  />
+  <!-- Link Swiper's CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="search-container">
+    <button class="close-search">
+      <i class="fa-solid fa-xmark" style="font-size: 40px; color: #fff;"></i>
+    </button>
+    <form class="search-box">
+      <button style="background: none; border: none; padding: 0"><i class="fa-solid fa-magnifying-glass" style="font-size: 30px;"></i></button>
+      <input style="vertical-align: 4px; width: 255px;" type="search" name="focus" placeholder="Search" id="search-input" value="">
+    </form>
+  </div>
+  <header>
+    <div class="main-top">
+      <div class="logo-icons">
+        <div class="logo">
+          <a class="logo-txt">Qizilim.az</a>
+        </div>
+        <div class="icons">
+          <!-- <input type="search" class="search-box" name="search" id="search"> -->
+
+          <a class="icons-top-a search" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+          </a>
+
+          <a class="icons-top-a" href="# ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart"
+              viewBox="0 0 16 16">
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+            </svg>
+          </a>
+          <a class="icons-top-a" id="loginRegister" href="../loginRegister/login-register.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+            </svg>
+          </a>
+          <a class="icons-top-a" id="user" href="../storeOwn/store-own-page.html" style="font-size: 14px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; width: 80px;">
+            
+          </a>
+          <div class="icons-top-a menu-icon">
+            <svg viewBox="0 0 100 80" width="40" height="40" fill="#C1957C">
+              <rect width="100" height="20"></rect>
+              <rect y="30" width="100" height="20"></rect>
+              <rect y="60" width="100" height="20"></rect>
+            </svg>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="second-top">
+      <nav id="main-menu">
+        <div id="close-menu-btn">
+         <img src="https://www.svgrepo.com/show/178323/cross-close.svg" width="15px" height="15px" alt="">
+        </div>
+        <ul>
+          <li><a href="../main/index.html">Son Elanlar</a></li>
+          <li><a href="#">Premium elanlar</a></li>
+          <!-- <li><a href="stores.html">Magazalar</a></li> -->
+          <li><a href="../necklace/necklace.html">Haqqımızda</a></li>
+       
+          <!-- <li><a href="#">Sirgalar</a></li>
+          <li><a href="#">Destler</a></li> -->
+          <li><a class="  nav-link" id="detailed-search" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="currentColor"
+                class="bi bi-filter-square" viewBox="0 0 16 16">
+                <path
+                  d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                <path
+                  d="M6 11.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+              </svg> Axtarış</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+
+
+    </div>
+    <div class="filter-area" id="filter-area">
+      <table> 
+        <tr>
+          <td>
+            <details class="custom-select type">
+            	<summary class="radios">
+            		<input type="radio" name="item-type" id="default" title-type="Nov" checked>
+            		<input type="radio" name="item-type" id="item1" title-type="Sep">
+            		<input type="radio" name="item-type" id="item2" title-type="Uzuk">
+            		<input type="radio" name="item-type" id="item3" title-type="Qolbaq">
+            		<input type="radio" name="item-type" id="item4" title-type="Dest">
+            		<input type="radio" name="item-type" id="item5" title-type="Lorem">
+            	</summary>
+            	<ul class="selector-list">
+              
+            		<li>
+            			<label class="selector-label" for="item1">Sep</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item2">Uzuk</label>
+            		</li>
+                <li>
+            			<label class="selector-label" for="item3">Qolbaq</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item4">Dest</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item5">Lorem</label>
+            		</li>
+            	</ul>
+            </details>
+
+          </td>
+          <td>
+            <label class="filter-header">Əyyar : <span id="adjust"></span></label>
+            <div class="radio-filter">
+              
+              <input type="checkbox" class="radio-filter_input adjust" name="diamond" id="myRadio1"><label
+                class="radio-filter_label" for="myRadio1">583</label>
+              <input type="checkbox" class="radio-filter_input adjust" name="diamond" id="myRadio2"><label
+                class="radio-filter_label" for="myRadio2"> 585 </label>
+              <input type="checkbox" class="radio-filter_input adjust" name="diamond" id="myRadio3"><label
+                class="radio-filter_label" for="myRadio3"> 750</label>
+              <input type="checkbox" class="radio-filter_input adjust" name="diamond" id="myRadio4"><label
+                class="radio-filter_label" for="myRadio4">916</label>
+            </div>
+
+          </td>
+          <td>
+            <label class="filter-header" style="margin-bottom: 8px;">Çəki <span class="fltr-header-detail">(qram)</span> : </label>
+            <div class="input_number_div">
+              <input class="input_number" type="number" name="min-price" placeholder="Min" id="input_number_min">
+              <input class="input_number" type="number" name="min-price" placeholder="Max" id="">
+            </div>
+            
+          </td>
+        </tr>
+        
+
+        <tr>
+          <td>
+
+            <details class="custom-select diamond">
+            	<summary class="radios">
+            		<input type="radio" name="item-diamond" id="default" title-diamond="Brilliant" checked>
+            		<input type="radio" name="item-diamond" id="item31" title-diamond="Hamsi">
+            		<input type="radio" name="item-diamond" id="item32" title-diamond="Var">
+            		<input type="radio" name="item-diamond" id="item33" title-diamond="Yox">
+
+            	</summary>
+            	<ul class="selector-list">
+                <li>
+            			<label class="selector-label" for="item31">Hamsi</label>
+            		</li>
+              
+            		<li>
+            			<label class="selector-label" for="item32">Var</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item33">Yox</label>
+            		</li>
+
+
+            	</ul>
+            </details>
+
+          </td>
+          <td style="margin-right: 60px;">
+
+            <label class="filter-header" id="gColor">Qizil rengi : <span id="selected_color_text"></span></label>
+            <div class="radio-filter">
+              <input type="checkbox" class="radio-filter_input color" name="g-color" id="g-color1">
+              <label
+                class="radio-filter_label" for="g-color1">Ag</label>
+              <input type="checkbox" class="radio-filter_input color" name="g-color" id="g-color2"><label
+                class="radio-filter_label" for="g-color2">Sari</label>
+              <input type="checkbox" class="radio-filter_input color" name="g-color" id="g-color3"><label
+                class="radio-filter_label" for="g-color3">Rose</label>
+            </div>  
+
+          </td>
+          <td>
+            <label class="filter-header" style="margin-bottom: 8px;">Qiymət <span class="fltr-header-detail">(Azn)</span>: </label>
+            <div class="input_number_div">
+              <input class="input_number" type="number" name="min-price" placeholder="Min" id="input_number_min">
+              <input class="input_number" type="number" name="min-price" placeholder="Max" id="">
+            </div>
+            
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <details class="custom-select loc">
+            	<summary class="radios">
+            		<input type="radio" name="item-loc" id="default" title-loc="Ticarət Mərkəzi" checked>
+            		<input type="radio" name="item-loc" id="item11" title-loc="Ticarət mərkəzləri">
+            		<input type="radio" name="item-loc" id="item12" title-loc="Moska T/M">
+            		<input type="radio" name="item-loc" id="item13" title-loc="Mərkəzi Univermaq T/M">
+            		<input type="radio" name="item-loc" id="item14" title-loc="Laçın T/M">
+            		<input type="radio" name="item-loc" id="item15" title-loc="Diger
+                ">
+            	</summary>
+            	<ul class="selector-list">
+              
+            		<li>
+            			<label class="selector-label" for="item12">Moska T/M</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item13">Mərkəzi Univermaq T/M</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item14">Laçın T/M</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item15">Diger</label>
+            		</li>
+            	</ul>
+            </details>
+
+          </td>
+          <td>
+            <details class="custom-select delivery">
+            	<summary class="radios">
+            		<input type="radio" name="item-delivery" id="default" title-delivery="Catdrilma" checked>
+            		<input type="radio" name="item-delivery" id="item21" title-delivery="Hamsi">
+            		<input type="radio" name="item-delivery" id="item22" title-delivery="Var">
+            		<input type="radio" name="item-delivery" id="item23" title-delivery="Yox">
+            	</summary>
+            	<ul class="selector-list">
+                
+              
+            		<li>
+            			<label class="selector-label" for="item21">Hamsi</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item22">Var</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item23">Yox</label>
+            		</li>
+
+            	</ul>
+            </details>
+
+          </td>
+          <td>
+            <div class="submit-div">
+              <button class="filter-sumbit" type="submit">Axtar</button>
+            </div>
+            
+          </td>
+        </tr>
+      </table>
+
+
+    </div>
+
+    </div>
+
+  </header>
+      <div id="sync1" class="owl-carousel owl-theme">
+        <div class="small-prdct-img-col">
+          <img src="../../Main/images/products/New/84856461_481448139208023_7236620010829905920_n.jpg" class="small-prdct-img"   width="100%" alt="">
+          <button class="add_wishlist_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fff" class="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="small-prdct-img-col">
+          <img src="../../Main/images/products/New/1.jfif" class="small-prdct-img"   width="100%" alt="">
+          <button class="add_wishlist_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fff" class="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="small-prdct-img-col">
+          <img src="../../Main/images/products/New/2.jfif" class="small-prdct-img"   width="100%" alt="">
+          <button class="add_wishlist_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fff" class="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="small-prdct-img-col">
+          <img src="../../Main/images/products/New/3.jfif" class="small-prdct-img"   width="100%" alt="">
+          <button class="add_wishlist_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fff" class="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="small-prdct-img-col">
+          <img src="../../Main/images/products/New/4.jpg" class="small-prdct-img"   width="100%" alt="">
+          <button class="add_wishlist_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fff" class="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="small-prdct-img-col">
+          <img src="../../Main/images/products/New/87371399_497630300923140_137494959845539840_n.jpg" class="small-prdct-img"   width="100%" alt="">
+          <button class="add_wishlist_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fff" class="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="small-prdct-img-col">
+          <img src="../../Main/images/products/New/88347035_497629284256575_1541182188773441536_n.jpg" class="small-prdct-img"   width="100%" alt="">
+          <button class="add_wishlist_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fff" class="bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"></path>
+            </svg>
+          </button>
+        </div>
+    </div>
+    
+    <div id="sync2" class="owl-carousel owl-theme">
+      <div class="small-prdct-img-col">
+       
+        <img src="../../Main/images/products/New/84856461_481448139208023_7236620010829905920_n.jpg" class="small-prdct-img"   width="100%" alt="">
+
+      </div>
+      <div class="small-prdct-img-col">
+        <img src="../../Main/images/products/New/1.jfif" class="small-prdct-img"   width="100%" alt="">
+
+      </div>
+      <div class="small-prdct-img-col">
+        <img src="../../Main/images/products/New/2.jfif" class="small-prdct-img"   width="100%" alt="">
+
+      </div>
+      <div class="small-prdct-img-col">
+        <img src="../../Main/images/products/New/3.jfif" class="small-prdct-img"   width="100%" alt="">
+
+      </div>
+      <div class="small-prdct-img-col">
+        <img src="../../Main/images/products/New/4.jpg" class="small-prdct-img"   width="100%" alt="">
+
+      </div>
+      <div class="small-prdct-img-col">
+        <img src="../../Main/images/products/New/87371399_497630300923140_137494959845539840_n.jpg" class="small-prdct-img"   width="100%" alt="">
+
+      </div>
+      <div class="small-prdct-img-col">
+        <img src="../../Main/images/products/New/88347035_497629284256575_1541182188773441536_n.jpg" class="small-prdct-img"   width="100%" alt="">
+
+      </div>
+      
+    </div>
+    </div>
+    <div class="product-header-div">
+      <div class="price-header-main">
+
+        <div class="price-box-main">
+      <div class="price-box">
+
+        <span class="price-count" >300</span><span class="price-azn" >AZN</span>
+      </div>
+        </div>
+        <div class="header-product-main">
+          <div class="header-product">
+
+            <span class="title-of-product" >Yeni model uzuk 585 eyyar</span>
+            <div class="icons-in-header">
+              <div class="options-for-store-main">
+                <div class="options-for-store">
+                  <button class="option-for-store-button" id="be-premium" >
+                    <img src="../../Main/images/asist-imgs/upward.png" alt="" srcset=""> 
+
+                    Elani ireli cek</button> 
+                </div>
+              </div>
+              <div class="options-for-store-main">
+                <div class="options-for-store">
+                  <button class="option-for-store-button"id="be-first" >
+                    <img src="../../Main/images/asist-imgs/diamond-svgrepo-com.svg" alt="" srcset=""> 
+                    Elani Premium et
+                  </button> 
+              </div>
+              </div>
+              <div class="options-for-store-main">
+                <div class="options-for-store">
+                  <button class="option-for-store-button" id="be-delete" >
+                    <img src="../../Main/images/asist-imgs/icons8-remove-48.png" alt="" srcset=""> 
+
+                    Elani sil
+                  </button> 
+              </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="product-details">
+      <div class="shop-details-main">
+        <div class="shop-details">
+          <div style="width: 270px;">
+          <div class="shop-image">
+            <div class="img-of-brand-main">
+
+              <img class="img-of-brand" src="../../Main/images/brands/brnd-1.jpg">
+            </div>
+          </div>
+
+          <div class="name-of-store-main">
+
+            <div class="name-of-store">
+              <fieldset class="fieldset_name" >
+
+                <a class="attch-to-shop-page" href="../store-page.html"><em>Store Name</em></a>
+                <legend class="legend-name-store"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-gem" viewBox="0 -1 16 16">
+                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
+                </svg>
+                Premium</legend>
+              </fieldset>
+            </div>
+          </div>
+          <div class="awm-name">
+            <a href="#" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+            </svg><span>MOSKVA T/M</span> </a> 
+          </div>
+          </div>
+          <div class="sep-product-details">
+            <fieldset class="propertied-div-fs" >
+               <legend>Haqqinda</legend>
+            <table class="properties" >
+               <tr class="table-rows">
+                <td class="categories" >Kateqoiya</td>
+                <td class="sub-details" >Uzuk</td>
+              </tr>
+               <tr class="table-rows">
+                <td class="categories" >Nov</td>
+                <td class="sub-details" >Nisan uzuyu</td>
+              </tr>
+               <tr class="table-rows">
+                <td class="categories" >Eyyar</td>
+                <td class="sub-details" >585</td>
+              </tr>
+               <tr class="table-rows">
+                <td class="categories" >Ceki</td>
+                <td class="sub-details" >5.83gr</td>
+              </tr>
+               <tr class="table-rows">
+                <td class="categories" >brilliaNT</td>
+                <td class="sub-details" >5.3ct</td>
+              </tr>
+            
+    
+            </table>
+          </fieldset>
+          <div class="addditional-information">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem repellendus, praesentium optio saepe quam deleniti expedita minima nostrum cupiditate maxime, pariatur illum neque quibusdam fugiat delectus. Quas animi non ipsam.
+    
+          </div>
+          <div class="additional_info" style="display: flex; align-items: center; flex-wrap: wrap; height: fit-content; justify-content: space-between;">
+            <div class="must-read-div">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.146.146 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.163.163 0 0 1-.054.06.116.116 0 0 1-.066.017H1.146a.115.115 0 0 1-.066-.017.163.163 0 0 1-.054-.06.176.176 0 0 1 .002-.183L7.884 2.073a.147.147 0 0 1 .054-.057zm1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566z"/>
+                <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995z"/>
+              </svg> Məhsul üçün heç bir səbəblə  beh göndərməyin
+            </div>
+            <div class="send-message-wp-div">
+      
+              <a href="#" class="send-message-wp-a" >
+      
+                <img src="../../Main/images/asist-imgs/whatsapp-svgrepo-com.svg" alt="">
+                Saticiya mesaj gonder
+        
+              </a>
+            </div>
+          </div>
+    
+          </div>
+        </div>
+        <div class="contact-infos-main">
+          <div class="contact-info-header">
+            <span>
+              Əlaqə məlumatları
+            </span>
+          </div>
+          <!-- <div class="contact-info">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg>
+          </span>
+            <span><a href="#" >055-901-95-09</a></span>
+          </div>
+          <div class="contact-info">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg>
+          </span>
+            <span><a href="#" >055-901-95-09</a></span>
+          </div> -->
+          <div class="contact-info">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg>
+          </span>
+            <span><a href="#" >055-901-95-09</a></span>
+          </div>
+          <div class="contact-info">
+            <span>
+              <img src="../../Main/images/asist-imgs/tiktok.png" alt="">
+          </span>
+            <span><a href="#" >@haciefv0</a></span>
+          </div>
+          <div class="contact-info">
+            <span>
+              <img src="../../Main/images/asist-imgs/instagram.png" alt="">
+          </span>
+            <span><a href="#" >@haciefv0</a></span>
+          </div>
+          <div class="contact-info">
+            <span>
+              <img src="../../Main/images/asist-imgs/whatsapp.png  " alt="">
+          </span>
+          </span>
+           <span><a href="#" >0559019509</a></span>
+          </div>
+          <div class="contact-info">
+            <a  href="#" class="all-ads-contact">Butun Elanlar</a>
+
+          </div>
+         
+        </div>
+      </div>
+      
+
+
+    </div>
+    <div class="vip-products-text-area">
+      <div class="vip-child-div" >
+        <div class="vip-text">Oxşar elanlar</div>
+        <div class="all-vip-btn"><button class="btn-shw-all-vip" >Butun oxşar elanlar</button></div>
+      </div>
+    </div>
+    <div class="praducts">
+      <div class="container">
+        <div class="image">
+          <img src="../../Main/images/products/New/4.jpg" alt="">
+        </div>
+        <div class="info">
+          <div class="price">4 500 AZN</div>
+          <div class="prob-weight-div">
+  
+            <div class="prob">585</div>
+            <div class="weight">4,3gr</div><span class="sep-w-c" >/</span>
+            <div class="carat">0,35ct</div>
+            
+          </div>
+          <div class="title-of-product">some text about product</div>
+  
+          <div class="time">Bakı, bugün, 16:06</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="image">
+          <img src="../../Main/images/products/New/4.jpg" alt="">
+        </div>
+        <div class="info">
+          <div class="price">4 500 AZN</div>
+          <div class="prob-weight-div">
+  
+            <div class="prob">585</div>
+            <div class="weight">4,3gr</div><span class="sep-w-c" >/</span>
+            <div class="carat">0,35ct</div>
+            
+          </div>
+          <div class="title-of-product">some text about product</div>
+          <div class="time">Bakı, bugün, 16:06</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="image">
+          <img src="../../Main/images/products/New/4.jpg" alt="">
+        </div>
+        <div class="info">
+          <div class="price">4 500 AZN</div>
+          <div class="prob-weight-div">
+  
+            <div class="prob">585</div>
+            <div class="weight">4,3gr</div><span class="sep-w-c" >/</span>
+            <div class="carat">0,35ct</div>
+            
+          </div>
+          <div class="title-of-product">some text about product</div>
+          <div class="time">Bakı, bugün, 16:06</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="image">
+          <img src="../../Main/images/products/New/4.jpg" alt="">
+        </div>
+        <div class="info">
+          <div class="price">4 500 AZN</div>
+          <div class="prob-weight-div">
+  
+            <div class="prob">585</div>
+            <div class="weight">4,3gr</div><span class="sep-w-c" >/</span>
+            <div class="carat">0,35ct</div>
+            
+          </div>
+          <div class="title-of-product">some text about product</div>
+          <div class="time">Bakı, bugün, 16:06</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="image">
+          <img src="../../Main/images/products/New/4.jpg" alt="">
+        </div>
+        <div class="info">
+          <div class="price">4 500 AZN</div>
+          <div class="prob-weight-div">
+  
+            <div class="prob">585</div>
+            <div class="weight">4,3gr</div><span class="sep-w-c" >/</span>
+            <div class="carat">0,35ct</div>
+            
+          </div>
+          <div class="title-of-product">some text about product</div>
+          <div class="time">Bakı, bugün, 16:06</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="image">
+          <img src="../../Main/images/products/New/4.jpg" alt="">
+        </div>
+        <div class="info">
+          <div class="price">4 500 AZN</div>
+          <div class="prob-weight-div">
+  
+            <div class="prob">585</div>
+            <div class="weight">4,3gr</div><span class="sep-w-c" >/</span>
+            <div class="carat">0,35ct</div>
+            
+          </div>
+          <div class="title-of-product">some text about product</div>
+          <div class="time">Bakı, bugün, 16:06</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="image">
+          <img src="../../Main/images/products/New/4.jpg" alt="">
+        </div>
+        <div class="info">
+          <div class="price">4 500 AZN</div>
+          <div class="prob-weight-div">
+  
+            <div class="prob">585</div>
+            <div class="weight">4,3gr</div><span class="sep-w-c" >/</span>
+            <div class="carat">0,35ct</div>
+            
+          </div>
+          <div class="title-of-product">some text about product</div>
+          <div class="time">Bakı, bugün, 16:06</div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="image">
+          <img src="../../Main/images/products/New/4.jpg" alt="">
+        </div>
+        <div class="info">
+          <div class="price">4 500 AZN</div>
+          <div class="prob-weight-div">
+  
+            <div class="prob">585</div>
+            <div class="weight">4,3gr</div><span class="sep-w-c" >/</span>
+            <div class="carat">0,35ct</div>
+            
+          </div>
+          <div class="title-of-product">some text about product</div>
+          <div class="time">Bakı, bugün, 16:06</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="about-prdcts-container">
+        
+      
+      
+    </div> -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../../Main/global.js"></script>
+    <script src="./productPage.js"></script>
+
+    <script>
+ 
+  
+    </script>
+    
+</body>
+</html>
