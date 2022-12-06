@@ -1,17 +1,10 @@
+const hamburgerMenu = document.getElementById("hamburger-menu");
 const radiosAdjust = document.querySelectorAll(".adjust");
+const sidebarMenu = document.getElementById("main-menu");
 const AdjustText = document.getElementById("adjust");
 const colors = document.querySelectorAll(".color");
 const selectedColorText = document.getElementById("selected_color_text");
-const searchButton = document.querySelector(".search");
-const closeSearchBtn = document.querySelector(".close-search");
-closeSearchBtn.addEventListener(
-  "click",
-  () => (document.querySelector(".search-container").style.top = "-1000%")
-);
-searchButton.addEventListener(
-  "click",
-  () => (document.querySelector(".search-container").style.top = "0")
-);
+
 colors.forEach((color) => {
   color.addEventListener("click", () => {
     selectedColorText.innerHTML = color.nextElementSibling.innerHTML;
@@ -35,10 +28,12 @@ radiosAdjust.forEach((radioAdjust) => {
     }
   });
 });
-
-document.querySelector(".menu-icon").addEventListener("click", (e) => {
-  document.getElementById("main-menu").style.left = "0";
+hamburgerMenu.addEventListener("click", (e) => {
+  console.log(e.target);
+  sidebarMenu.style.visibility = "visible";
+  sidebarMenu.style.left = "0";
 });
 document.getElementById("close-menu-btn").addEventListener("click", () => {
-  document.getElementById("main-menu").style.left = "-100%";
+  sidebarMenu.style.visibility = "hidden";
+  sidebarMenu.style.left = "-250px";
 });
