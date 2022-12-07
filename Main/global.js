@@ -67,11 +67,11 @@ const observer = new IntersectionObserver(entries => {
 hiddenElements.forEach(el => observer.observe(el));
 
 var swiper = new Swiper(".mySwiper", {
-  loop: true,
-  spaceBetween: 40,
+  loop:true,
+  spaceBetween: 30,
   slidesPerView: 5,
-  freeMode: true,
-  watchSlidesProgress: true,
+  freeMode: false,
+  watchSlidesProgress: false,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
