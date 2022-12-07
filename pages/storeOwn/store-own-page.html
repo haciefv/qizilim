@@ -12,6 +12,9 @@
     content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
   />
   <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
@@ -26,16 +29,24 @@
           <a class="logo-txt">Qizilim.az</a>
         </div>
         <div class="icons">
-          <!-- <input type="search" class="search-box" name="search" id="search"> -->
-
-          <a class="icons-top-a" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search"
-              viewBox="0 0 16 16">
-              <path></path>
-                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-            </svg>
-          </a>
-
+         <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
+              <div role="search" class="sbx-twitter__wrapper">
+                <input type="search" name="search" placeholder="Search your website" autocomplete="off" required="required" class="sbx-custom__input">
+                <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+                  <svg role="img" aria-label="Search">
+                    <use xlink:href="#sbx-icon-search-17"></use>
+                  </svg>
+                </button>
+                <button type="reset" title="Clear the search query." class="sbx-custom__reset">
+                  <svg role="img" aria-label="Reset">
+                    <use xlink:href="#sbx-icon-clear-3"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+            <script type="text/javascript">
+              document.querySelector('.searchbox [type="reset"]').addEventListener('click', function() {  this.parentNode.querySelector('input').focus();});
+            </script>
           <a class="icons-top-a" href="# ">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart"
               viewBox="0 0 16 16">
@@ -53,9 +64,8 @@
           <a class="icons-top-a" id="user" href="./store-own-page.html" style="font-size: 14px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; width: 80px;">
             
           </a>
-          <a class="icons-top-a menu-icon" href="#">
-            <ion-icon name="menu-outline"></ion-icon>
-          </a>
+          <input type="checkbox" id="hamburger-input" class="burger-shower" />
+          <label id="hamburger-menu" for="hamburger-input">
 
         </div>
 
@@ -65,8 +75,8 @@
     <div class="second-top">
       <nav id="main-menu">
         <div id="close-menu-btn">
-          <ion-icon name="close-outline"></ion-icon>
-        </div>
+          <img src="https://www.svgrepo.com/show/178323/cross-close.svg" width="15px" height="15px" alt="">
+         </div>
         <ul>
           <li><a href="../main/index.html">Son Elanlar</a></li>
           <li><a href="../markets/stores.html">Magazalar</a></li>
@@ -125,11 +135,6 @@
                 class="radio-filter_label" for="myRadio4">916</label>
             </div>
           </div>
-
-
-
-
-
         </div>
         <div class="filter-options">
           <div class="content-filter-div">

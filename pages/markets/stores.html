@@ -34,13 +34,24 @@
         <div class="icons">
           <!-- <input type="search" class="search-box" name="search" id="search"> -->
 
-          <a class="icons-top-a search" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-search"
-              viewBox="0 0 16 16">
-              <path
-                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-            </svg>
-          </a>
+          <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
+              <div role="search" class="sbx-twitter__wrapper">
+                <input type="search" name="search" placeholder="Search your website" autocomplete="off" required="required" class="sbx-custom__input">
+                <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+                  <svg role="img" aria-label="Search">
+                    <use xlink:href="#sbx-icon-search-17"></use>
+                  </svg>
+                </button>
+                <button type="reset" title="Clear the search query." class="sbx-custom__reset">
+                  <svg role="img" aria-label="Reset">
+                    <use xlink:href="#sbx-icon-clear-3"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+            <script type="text/javascript">
+              document.querySelector('.searchbox [type="reset"]').addEventListener('click', function() {  this.parentNode.querySelector('input').focus();});
+            </script>
 
           <a class="icons-top-a" href="# ">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart"

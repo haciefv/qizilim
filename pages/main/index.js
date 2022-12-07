@@ -4,7 +4,21 @@ const sidebarMenu = document.getElementById("main-menu");
 const AdjustText = document.getElementById("adjust");
 const colors = document.querySelectorAll(".color");
 const selectedColorText = document.getElementById("selected_color_text");
+const logoutBtn = document.getElementById('log_out');
 
+let email = localStorage.getItem('Email')
+console.log(email)
+if(!email) {
+  document.getElementById("info_user").style.display = "none"
+}else {
+  document.getElementById('info_user').style.display = "flex"
+}
+
+logoutBtn.addEventListener('click', () => {
+  localStorage.removeItem('Email')
+  window.location.reload()
+  document.querySelector('.user_info').style.display = "none"
+})
 colors.forEach((color) => {
   color.addEventListener("click", () => {
     selectedColorText.innerHTML = color.nextElementSibling.innerHTML;

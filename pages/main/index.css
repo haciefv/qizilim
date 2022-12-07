@@ -1,0 +1,70 @@
+.user_info {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+}
+.user_email {
+  
+    background: none;
+    outline: none;
+    border: 1px solid #C1957C;
+    border-radius: 8px;
+    position: relative;
+    transition: all .3s ease-in-out;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+  cursor: pointer;
+}
+.user_email span{
+    color: #C1957C;
+    display: block;
+    width: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    --webkit-line-clamp: 1;
+    
+}
+.user_email i {
+    color: #C1957C;
+    font-size: 18px;
+    margin-left: 6px;
+}
+
+.user_info ul {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    position: absolute;
+    top: 56px;
+    visibility: hidden;
+    z-index: 99999999999999;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 11px 4px 22px -12px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 11px 4px 22px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 4px 22px -12px rgba(0,0,0,0.75);
+    
+}
+
+.user_info ul li {
+    padding: 20px 0;
+}
+.user_info ul li button {
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.user_info ul li:first-child {
+    border-bottom: 1px solid #C1957C;
+}
+
+.user_info:hover ul {
+   visibility: visible;
+}

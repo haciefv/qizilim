@@ -7,6 +7,7 @@ const submitBtn = document.getElementById("submit");
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   const email = localStorage.setItem("Email", emailText.value);
+  location.pathname = "/pages/main/index.html"
 });
 email.addEventListener("keyup", (e) => console.log(e.target.value.length));
 email.addEventListener("focus", () => {
