@@ -34,16 +34,16 @@
         <div class="icons">
           <!-- <input type="search" class="search-box" name="search" id="search"> -->
 
-          <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
+         <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
               <div role="search" class="sbx-twitter__wrapper">
-                <input type="search" name="search" placeholder="Search your website" autocomplete="off" required="required" class="sbx-custom__input">
-                <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+                <input type="search" name="search" placeholder="Search your website" autocomplete="off" required="required" class="sbx-custom__input" id="search_input">
+                <button type="submit" title="Submit your search query." class="sbx-custom__submit" id="search_button">
                   <svg role="img" aria-label="Search">
                     <use xlink:href="#sbx-icon-search-17"></use>
                   </svg>
                 </button>
                 <button type="reset" title="Clear the search query." class="sbx-custom__reset">
-                  <svg role="img" aria-label="Reset">
+                  <svg role="img" aria-label="Reset" id="reset_button">
                     <use xlink:href="#sbx-icon-clear-3"></use>
                   </svg>
                 </button>
@@ -67,9 +67,13 @@
                 d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
             </svg>
           </a>
-          <a class="icons-top-a" id="user" href="../storeOwn/store-own-page.html" style="font-size: 14px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; width: 80px;">
-            
-          </a>
+          <div class="user_info" id="info_user">
+            <button class="user_email"> <span id="user"></span><i class="fa-solid fa-angle-down"></i></button>
+            <ul>
+              <li><button id="log_out">Hesabdan cix</button></li>
+              <li><button>Hesabi idare et</button></li>
+            </ul>
+          </div>
           <a class="icons-top-a menu-icon" href="#">
             <ion-icon name="menu-outline"></ion-icon>
           </a>
@@ -1108,63 +1112,8 @@
 
         </div>
       </a>
-
-
-
-
-
-
-
-
-
-
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </body>
