@@ -234,7 +234,8 @@ tbody tr {
   align-items: center;
   justify-content: center;
 }
-.logo:nth-child(1) {
+.logo:nth-child(1) a {
+  text-decoration: none;
   color: #c1957c;
 
   font-size: 35px;
@@ -504,7 +505,10 @@ input[type=number] {
   /* margin-left: 31px; */
 }
 .vip-text-premium-shop{
-
+  background-color: rgba(58, 43, 12, 0.486);
+  padding: 10px;
+  backdrop-filter:blur(2px) ;
+  border-radius:15px ;
   color: #ffffff;
   /* text-align: center; */
   display: inline-block;
@@ -1121,6 +1125,7 @@ input[type=number] {
   width: 25px;
 }
 .contact-infos-main {
+  display: inline-block;
   margin-top: 35px;
   width: 270px;
   /* height: 300px; */
@@ -1314,9 +1319,16 @@ padding: 10px 0;
     display: block;
     z-index: 1231412412414124;
   }
+  .logo a{
+    color: #c1957c;
+
+
+  }
   .logo-txt {
     /* margin: 0 15px; */
     font-size: 29px;
+    color: #c1957c;
+    text-decoration: none;
   }
   .icons-top-a svg {
     width: 18px;
@@ -2395,7 +2407,7 @@ font-size: 0.8rem;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 2px;
-  text-decoration: underline;
+  text-decoration: none;
   color: #000000;
 }
 .shop-list-li-img{
@@ -2527,6 +2539,15 @@ div.social {
   padding: 45px;
   max-width: 400px;
   margin: 40px 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* box-shadow: 10px 10px 15px rgba(0,0,0,0.05); */
+}
+.center-recover{
+  padding: 45px;
+  max-width: 400px;
+  margin:40px auto;
   background: white;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -2846,7 +2867,7 @@ details[open] summary:after {
 
 
 
-input[type=radio] {
+  input[type=radio] {
 	counter-increment: radios;
 	appearance: none;
 	display: none;
@@ -2865,6 +2886,19 @@ input[type=radio] {
 
 	font-size: 1rem;
 }
+.delivery-edit input[type=radio]:checked {
+	display: inline;
+	--display: block;
+}
+
+.delivery-edit input[type=radio]:after {
+  vertical-align: top;
+	content:attr(title-edit-delivery);
+	display: inline;
+  color: #4c4c4c;
+
+	font-size: 1rem;
+}
 .loc input[type=radio]:after {
   vertical-align: top;
 	content:attr(title-loc);
@@ -2874,6 +2908,42 @@ input[type=radio] {
 }
 
 .loc input[type=radio]:checked {
+	display: inline;
+	--display: block;
+}
+.add-degree input[type=radio]:after {
+  vertical-align: top;
+	content:attr(title-add-degree);
+	display: inline;
+	font-size: 1rem;
+  color: #4c4c4c;
+}
+
+.add-degree input[type=radio]:checked {
+	display: inline;
+	--display: block;
+}
+.add-color input[type=radio]:after {
+  vertical-align: top;
+	content:attr(title-add-colour);
+	display: inline;
+	font-size: 1rem;
+  color: #4c4c4c;
+}
+
+.add-color input[type=radio]:checked {
+	display: inline;
+	--display: block;
+}
+.reg-loc input[type=radio]:after {
+  vertical-align: top;
+	content:attr(reg-loc-title);
+	display: inline;
+	font-size: 1rem;
+  color: #4c4c4c;
+}
+
+.reg-loc input[type=radio]:checked {
 	display: inline;
 	--display: block;
 }
@@ -3269,19 +3339,23 @@ margin: 20px auto;
   max-width: 940px;
   margin: 30px auto;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  height: 550px;
+  height: 650px;
   /* border-radius: 15px; */
   
 }
 
 .edit-inputs form{
   width: fit-content;
-  height: fit-content;
+
 }
 .edit-content{
   /* width: 90%; */
-  width: 850px;
+  /* width: 850px; */
   float: left;
+}
+.edit-header {
+  width: 70%;
+  display: inline-block;
 }
 .edit-header h3{
   padding: 15px ;
@@ -3292,9 +3366,15 @@ margin: 20px auto;
   display: block;
   width: 450px ;
   float: left;
+  
 }
 .input-field input {
   
+  width: 220px;
+  float: right;
+}
+.input-field .delivery-edit {
+  margin-left: 50px;
   width: 220px;
   float: right;
 }
@@ -3309,6 +3389,7 @@ margin: 20px auto;
   text-align: center;
   float: right;
   width: 220px;
+  margin-right: 50px;
 }
 .brand-image-edit{
   width: 220px;
@@ -3332,7 +3413,7 @@ margin: 20px auto;
   background: #c1957c;
 	/* background: linear-gradient(180deg, #63ee6a 10%, #4acf46 100%); */
 	/* display: flex; */
-	padding: 10px 0px;
+	padding: 15px 15px;
 }
 .css-button-verfiy:hover {
 	background: linear-gradient(180deg, #c1957c 10%, #c07a51 100%);
@@ -3348,7 +3429,8 @@ margin: 20px auto;
 	padding: 10px 10px;
 }
 .button-save{
-  margin: 10px 25px;
+
+  margin: 10px 0;
   float: right;
   display: inline-block;
   /* width: 100%; */
@@ -3360,13 +3442,112 @@ margin: 20px auto;
   border-radius: 50%;
   background-color: #F5EBE0;
 }
-.buttonerr {
+.change-profile-photo {
+  border-radius: 5px;
+  cursor: pointer;
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 10px 1px;
+  padding: 10px 0px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+.chang-profile-photo:hover{
+  background-color: #2a752d;
+  transition-duration: .3s;
+}
+.edit-user-bttn{
+  text-decoration: none;
+}
+.verify-store h3{
+
+
+}
+.verify-store{
+  height: 400px;
+  padding: 15px;
+  width: fit-content;
+  margin :40px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.clock-img{
+  width: 300px;
+  margin: 0 auto;
+}
+.waiting-clock{
+  width: 250px;
+  /* display: inline-block; */
+  margin: 0 auto;
+}
+.back-main-page{
+  cursor: pointer;
+  border: 0;
+  width: 100x;
+  margin: 0 auto;
+}
+.back-main-page button {
+  cursor: pointer;
+
+  background-color: #c1957c;
+  color: #ffffff;
+  border: 0;
+  padding:8px;
+  border-radius: 10px;
+  float: right;
+}
+.editUser{
+  text-decoration: none;
+}
+
+.wallet-div{
+  width: 46%;
+  float: right;
+  margin-right: 20px;
+  /* margin:  20px 10% ; */
+  /* margin: 50px 0; */
+  height: 50px;
+  display: inline-block;
+}
+.wallet-balance{
+  font-size: 25px;
+
+  margin: 10px 20px;
+  display: inline-block;
+}
+.wallet-button { 
+  vertical-align: top;
+  float: right;
+	color: #FFFFFF;
+	font-size: 15px;
+	border-radius: 5px;
+	border: solid 0 #82CD47;
+	box-shadow: inset 1px 1px 0px 0px #379237;
+	text-decoration: none;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	font-family: Arial;
+	background: linear-gradient(180deg, #82CD47 10%, #379237 100%);
+	display: inline-flex;
+	align-items: center;
+	padding: 0;
+}
+.wallet-button:hover {
+	background: linear-gradient(180deg, #379237 10%, #82CD47 100%);
+}
+.wallet-button-text {
+	position: relative;
+	padding: 10px 10px;
+}
+.wallet-button-icon img {
+	position: relative;
+  width: 15px;
+	border-right: 1px solid #ffffff29;
+	box-shadow: inset rgb(0 0 0 / 14%) -1px 0 0;
+	padding: 5px 5px;
+}
+.store-delivery-rad{
+  display: in;
 }
