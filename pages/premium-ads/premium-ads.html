@@ -23,12 +23,23 @@
     <div class="main-top">
       <div class="logo-icons">
         <div class="logo">
-          <a class="logo-txt">Qizilim.az</a>
+          <a href="../main/index.html" class="logo-txt">Qizilim.az</a>
         </div>
         <div class="icons">
           <!-- <input type="search" class="search-box" name="search" id="search"> -->
 
-         <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
+          <a class="icons-top-a search" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+              <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-17" viewBox="0 0 40 40">
+                <path d="M35.567 31.158L28.6 24.192c1.634-2.465 2.584-5.42 2.584-8.6C31.184 6.983 24.204 0 15.592 0 6.982 0 0 6.98 0 15.593c0 8.61 6.98 15.592 15.592 15.592 3.178 0 6.134-.95 8.6-2.583l10.24 10.24c1.173 1.175 3.077 1.174 4.252 0l.155-.156c1.18-1.182 1.175-3.08 0-4.254l-2.17-2.172-1.102-1.104v.002zm-1.103 1.102l-6.022-6.02c-.388-.39-1.024-.39-1.416.002l-.785.785c-.393.394-.393 1.027-.003 1.417l6.022 6.02 2.204-2.204zm1.103 1.103l2.488 2.488c.39.392.39 1.024-.003 1.418l-.785.785c-.393.392-1.028.392-1.417.004l-2.488-2.49 2.205-2.204zm-19.975-3.737c7.75 0 14.033-6.283 14.033-14.033 0-7.75-6.283-14.034-14.033-14.034C7.842 1.56 1.56 7.84 1.56 15.592c0 7.75 6.282 14.033 14.032 14.033zm0-25.728c-.645 0-1.284.053-1.912.156-.425.07-.713.47-.643.896.07.425.47.712.896.642.545-.09 1.1-.135 1.66-.135.43 0 .78-.35.78-.78 0-.43-.35-.78-.78-.78zm-5.31 1.273c-3.885 1.984-6.384 5.98-6.384 10.423 0 .43.35.78.78.78.43 0 .78-.35.78-.78 0-3.85 2.165-7.314 5.533-9.034.385-.196.537-.666.34-1.05-.195-.383-.664-.535-1.048-.34z"
+                fill-rule="evenodd" />
+              </symbol>
+              <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+                <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+              </symbol>
+            </svg>
+            
+           <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
               <div role="search" class="sbx-twitter__wrapper">
                 <input type="search" name="search" placeholder="Search your website" autocomplete="off" required="required" class="sbx-custom__input" id="search_input">
                 <button type="submit" title="Submit your search query." class="sbx-custom__submit" id="search_button">
@@ -46,8 +57,9 @@
             <script type="text/javascript">
               document.querySelector('.searchbox [type="reset"]').addEventListener('click', function() {  this.parentNode.querySelector('input').focus();});
             </script>
+          </a>
 
-          <a class="icons-top-a" href="# ">
+          <a class="icons-top-a" href="../liked/liked.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart"
               viewBox="0 0 16 16">
               <path
@@ -61,19 +73,16 @@
                 d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
             </svg>
           </a>
-          <a class="icons-top-a" id="ownPage" href="../store-own-page.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person"
-              viewBox="0 0 16 16">
-              <path
-                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
-            </svg>
-          </a>
-          <a class="icons-top-a" id="user" href="../storeOwn/store-own-page.html" style="font-size: 14px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; width: 80px;">
-            
-          </a>
-          <div class="icons-top-a menu-icon">
-            <ion-icon name="menu-outline"></ion-icon>
+
+          <div class="user_info" id="info_user">
+            <button class="user_email"> <span id="user"></span><i class="fa-solid fa-angle-down"></i></button>
+            <ul>
+              <li><button id="log_out">Hesabdan cix</button></li>
+              <li><button>Hesabi idare et</button></li>
+            </ul>
           </div>
+            <input type="checkbox" id="hamburger-input" class="burger-shower" />
+          <label id="hamburger-menu" for="hamburger-input">
 
         </div>
       </div>
@@ -81,14 +90,14 @@
 
     <div class="second-top">
       <nav id="main-menu">
-        <div id="close-menu-btn">
-          <ion-icon name="close-outline"></ion-icon>
-        </div>
+       <div id="close-menu-btn">
+          <img src="https://www.svgrepo.com/show/178323/cross-close.svg" width="15px" height="15px" alt="">
+         </div>
         <ul>
           <li><a href="../main/index.html">Son Elanlar</a></li>
           <li><a href="../premium-ads/premium-ads.html">Premium elanlar</a></li>
-          <!-- <li><a href="stores.html">Magazalar</a></li> -->
-          <li><a href="../necklace/necklace.html">Haqqımızda</a></li>
+          <li><a href="../markets/stores.html">Mağazalar</a></li>
+          <!-- <li><a href="../necklace/necklace.html">Haqqımızda</a></li> -->
        
           <!-- <li><a href="#">Sirgalar</a></li>
           <li><a href="#">Destler</a></li> -->
@@ -96,10 +105,10 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="currentColor"
                 class="bi bi-filter-square" viewBox="0 0 16 16">
                 <path
-                  d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                  d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a+1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
                 <path
                   d="M6 11.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
-              </svg> Axtarış</a></li>
+              </svg> Ətraflı Axtarış</a></li>
         </ul>
       </nav>
     </div>
@@ -183,7 +192,6 @@
                 <li>
             			<label class="selector-label" for="item31">Hamsi</label>
             		</li>
-              
             		<li>
             			<label class="selector-label" for="item32">Var</label>
             		</li>
@@ -295,12 +303,14 @@
   
 
   
+
+  
   <div class="sr-area-div swiper mySwiper">
         
     <div class="sr-content swiper-wrapper">
       <div class="swiper-slide">
       <div class="brands-carousel-img">
-        <a href="../store-page.html" style="text-decoration: none;">
+        <a href="../store-page/store-page.html" style="text-decoration: none;">
           <img class="sr-img-brand"  src="../../Main/images/brands/brnd-2.jpg" alt="">
         <span class="brands-store-name" >Store Name</span>
         </a>
@@ -308,7 +318,7 @@
       </div>
       <div class="swiper-slide">
       <div class="brands-carousel-img">
-        <a href="../store-page.html" style="text-decoration: none;">
+        <a href="../store-page/store-page.html" style="text-decoration: none;">
           <img class="sr-img-brand"  src="../../Main/images/brands/brnd-3.jpg" alt="">
           <span class="brands-store-name" >Store Name</span>
         </a>     
@@ -316,7 +326,7 @@
       </div>
       <div class="swiper-slide">
       <div class="brands-carousel-img">
-     <a href="../store-page.html" style="text-decoration: none;">
+     <a href="../store-page/store-page.html" style="text-decoration: none;">
       <img class="sr-img-brand"  src="../../Main/images/brands/brnd-1.jpg" alt="">
       <span class="brands-store-name" >Store Name</span>
      </a>
@@ -324,28 +334,28 @@
       </div>
       <div class="swiper-slide">
       <div class="brands-carousel-img">
-       <a href="../store-page.html" style="text-decoration: none;">
+       <a href="../store-page/store-page.html" style="text-decoration: none;">
         <img class="sr-img-brand"  src="../../Main/images/brands/brnd-4.jpg" alt="">
         <span class="brands-store-name" >Store Name</span></a>
       </div>
       </div>
       <div class="swiper-slide">
       <div class="brands-carousel-img">
-        <a href="../store-page.html" style="text-decoration: none;">
+        <a href="../store-page/store-page.html" style="text-decoration: none;">
           <img class="sr-img-brand"  src="../../Main/images/brands/brnd-2.jpg" alt="">
           <span class="brands-store-name" >Store Name</span></a>
       </div>
       </div>
       <div class="swiper-slide">
       <div class="brands-carousel-img">
-        <a href="../store-page.html" style="text-decoration: none;">
+        <a href="../store-page/store-page.html" style="text-decoration: none;">
           <img class="sr-img-brand"  src="../../Main/images/brands/brnd-1.jpg" alt="">
           <span class="brands-store-name" >Store Name</span></a>
       </div>
       </div>
       <div class="swiper-slide">
       <div class="brands-carousel-img">
-        <a href="../store-page.html" style="text-decoration: none;">
+        <a href="../store-page/store-page.html" style="text-decoration: none;">
           <img class="sr-img-brand"  src="../../Main/images/brands/brnd-4.jpg" alt="">
           <span class="brands-store-name" >Store Name</span></a>
         
@@ -353,7 +363,7 @@
       </div>
       <div class="swiper-slide">
       <div class="brands-carousel-img">
-        <a href="../store-page.html" style="text-decoration: none;">
+        <a href="../store-page/store-page.html" style="text-decoration: none;">
           <img class="sr-img-brand"  src="../../Main/images/brands/brnd-3.jpg" alt="">
           <span class="brands-store-name" >Store Name</span></a>
         
@@ -361,7 +371,7 @@
       </div>
       <div class="swiper-slide">
       <div class="brands-carousel-img">
-        <a href="../store-page.html" style="text-decoration: none;">
+        <a href="../store-page/store-page.html" style="text-decoration: none;">
           <img class="sr-img-brand"  src="../../Main/images/brands/brnd-1.jpg" alt="">
           <span class="brands-store-name" >Store Name</span></a>
       </div>
@@ -832,7 +842,6 @@
 
   <!-- Index Js-->
   <script src="../../Main/global.js"></script>
-  <script src="./index.js"></script>
 </body> 
 
 </html>

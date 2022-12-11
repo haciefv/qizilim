@@ -238,7 +238,8 @@ tbody tr {
   align-items: center;
   justify-content: center;
 }
-.logo:nth-child(1) {
+.logo:nth-child(1) a {
+  text-decoration: none;
   color: #c1957c;
 
   font-size: 35px;
@@ -573,7 +574,10 @@ input[type=number] {
   /* margin-left: 31px; */
 }
 .vip-text-premium-shop{
-
+  background-color: rgba(58, 43, 12, 0.486);
+  padding: 10px;
+  backdrop-filter:blur(2px) ;
+  border-radius:15px ;
   color: #ffffff;
   /* text-align: center; */
   display: inline-block;
@@ -801,16 +805,10 @@ input[type=number] {
   display: inline-block;
   background-color: #ffffff;
   width: 240px;
-  /* margin: 20px; */
   height: 350px;
-  /* display: inline-block; */
-  /* border-radius: 30px; */
-  /* border-top-left-radius: 380px;
-  border-bottom-left-radius: 380px; */
 }
 
 .img-card-shop img{
-  
   border-radius: 50%;
   width: 100px;
   margin: 0 auto;
@@ -862,7 +860,6 @@ input[type=number] {
 }
 .contact-card img{
   width: 10px;
-
 }
 
 
@@ -1144,6 +1141,10 @@ input[type=number] {
   display: inline-block;
   width: 100%;
 }
+.shop-edit-button{
+  text-align: center;
+  margin: 5px 10px;
+}
 .shop-image {
   display: block;
   width: 270px;
@@ -1199,6 +1200,7 @@ input[type=number] {
   width: 25px;
 }
 .contact-infos-main {
+  display: inline-block;
   margin-top: 35px;
   width: 270px;
   /* height: 300px; */
@@ -1396,9 +1398,16 @@ padding: 10px 0;
     display: block;
     z-index: 1231412412414124;
   }
+  .logo a{
+    color: #c1957c;
+
+
+  }
   .logo-txt {
     /* margin: 0 15px; */
     font-size: 29px;
+    color: #c1957c;
+    text-decoration: none;
   }
   .icons-top-a svg {
     width: 18px;
@@ -1455,6 +1464,7 @@ padding: 10px 0;
   padding:20px 0;
 }
 .premium-products-shop .container {
+
   border:1px solid #c1957c;
   background: #ffffff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -1497,6 +1507,11 @@ padding: 10px 0;
   border: 1px solid #e6e6e6;
   border-radius: 10px;
 }
+.container:hover{
+  transition-duration: .1s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .container:focus {
   outline: none;
 }
@@ -2336,6 +2351,8 @@ font-size: 0.8rem;
   margin: 20px 0;
 }
 .shop-page-img{
+  display: flex;
+  margin: 0 auto;
   width: 150px;
   border-radius: 50%;
 }
@@ -2347,10 +2364,7 @@ font-size: 0.8rem;
 .shop-img{
   margin: 0 auto;
 }
-.shop-page-img{
-  display: flex;
-  margin: 0 auto;
-}
+
 .follow-button-div{
   width: 150px;
   margin: 20px auto;
@@ -2475,7 +2489,7 @@ font-size: 0.8rem;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 2px;
-  text-decoration: underline;
+  text-decoration: none;
   color: #000000;
 }
 .shop-list-li-img{
@@ -2607,6 +2621,15 @@ div.social {
   padding: 45px;
   max-width: 400px;
   margin: 40px 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* box-shadow: 10px 10px 15px rgba(0,0,0,0.05); */
+}
+.center-recover{
+  padding: 45px;
+  max-width: 400px;
+  margin:40px auto;
   background: white;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -2926,7 +2949,7 @@ details[open] summary:after {
 
 
 
-input[type=radio] {
+  input[type=radio] {
 	counter-increment: radios;
 	appearance: none;
 	display: none;
@@ -2945,6 +2968,19 @@ input[type=radio] {
 
 	font-size: 1rem;
 }
+.delivery-edit input[type=radio]:checked {
+	display: inline;
+	--display: block;
+}
+
+.delivery-edit input[type=radio]:after {
+  vertical-align: top;
+	content:attr(title-edit-delivery);
+	display: inline;
+  color: #4c4c4c;
+
+	font-size: 1rem;
+}
 .loc input[type=radio]:after {
   vertical-align: top;
 	content:attr(title-loc);
@@ -2954,6 +2990,42 @@ input[type=radio] {
 }
 
 .loc input[type=radio]:checked {
+	display: inline;
+	--display: block;
+}
+.add-degree input[type=radio]:after {
+  vertical-align: top;
+	content:attr(title-add-degree);
+	display: inline;
+	font-size: 1rem;
+  color: #4c4c4c;
+}
+
+.add-degree input[type=radio]:checked {
+	display: inline;
+	--display: block;
+}
+.add-color input[type=radio]:after {
+  vertical-align: top;
+	content:attr(title-add-colour);
+	display: inline;
+	font-size: 1rem;
+  color: #4c4c4c;
+}
+
+.add-color input[type=radio]:checked {
+	display: inline;
+	--display: block;
+}
+.reg-loc input[type=radio]:after {
+  vertical-align: top;
+	content:attr(reg-loc-title);
+	display: inline;
+	font-size: 1rem;
+  color: #4c4c4c;
+}
+
+.reg-loc input[type=radio]:checked {
 	display: inline;
 	--display: block;
 }
@@ -2969,10 +3041,23 @@ input[type=radio] {
 	display: inline;
 	--display: block;
 }
+.diamond input[type=radio]:after {
+  vertical-align: top;
+	content:attr(title-diamond);
+	display: inline;
+  color: #4c4c4c;
+
+	font-size: 1rem;
+}
+
+.diamond input[type=radio]:checked {
+	display: inline;
+	--display: block;
+}
 
 .delivery input[type=radio]:after {
   vertical-align: top;
-	content:attr(title-store-filter);
+	content:attr(title-delivery);
 	display: inline;
   color: #4c4c4c;
 
@@ -3110,7 +3195,7 @@ margin: 20px auto;
   transition: color .2s ease-in-out;
 }
 
-input[type=file] {
+.file-field {
   width: 350px;
   max-width: 100%;
   color: #444;
@@ -3120,10 +3205,10 @@ input[type=file] {
   border: 1px solid #555;
 }
 
-input[type=file]::file-selector-button {
+.file-field::file-selector-button {
   margin-right: 20px;
   border: none;
-  background: #084cdf;
+  background: #c1957c;
   padding: 10px 20px;
   border-radius: 10px;
   color: #fff;
@@ -3131,8 +3216,8 @@ input[type=file]::file-selector-button {
   transition: background .2s ease-in-out;
 }
 
-input[type=file]::file-selector-button:hover {
-  background: #0d45a5;
+.file-field::file-selector-button:hover {
+  background: #8b5231;
 }
 .add-prdct-btn-div{
   width: 90%;
@@ -3212,4 +3297,342 @@ input[type=file]::file-selector-button:hover {
 }
 .text-content h2,h3{
   color: #c1957c;
+}
+
+/* User PAge */
+.my-shops-content-area-div{
+  display: flex;
+  flex-basis:content;
+  /* align-items: stretch; */
+  /* flex-wrap: wrap; */
+  max-width: 940px;
+  overflow: scroll;
+  justify-content: space-between;
+}
+.my-shops-content-area{
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  overflow: scroll
+  ;
+
+}
+.my-premium-products-shop{
+  /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+  /* background-image: url("../Main/images/background/pexels-peter-olexa-4880794.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  /* background-color: #c1957c; */
+  height: fit-content;
+  padding:20px 0;
+}
+.count-myshops  {
+  margin-left: 10px ;
+  font-size: 20px;
+  color: #b79784;
+}
+.count-myshops a{
+  font-size: 20px;
+  text-decoration: underline;
+  color: #b79784;
+}
+.count-myshops a:hover{
+  color: #8e6d5a;
+}
+.user-page-img{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: #ffffff;
+  display: flex;
+  margin: 0 auto;
+  width: 150px;
+  border-radius: 50%;
+}
+.following-page{
+  text-decoration: none;
+  color: #000000;
+  
+}
+.user-liked{
+  text-decoration: underline;
+}
+.edit-profile img{
+  width: 15px;
+  color:red;
+}
+/* .edit-profile{
+  cursor: pointer;
+  background-color: #C7BCA1;
+  border-radius: 10px;
+  font-size: 18px;
+  border: 0;
+  height: 30px;
+  padding: 8px 10px;
+  margin: 10px 0;
+} */
+.following-page .follower-counter-span{
+  text-decoration: underline;
+}
+.user-desc{
+  border: 0;
+}
+.css-button {
+  
+	color: #FFFFFF;
+	font-size: 13px;
+  margin: 10px 0;
+	border-radius: 5px;
+	border: solid 0px #000000;
+	text-shadow: 1px 1px 0px #000000;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	font-family: Arial;
+	background: linear-gradient(180deg, #c7bca1 10%, #c7bca1 100%);
+	display: inline-flex;
+	align-items: center;
+	padding: 0;
+}
+.css-button:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;	text-decoration: none;
+  transition-duration: .3s;
+}
+.css-button:hover {
+  background: linear-gradient(180deg, #9a917b 10%, #c7bca1 100%);
+	background: linear-gradient(180deg, #c7bca1 10%, #978f7a 100%);
+}
+.css-button-text {
+	position: relative;
+	padding: 10px 18px;
+}
+.css-button-icon {
+	position: relative;
+	border-right: 1px solid #ffffff29;
+	box-shadow: inset rgb(0 0 0 / 14%) -1px 0 0;
+	padding: 10px 10px;
+}
+.shop-edit-button{
+  text-align: center;
+  margin: 5px 10px;
+}
+
+
+/* Edit pages  */
+
+.edit-content-main{
+  max-width: 940px;
+  margin: 30px auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 650px;
+  /* border-radius: 15px; */
+  
+}
+
+.edit-inputs form{
+  width: fit-content;
+
+}
+.edit-content{
+  /* width: 90%; */
+  /* width: 850px; */
+  float: left;
+}
+.edit-header {
+  width: 70%;
+  display: inline-block;
+}
+.edit-header h3{
+  padding: 15px ;
+  font-size: 35px;
+}
+.input-field  {
+  margin: 10px 10px;
+  display: block;
+  width: 450px ;
+  float: left;
+  
+}
+.input-field input {
+  
+  width: 220px;
+  float: right;
+}
+.input-field .delivery-edit {
+  margin-left: 50px;
+  width: 220px;
+  float: right;
+}
+.left-edit{
+  float: left;
+  width: 500px;
+  margin-left: 10px;
+}
+.right-edit{
+  vertical-align: top;
+  margin-left:20px ;
+  text-align: center;
+  float: right;
+  width: 220px;
+  margin-right: 50px;
+}
+.brand-image-edit{
+  width: 220px;
+
+}
+.css-button-verfiy {
+  float: right;
+  margin:25px 20px  ;
+  /* height: 35px; */
+	color: #FFFFFF;
+	font-size: 16px;
+	border-radius: 5px;
+	border: solid 0 #3866a3;
+	/* text-shadow: 1px 1px 0px #528ECC;
+	box-shadow: inset 1px 1px 0px 0px #BBDAF7; */
+	text-decoration: none;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	font-family: Arial;
+  background: #c1957c;
+	/* background: linear-gradient(180deg, #63ee6a 10%, #4acf46 100%); */
+	/* display: flex; */
+	padding: 15px 15px;
+}
+.css-button-verfiy:hover {
+	background: linear-gradient(180deg, #c1957c 10%, #c07a51 100%);
+}
+.css-button-text {
+	position: relative;
+	padding: 10px 18px;
+}
+.css-button-icon {
+	position: relative;
+	border-right: 1px solid #ffffff29;
+	box-shadow: inset rgb(0 0 0 / 14%) -1px 0 0;
+	padding: 10px 10px;
+}
+.button-save{
+
+  margin: 10px 0;
+  float: right;
+  display: inline-block;
+  /* width: 100%; */
+  height: 100px;
+}
+
+.user-image-edit{
+  width: 220px;
+  border-radius: 50%;
+  background-color: #F5EBE0;
+}
+.change-profile-photo {
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.chang-profile-photo:hover{
+  background-color: #2a752d;
+  transition-duration: .3s;
+}
+.edit-user-bttn{
+  text-decoration: none;
+}
+.verify-store h3{
+
+
+}
+.verify-store{
+  height: 400px;
+  padding: 15px;
+  width: fit-content;
+  margin :40px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.clock-img{
+  width: 300px;
+  margin: 0 auto;
+}
+.waiting-clock{
+  width: 250px;
+  /* display: inline-block; */
+  margin: 0 auto;
+}
+.back-main-page{
+  cursor: pointer;
+  border: 0;
+  width: 100x;
+  margin: 0 auto;
+}
+.back-main-page button {
+  cursor: pointer;
+
+  background-color: #c1957c;
+  color: #ffffff;
+  border: 0;
+  padding:8px;
+  border-radius: 10px;
+  float: right;
+}
+.editUser{
+  text-decoration: none;
+}
+
+.wallet-div{
+  width: 46%;
+  float: right;
+  margin-right: 20px;
+  /* margin:  20px 10% ; */
+  /* margin: 50px 0; */
+  height: 50px;
+  display: inline-block;
+}
+.wallet-balance{
+  font-size: 25px;
+
+  margin: 10px 20px;
+  display: inline-block;
+}
+.wallet-button { 
+  vertical-align: top;
+  float: right;
+	color: #FFFFFF;
+	font-size: 15px;
+	border-radius: 5px;
+	border: solid 0 #82CD47;
+	box-shadow: inset 1px 1px 0px 0px #379237;
+	text-decoration: none;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	font-family: Arial;
+	background: linear-gradient(180deg, #82CD47 10%, #379237 100%);
+	display: inline-flex;
+	align-items: center;
+	padding: 0;
+}
+.wallet-button:hover {
+	background: linear-gradient(180deg, #379237 10%, #82CD47 100%);
+}
+.wallet-button-text {
+	position: relative;
+	padding: 10px 10px;
+}
+.wallet-button-icon img {
+	position: relative;
+  width: 15px;
+	border-right: 1px solid #ffffff29;
+	box-shadow: inset rgb(0 0 0 / 14%) -1px 0 0;
+	padding: 5px 5px;
+}
+.store-delivery-rad{
+  display: in;
 }
