@@ -86,7 +86,7 @@
           </a>
 
           <div class="user_info" id="info_user">
-            <button class="user_email"> <span id="user"></span><i class="fa-solid fa-angle-down"></i></button>
+            <button class="user_email"> <a href="../storeOwn/store-own-page.html" style="color: #C1957C;" id="user"></a><i class="fa-solid fa-angle-down"></i></button>
             <ul>
               <li><button id="log_out">Hesabdan cix</button></li>
               <li><button>Hesabi idare et</button></li>
@@ -314,30 +314,30 @@
   
 
     <div class="edit-content-main">
-        
-    <div class="edit-content">
-        <div class="edit-header">
-            <h3>Hesab idaresi </h3>
-        </div>
-        <div class="wallet-div">
-          <div class="wallet-balance">
-            Balans: <span>0.00</span><span> AZN</span>
-          </div>
-          <div class="wallet-button">
-            <button type="button" class="wallet-button">
-              <span class="wallet-button-icon">
-                <!-- <i class="fa-duotone fa-credit-card"></i>
-                <i class="fa-duotone fa-credit-card"></i> -->
-                
-                <img src="../../Main/images/asist-imgs/icons8-credit-card-60.png" alt="" srcset="">
-              </span>
-              <span class="wallet-button-text">
-                <span>Balansi artır</span>
-              </span>
-            </button>
+      <div class="edit-header">
+        <h3>Hesab idaresi </h3>
+    </div>
+    <div class="wallet-div">
+      <div class="wallet-balance">
+        Balans: <span>0.00</span><span> AZN</span>
+      </div>
+      <div class="wallet-button">
+        <button type="button" class="wallet-button">
+          <span class="wallet-button-icon">
+            <!-- <i class="fa-duotone fa-credit-card"></i>
+            <i class="fa-duotone fa-credit-card"></i> -->
+            
+            <img src="../../Main/images/asist-imgs/icons8-credit-card-60.png" alt="" srcset="">
+          </span>
+          <span class="wallet-button-text">
+            <span>Balansi artır</span>
+          </span>
+        </button>
 
-          </div>
-        </div>
+      </div>
+    </div>
+    <div class="edit-content">
+        
         <div class="left-edit">
             <div class="edit-inputs">
                 <form action="">
@@ -373,16 +373,12 @@
                     <div class="input-field">
                       <label for="storeDelivery">Çatdrılma : </label>
                       <div class="input-are">
-
-                        <input type="radio" name="sample" checked class="store-delivery-rad" >
-                        <label for="store-delivery">Var</label>
-                        <input type="radio" name="sample" checked class="store-delivery-rad" >
-                        <label for="store-delivery">Yox</label>
+                        <label for="yes">Var</label>
+                        <input type="radio" name="sample" id="yes" class="store-delivery-rad" >
+                        <label for="no">Yox</label>
+                        <input type="radio" name="sample" id="no" class="store-delivery-rad" >                    
                       </div>
-
-
-                    </div>
-    
+                    </div> 
                 </form>
             </div>
 
@@ -402,39 +398,20 @@
                 <span>Profil şəklini dəyiş</span>
             </span>
         </button>
+     
+          <button type="button" class="css-button-verfiy">
+              
+              <span class="css-button-icon">
+                  <i class="fa fa-check"></i>
+              </span>
+              
+              <span class="css-button-text">
+                  <span>Yaddaşda saxla</span>
+              </span>
+          </button>
         </div>
-    
-        <div class="button-save">
-            <button type="button" class="css-button-verfiy">
-                
-                <span class="css-button-icon">
-                    <i class="fa fa-check"></i>
-                </span>
-                
-                <span class="css-button-text">
-                    <span>Yaddaşda saxla</span>
-                </span>
-            </button>
-        
-            
-        </div>
-
-
-
     </div>
-
-
-
-
   </div>
-    
-
-
-
-
-
-
-      
     <script src="../../Main/global.js"></script>
     <script src="./editstore.js"></script>
 </body>

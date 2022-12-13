@@ -2,7 +2,22 @@ const userEmail = localStorage.getItem("Email");
 const twitterWrapper = document.querySelector(".sbx-twitter__wrapper");
 const hamburgerMenu = document.getElementById("hamburger-menu");
 const sidebarMenu = document.getElementById("main-menu");
-
+const radiosAdjust = document.querySelectorAll(".adjust");
+const AdjustText = document.getElementById("adjust");
+const colors = document.querySelectorAll(".color");
+const selectedColorText = document.getElementById("selected_color_text");
+const typeDetails = document.querySelector(".type");
+const diamondDetails = document.querySelector('.diamond');
+const locDetails = document.querySelector(".loc");
+const deliveryDetails = document.querySelector(".delivery");
+const searchInput = document.getElementById("search_input");
+const searchBtn = document.getElementById("search_button");
+const bannerShopPage = document.querySelector(".banner-shop-page");
+const bannerDivs = document.querySelectorAll(".banner-shop-page .banner-div");
+const bannerWidth = document.querySelector(".banner-div");
+const resultBannerWidth = bannerWidth.clientWidth * (bannerDivs.length - 1)
+let sliderWidth = 0;
+const lastAnnounContainer = document.querySelector(".last-announ-container")
 
 if (userEmail) {
   document.getElementById("user").style.display = "block";
@@ -27,6 +42,15 @@ document.getElementById("close-menu-btn").addEventListener("click", () => {
   sidebarMenu.style.visibility = "hidden";
   sidebarMenu.style.left = "-250px";
 });
+setInterval(() => {
+
+  sliderWidth += bannerWidth.clientWidth;
+  if(sliderWidth > resultBannerWidth) {
+      sliderWidth = 0;
+  }
+  console.log(bannerDivs.length - 1)
+  bannerShopPage.style.transform = `translateX(-${sliderWidth}px)`
+},4000)
 
 const logoutBtn = document.getElementById('log_out');
 
@@ -70,6 +94,56 @@ if (mediaQuery.matches) {
   })
 }
 
+searchBtn.addEventListener("click", () => {
+if(searchInput.value.length !== 0) {
+     location.pathname = "../pages/searchResult/search-result.html"
+}
+  
+})
+
+colors.forEach((color) => {
+  color.addEventListener("click", () => {
+    selectedColorText.innerHTML = color.nextElementSibling.innerHTML;
+  });
+});
+let multiAdjustText = [];
+radiosAdjust.forEach((radioAdjust) => {
+  radioAdjust.addEventListener("click", (e) => {
+    if (e.target.checked) {
+      multiAdjustText.push(Number(radioAdjust.nextElementSibling.innerHTML));
+      AdjustText.innerHTML = multiAdjustText.toString();
+      console.log(multiAdjustText);
+    } else {
+      const filterAdjust = multiAdjustText.filter(
+        (num) => num != radioAdjust.nextElementSibling.innerHTML
+      );
+      multiAdjustText = filterAdjust;
+      AdjustText.innerHTML = multiAdjustText.toString();
+    }
+  });
+});
+
+typeDetails.querySelectorAll("ul li").forEach(li =>  {
+  li.addEventListener('click', () => {
+    typeDetails.removeAttribute("open")
+  })
+})
+
+diamondDetails.querySelectorAll("ul li").forEach(li =>  {
+  li.addEventListener('click', () => {
+    diamondDetails.removeAttribute("open")
+  })
+})
+locDetails.querySelectorAll("ul li").forEach(li =>  {
+  li.addEventListener('click', () => {
+    locDetails.removeAttribute("open")
+  })
+})
+deliveryDetails.querySelectorAll("ul li").forEach(li =>  {
+  li.addEventListener('click', () => {
+    deliveryDetails.removeAttribute("open")
+  })
+})
 
 document.querySelector("#main-menu #detailed-search").addEventListener("click", filterShower)
 
