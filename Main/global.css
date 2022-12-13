@@ -284,6 +284,10 @@ tbody tr {
   font-size: 35px;
   font-weight: 600;
 }
+.add {
+  border: 1px solid #C1957C !important;
+  border-radius: 10px;
+}
 .logo:nth-child(3) {
   color: #baa633;
 
@@ -1398,13 +1402,13 @@ padding: 10px 0;
    flex-direction: column;
   }
   .swiper-wrapper {
-    animation: scroll 1s linear 1;
+    animation: scroll 2s linear 1 alternate;
   }
   .swiper-button-prev {
-    display: none;
+    display: none !important;
   }
   .swiper-button-next {
-    display: none;
+    display: none !important;
   }
   .edit-content {
      justify-content: center !important;

@@ -12,12 +12,6 @@ const locDetails = document.querySelector(".loc");
 const deliveryDetails = document.querySelector(".delivery");
 const searchInput = document.getElementById("search_input");
 const searchBtn = document.getElementById("search_button");
-const bannerShopPage = document.querySelector(".banner-shop-page");
-const bannerDivs = document.querySelectorAll(".banner-shop-page .banner-div");
-const bannerWidth = document.querySelector(".banner-div");
-const resultBannerWidth = bannerWidth.clientWidth * (bannerDivs.length - 1)
-let sliderWidth = 0;
-const lastAnnounContainer = document.querySelector(".last-announ-container")
 
 if (userEmail) {
   document.getElementById("user").style.display = "block";
@@ -42,15 +36,6 @@ document.getElementById("close-menu-btn").addEventListener("click", () => {
   sidebarMenu.style.visibility = "hidden";
   sidebarMenu.style.left = "-250px";
 });
-setInterval(() => {
-
-  sliderWidth += bannerWidth.clientWidth;
-  if(sliderWidth > resultBannerWidth) {
-      sliderWidth = 0;
-  }
-  console.log(bannerDivs.length - 1)
-  bannerShopPage.style.transform = `translateX(-${sliderWidth}px)`
-},4000)
 
 const logoutBtn = document.getElementById('log_out');
 
@@ -100,10 +85,18 @@ if(searchInput.value.length !== 0) {
 }
   
 })
+let multiColorsText = [];
 
 colors.forEach((color) => {
-  color.addEventListener("click", () => {
-    selectedColorText.innerHTML = color.nextElementSibling.innerHTML;
+  color.addEventListener("click", (e) => {
+    if(e.target.checked){
+      multiColorsText.push(color.nextElementSibling.innerHTML);
+      selectedColorText.innerHTML = multiColorsText.toString()
+    }else{
+      const filterColors = multiColorsText.filter((num) => num != color.nextElementSibling.innerHTML)
+      multiColorsText = filterColors;
+      selectedColorText.innerHTML = multiColorsText.toString();
+    }
   });
 });
 let multiAdjustText = [];
@@ -112,7 +105,6 @@ radiosAdjust.forEach((radioAdjust) => {
     if (e.target.checked) {
       multiAdjustText.push(Number(radioAdjust.nextElementSibling.innerHTML));
       AdjustText.innerHTML = multiAdjustText.toString();
-      console.log(multiAdjustText);
     } else {
       const filterAdjust = multiAdjustText.filter(
         (num) => num != radioAdjust.nextElementSibling.innerHTML
@@ -218,3 +210,19 @@ function EnableDisableTextBox(diamonCheck) {
     addDiamondCount.focus();
   }
 }
+
+const bannerShopPage = document.querySelector(".banner-shop-page");
+const bannerDivs = document.querySelectorAll(".banner-shop-page .banner-div");
+const bannerWidth = document.querySelector(".banner-div");
+const resultBannerWidth = bannerWidth.clientWidth * (bannerDivs.length - 1)
+let sliderWidth = 0;
+const lastAnnounContainer = document.querySelector(".last-announ-container")
+
+setInterval(() => {
+
+  sliderWidth += bannerWidth.clientWidth;
+  if(sliderWidth > resultBannerWidth) {
+      sliderWidth = 0;
+  }
+  bannerShopPage.style.transform = `translateX(-${sliderWidth}px)`
+},4000)
