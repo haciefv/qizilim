@@ -1118,6 +1118,7 @@ input[type=number] {
 }
 .header-product-main .header-product {
   height: fit-content;
+  margin: 10px 0;
 }
 
 .icons-in-header {
@@ -1762,6 +1763,9 @@ padding: 10px 0;
   .brands-carousel-img {
     width: 100px !important;
   }
+  .icons-in-header {
+    flex-direction: column;
+  }
   .wallet-div {
     justify-content: center !important;
   }
@@ -2245,6 +2249,7 @@ font-size: 0.8rem;
 .banner-shop-page{
  min-width: fit-content;
     display: flex;
+    
     transition: all 1s linear;
 }
 .banner-div {
