@@ -85,56 +85,6 @@ $(document).ready(function () {
   });
 });
 
-
-const radiosAdjust = document.querySelectorAll(".adjust");
-const AdjustText = document.getElementById("adjust");
-const colors = document.querySelectorAll(".color");
-const selectedColorText = document.getElementById("selected_color_text");
-
-colors.forEach((color) => {
-  color.addEventListener("click", () => {
-    selectedColorText.innerHTML = color.nextElementSibling.innerHTML;
-  });
-});
-let multiAdjustText = [];
-radiosAdjust.forEach((radioAdjust) => {
-  radioAdjust.addEventListener("click", (e) => {
-    if (e.target.checked) {
-      multiAdjustText.push(Number(radioAdjust.nextElementSibling.innerHTML));
-      AdjustText.innerHTML = multiAdjustText.toString();
-      console.log(multiAdjustText);
-    } else {
-      const filterAdjust = multiAdjustText.filter(
-        (num) => num != radioAdjust.nextElementSibling.innerHTML
-      );
-      multiAdjustText = filterAdjust;
-      AdjustText.innerHTML = multiAdjustText.toString();
-    }
-  });
-});
-const searchButton = document.querySelector(".search");
-const closeSearchBtn = document.querySelector(".close-search");
-closeSearchBtn.addEventListener(
-  "click",
-  () => (document.querySelector(".search-container").style.top = "-1000%")
-);
-searchButton.addEventListener(
-  "click",
-  () => (document.querySelector(".search-container").style.top = "0")
-);
-
-document.querySelector(".menu-icon").addEventListener("click", (e) => {
-  document.getElementById("main-menu").style.left = "0";
-});
-document.getElementById("close-menu-btn").addEventListener("click", () => {
-  document.getElementById("main-menu").style.left = "-100%";
-});
-
-var ProductImgMain = document.getElementById("ProductImgMain");
-var smallImages = document.querySelectorAll(".small-prdct-img");
-ProductImgMain.src = smallImages[0].src;
-smallImages.forEach((smallImg) => {
-  smallImg.addEventListener("click", () => {
-    ProductImgMain.src = smallImg.src;
-  });
-});
+document.querySelectorAll(".add_wishlist_btn").forEach(btn => {
+  btn.addEventListener('click', () => btn.classList.toggle('active'))
+})

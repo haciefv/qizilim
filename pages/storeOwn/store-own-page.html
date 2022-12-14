@@ -49,16 +49,16 @@
               </symbol>
             </svg>
             
-            <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
+           <form novalidate="novalidate" onsubmit="return false;" class="searchbox sbx-custom">
               <div role="search" class="sbx-twitter__wrapper">
-                <input type="search" name="search" placeholder="Search your website" autocomplete="off" required="required" class="sbx-custom__input">
-                <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+                <input type="search" name="search" placeholder="Search your website" autocomplete="off" required="required" class="sbx-custom__input" id="search_input">
+                <button type="submit" title="Submit your search query." class="sbx-custom__submit" id="search_button">
                   <svg role="img" aria-label="Search">
                     <use xlink:href="#sbx-icon-search-17"></use>
                   </svg>
                 </button>
                 <button type="reset" title="Clear the search query." class="sbx-custom__reset">
-                  <svg role="img" aria-label="Reset">
+                  <svg role="img" aria-label="Reset" id="reset_button">
                     <use xlink:href="#sbx-icon-clear-3"></use>
                   </svg>
                 </button>
@@ -84,12 +84,15 @@
             </svg>
           </a>
 
-          <a class="icons-top-a" id="user" href="../storeOwn/store-own-page.html" style="font-size: 14px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; width: 80px;">
-            
-          </a>
-          <div class="icons-top-a menu-icon">
-            <ion-icon name="menu-outline"></ion-icon>
+          <div class="user_info" id="info_user">
+            <button class="user_email"> <a href="../storeOwn/store-own-page.html" style="color: #C1957C;" id="user"></a><i class="fa-solid fa-angle-down"></i></button>
+            <ul>
+              <li><button id="log_out">Hesabdan cix</button></li>
+              <li><a href="../myStore/myStore.html" style="text-decoration: none; color: inherit; font-size: 16px;">Hesabi idare et</a></li>
+            </ul>
           </div>
+            <input type="checkbox" id="hamburger-input" class="burger-shower" />
+          <label id="hamburger-menu" for="hamburger-input">
 
         </div>
       </div>
@@ -98,8 +101,8 @@
     <div class="second-top">
       <nav id="main-menu">
         <div id="close-menu-btn">
-          <ion-icon name="close-outline"></ion-icon>
-        </div>
+          <img src="https://www.svgrepo.com/show/178323/cross-close.svg" width="15px" height="15px" alt="">
+         </div>
         <ul>
           <li><a href="../main/index.html">Son Elanlar</a></li>
           <li><a href="../premium-ads/premium-ads.html">Premium elanlar</a></li>
@@ -130,7 +133,7 @@
           <td>
             <details class="custom-select type">
             	<summary class="radios">
-            		<input type="radio"  id="default" title-type="Nov" checked>
+            		<input type="radio" name="item-type"  id="default" title-type="Nov" checked>
             		<input type="radio" name="item-type" id="item1" title-type="Sep">
             		<input type="radio" name="item-type" id="item2" title-type="Uzuk">
             		<input type="radio" name="item-type" id="item3" title-type="Qolbaq">
@@ -308,12 +311,23 @@
 
   </header>
   
+   <div class="banner">
     <div class="banner-shop-page">
-        <div class="banner-div">
-            <img class="banner-area" src="https://media.giphy.com/media/UkyPa531vLhlKkTXqg/giphy.gif" alt="">
-        </div>
-
+      <div class="banner-div">
+          <img class="banner-area" src="https://media.giphy.com/media/UkyPa531vLhlKkTXqg/giphy.gif" alt="">
+      </div>
+      <div class="banner-div">
+        <img class="banner-area" src="https://media.giphy.com/media/UkyPa531vLhlKkTXqg/giphy.gif" alt="">
     </div>
+    <div class="banner-div">
+      <img class="banner-area" src="https://media.giphy.com/media/UkyPa531vLhlKkTXqg/giphy.gif" alt="">
+  </div>
+  <div class="banner-div">
+    <img class="banner-area" src="https://media.giphy.com/media/UkyPa531vLhlKkTXqg/giphy.gif" alt="">
+</div>
+
+  </div>
+   </div>
     <div class="shop-details-main-div">
         <div class="shop-details-img-follow-div">
             <div class="shop-img-div">
@@ -402,7 +416,7 @@
         <div class="vip-text-premium-shop">Premium elanlar</div>
         <!-- <div class="all-vip-btn"><button class="btn-shw-all-vip">Butun Vip Elanlar</button></div> -->
       </div>
-      <div class="praducts">
+      <div class="premium">
         <a href="../productPage/productPage.html" style="text-decoration: none;">
      <div class="container">
       

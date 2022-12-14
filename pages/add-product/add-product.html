@@ -1,236 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../Main/global.css" />
+    <!-- <link rel="stylesheet" href="../../Main/search.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qızılım.az</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight&family=Raleway:ital,wght@0,800;1,300&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../../Main/swiper/swiper-bundle.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../Main/global.css">
-  <!-- <link rel="stylesheet" href="../../Main/search.css"> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Qızılım.az</title>
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter+Tight&family=Raleway:ital,wght@0,800;1,300&family=Ubuntu:wght@500&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-  <link rel="stylesheet" href="../../Main/swiper/swiper-bundle.min.css">
-</head>
-
-<body>
-  <!-- <div class="search-container">
-    <button class="close-search">
-      <i class="fa-solid fa-xmark" style="font-size: 40px; color: #fff;"></i>
-    </button>
-    <form class="search-box">
-      <button style="background: none; border: none; padding: 0"><i class="fa-solid fa-magnifying-glass" style="font-size: 30px;"></i></button>
-      <input style="vertical-align: 4px; width: 255px;" type="search" name="focus" placeholder="Search" id="search-input" value="">
-    </form>
-  </div> -->
-
-  
+  <body>
     <div class="product-add-div">
-        <h3 class="add-prdct-h3" >Elan əlavə et</h3>
-        <form  class="product-add-form" action="">
-            <div class="product-detail-content">
-                <div class="product-detail-header">
-                    <label>Elan başlığı</label>
-                </div>
-                <div class="product-deatil-it">
-                    <input type="text" name="" id="" maxlength="50" >
-                </div>
-            </div>
-            <div class="product-detail-content">
-              <div class="product-detail-header">
-                <label>Kateqoriya</label>
-            </div>
-                <details class="custom-select type">
-                    <summary class="radios">
-                        <input type="radio" name="item-type" id="default" title-type="Nov" checked>
-                        <input type="radio" name="item-type" id="item1" title-type="Sep">
-                        <input type="radio" name="item-type" id="item2" title-type="Uzuk">
-                        <input type="radio" name="item-type" id="item3" title-type="Qolbaq">
-                        <input type="radio" name="item-type" id="item4" title-type="Dest">
-                        <input type="radio" name="item-type" id="item5" title-type="Lorem">
-                    </summary>
-                    <ul class="selector-list">
-                  
-                        <li>
-                            <label class="selector-label" for="item1">Sep</label>
-                        </li>
-                        <li>
-                            <label class="selector-label" for="item2">Uzuk</label>
-                        </li>
-                    <li>
-                            <label class="selector-label" for="item3">Qolbaq</label>
-                        </li>
-                        <li>
-                            <label class="selector-label" for="item4">Dest</label>
-                        </li>
-                        <li>
-                            <label class="selector-label" for="item5">Lorem</label>
-                        </li>
-                    </ul>
-                </details>
-
-            </div>
-             <div class="product-detail-content" id="addFormProb" >
-              <div class="product-detail-header">
-                <label>Əyyar</label>
-            </div>
-
-                <div class="product-deatil-it">
-
-
-                  <details class="custom-select add-degree" >
-                    <summary class="radios">
-                        <input type="radio" name="title-add-degree" id="default" title-add-degree="Əyyar" checked>
-                        <input type="radio" name="title-add-degree" id="item71" title-add-degree="583">
-                        <input type="radio" name="title-add-degree" id="item72" title-add-degree="585">
-                        <input type="radio" name="title-add-degree" id="item73" title-add-degree="750">
-                        <input type="radio" name="title-add-degree" id="item74" title-add-degree="916">
-                        <input type="radio" name="title-add-degree" id="item75" title-add-degree="Digər">
-
-                    </summary>
-                    <ul class="selector-list">
-                  
-                        <li>
-                            <label class="selector-label" for="item71">583</label>
-                        </li>
-                        <li>
-                            <label class="selector-label" for="item72">585</label>
-                        </li>
-                    <li>
-                            <label class="selector-label" for="item73">750</label>
-                        </li>
-                        <li>
-                            <label class="selector-label" for="item74">916</label>
-                        </li>
-                        <li>
-                            <label class="selector-label" for="item75">Digər</label>
-                        </li>
-                    </ul>
-                </details>
-
-
-                </div>
-                
-
-             </div>
-             <div class="product-detail-content" id="addFormProb" >
-              <div class="product-detail-header">
-                <label>Qızıl rəngi : </label>
-            </div>
-
-                <div class="product-deatil-it">
-
-
-                  <details class="custom-select add-color" >
-                    <summary class="radios">
-                        <input type="radio" name="title-add-colour" id="default"title-add-colour="Qızıl rəngi" checked>
-                        <input type="radio" name="title-add-colour" id="item91" title-add-colour="Ağ">
-                        <input type="radio" name="title-add-colour" id="item92" title-add-colour="Sarı">
-                        <input type="radio" name="title-add-colour" id="item93" title-add-colour="Rose">
-                        <input type="radio" name="title-add-colour" id="item95" title-add-colour="Digər">
-
-                    </summary>
-                    <ul class="selector-list">
-                  
-                        <li>
-                            <label class="selector-label" for="item91">Ağ</label>
-                        </li>
-                        <li>
-                            <label class="selector-label" for="item92">585</label>
-                        </li>
-                    <li>
-                            <label class="selector-label" for="item93">Rose</label>
-                        </li>
-
-                        <li>
-                            <label class="selector-label" for="item95">Digər</label>
-                        </li>
-                    </ul>
-                </details>
-
-
-                </div>
-                
-
-             </div>
-            <div class="product-detail-content" id="addFormWeight" >
-                <div class="product-detail-header">
-                    <label>Çəki</label>
-                </div>
-                <div class="product-deatil-it">
-                    <input type="number" name="" id=""><label class="detail-form" >  ,qram</label>
-                </div>
-            </div>
-            <div class="product-detail-content">
-                <div class="product-detail-header">
-
-                    <label>                    
-                        <input type="checkbox" name="diamon-add" id="diamonCheck" onclick="EnableDisableTextBox(this)">
-                        Brilliant
-                    </label>
-                </div>
-                <div class="product-deatil-it">
-                    <input type="number" name="" id="addDiamondCount" disabled="disabled"><label class="detail-form" >  ,ct</label>
-                </div>
-            </div>
-            
-            <div class="product-detail-content">
-                <div class="product-detail-header">
-                    <label>Ətraflı məlumat</label>
-                </div>
-                <div class="product-deatil-it">
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-            </div>
-
-
-
-            <div class="product-detail-content">
-                <div class="product-detail-header">
-                    <label>Qiymət</label>
-                </div>
-                <div class="product-deatil-it">
-                    <input type="number" name="" id=""><label class="detail-form" >  ,AZN</label>
-                </div>
-            </div>
-
-
-
-
-        </form>
-        <div class="add-img-ads">
-          <label for="images" class="drop-container">
-            <span class="drop-title">Şəkil əlavə et</span>
-            (max : 12)
-            
-            <input type="file" class="file-field" id="images" accept="image/*" multiple="multiple" required>
-          </label>
-            
+      <h3 class="add-prdct-h3">Elan əlavə et</h3>
+      <form class="product-add-form" action="">
+        <div class="product-detail-content">
+          <div class="product-detail-header">
+            <label>Elan başlığı</label>
+          </div>
+          <div class="product-deatil-it">
+            <input type="text" class="add" name="" id="" maxlength="50" />
+          </div>
         </div>
-        <div class="add-prdct-btn-div" >
-          <button class="add-prdct-btn">Elani əlavə et</button>
+        <div class="product-detail-content">
+          <div class="product-detail-header">
+            <label>Kateqoriya</label>
+          </div>
+          <details class="custom-select type">
+            <summary class="radios">
+              <input
+                type="radio"
+                name="item-type"
+                id="default"
+                title-type="Nov"
+                checked
+              />
+              <input
+                type="radio"
+                name="item-type"
+                id="item1"
+                title-type="Sep"
+              />
+              <input
+                type="radio"
+                name="item-type"
+                id="item2"
+                title-type="Uzuk"
+              />
+              <input
+                type="radio"
+                name="item-type"
+                id="item3"
+                title-type="Qolbaq"
+              />
+              <input
+                type="radio"
+                name="item-type"
+                id="item4"
+                title-type="Dest"
+              />
+              <input
+                type="radio"
+                name="item-type"
+                id="item5"
+                title-type="Lorem"
+              />
+            </summary>
+            <ul class="selector-list">
+              <li>
+                <label class="selector-label" for="item1">Sep</label>
+              </li>
+              <li>
+                <label class="selector-label" for="item2">Uzuk</label>
+              </li>
+              <li>
+                <label class="selector-label" for="item3">Qolbaq</label>
+              </li>
+              <li>
+                <label class="selector-label" for="item4">Dest</label>
+              </li>
+              <li>
+                <label class="selector-label" for="item5">Lorem</label>
+              </li>
+            </ul>
+          </details>
+        </div>
+        <div class="product-detail-content" id="addFormProb">
+          <div class="product-detail-header">
+            <label>Əyyar</label>
+          </div>
+
+          <div class="product-deatil-it">
+            <details class="custom-select add-degree">
+              <summary class="radios">
+                <input
+                  type="radio"
+                  name="title-add-degree"
+                  id="default"
+                  title-add-degree="Əyyar"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="title-add-degree"
+                  id="item71"
+                  title-add-degree="583"
+                />
+                <input
+                  type="radio"
+                  name="title-add-degree"
+                  id="item72"
+                  title-add-degree="585"
+                />
+                <input
+                  type="radio"
+                  name="title-add-degree"
+                  id="item73"
+                  title-add-degree="750"
+                />
+                <input
+                  type="radio"
+                  name="title-add-degree"
+                  id="item74"
+                  title-add-degree="916"
+                />
+                <input
+                  type="radio"
+                  name="title-add-degree"
+                  id="item75"
+                  title-add-degree="Digər"
+                />
+              </summary>
+              <ul class="selector-list">
+                <li>
+                  <label class="selector-label" for="item71">583</label>
+                </li>
+                <li>
+                  <label class="selector-label" for="item72">585</label>
+                </li>
+                <li>
+                  <label class="selector-label" for="item73">750</label>
+                </li>
+                <li>
+                  <label class="selector-label" for="item74">916</label>
+                </li>
+                <li>
+                  <label class="selector-label" for="item75">Digər</label>
+                </li>
+              </ul>
+            </details>
+          </div>
+        </div>
+        <div class="product-detail-content" id="addFormProb">
+          <div class="product-detail-header">
+            <label>Qızıl rəngi : </label>
+          </div>
+
+          <div class="product-deatil-it">
+            <details class="custom-select add-color">
+              <summary class="radios">
+                <input
+                  type="radio"
+                  name="title-add-colour"
+                  id="default"
+                  title-add-colour="Qızıl rəngi"
+                  checked
+                />
+                <input
+                  type="radio"
+                  name="title-add-colour"
+                  id="item91"
+                  title-add-colour="Ağ"
+                />
+                <input
+                  type="radio"
+                  name="title-add-colour"
+                  id="item92"
+                  title-add-colour="Sarı"
+                />
+                <input
+                  type="radio"
+                  name="title-add-colour"
+                  id="item93"
+                  title-add-colour="Rose"
+                />
+                <input
+                  type="radio"
+                  name="title-add-colour"
+                  id="item95"
+                  title-add-colour="Digər"
+                />
+              </summary>
+              <ul class="selector-list">
+                <li>
+                  <label class="selector-label" for="item91">Ağ</label>
+                </li>
+                <li>
+                  <label class="selector-label" for="item92">585</label>
+                </li>
+                <li>
+                  <label class="selector-label" for="item93">Rose</label>
+                </li>
+
+                <li>
+                  <label class="selector-label" for="item95">Digər</label>
+                </li>
+              </ul>
+            </details>
+          </div>
+        </div>
+        <div class="product-detail-content" id="addFormWeight">
+          <div class="product-detail-header">
+            <label>Çəki</label>
+          </div>
+          <div class="product-deatil-it">
+            <input type="number" name="" id="" class="add" /><label class="detail-form">
+              ,qram</label
+            >
+          </div>
+        </div>
+        <div class="product-detail-content">
+          <div class="product-detail-header">
+            <label>
+              <input
+                type="checkbox"
+                name="diamon-add"
+                id="diamonCheck"
+                onclick="EnableDisableTextBox(this)"
+              />
+              Brilliant
+            </label>
+          </div>
+          <div class="product-deatil-it">
+            <input
+              type="number"
+              name=""
+              id="addDiamondCount"
+              class="add"
+              disabled="disabled"
+            /><label class="detail-form"> ,ct</label>
+          </div>
         </div>
 
-        
+        <div class="product-detail-content">
+          <div class="product-detail-header">
+            <label>Ətraflı məlumat</label>
+          </div>
+          <div class="product-deatil-it">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+
+        <div class="product-detail-content">
+          <div class="product-detail-header">
+            <label>Qiymət</label>
+          </div>
+          <div class="product-deatil-it">
+            <input type="number" name="" id="" /><label class="detail-form">
+              ,AZN</label
+            >
+          </div>
+        </div>
+      </form>
+      <div class="add-img-ads">
+        <label for="images" class="drop-container">
+          <span class="drop-title">Şəkil əlavə et</span>
+          (max : 12)
+
+          <input
+            type="file"
+            class="file-field"
+            id="images"
+            accept="image/*"
+            multiple="multiple"
+            required
+          />
+        </label>
+        <div class="add-img-container">
+
+        </div>
+      </div>
+      <div class="add-prdct-btn-div">
+        <button class="add-prdct-btn">Elani əlavə et</button>
+      </div>
     </div>
 
     <footer>
-        <div class="row primary">
-          <div class="column about">
-        
-          <h3 class="footer-h3" >Foolish Developer</h3>
-        
-           <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-              voluptatem corporis error non,
+      <div class="row primary">
+        <div class="column about">
+          <h3 class="footer-h3">Foolish Developer</h3>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+            voluptatem corporis error non,
           </p>
-        
+
           <div class="social">
             <i class="fa-brands fa-facebook-square"></i>
             <i class="fa-brands fa-instagram-square"></i>
@@ -239,67 +315,65 @@
             <i class="fa-brands fa-whatsapp-square"></i>
           </div>
         </div>
-        
-        <div class="column links">
-        <h3 class="footer-h3">Some Links</h3>
-        
-         <ul class="footer-ul" >
-        
-          <li class="footer-li" >
-           <a class="footer-li-a"  href="#faq">F.A.Q</a>
-          </li>
-          <li class="footer-li" >
-           <a class="footer-li-a"  href="#cookies-policy">Cookies Policy</a>
-          </li>
-          <li class="footer-li" >
-           <a class="footer-li-a"  href="#terms-of-services">Terms Of Service</a>
-          </li>
-          <li class="footer-li" >
-           <a class="footer-li-a"  href="#support">Support</a>
-          </li>
-         </ul>
-        
-        </div>
-        
-        
+
         <div class="column links">
           <h3 class="footer-h3">Some Links</h3>
-           <ul class="footer-ul" >
-            <li class="footer-li" >
-             <a class="footer-li-a"  href="#faq">F.A.Q</a>
+
+          <ul class="footer-ul">
+            <li class="footer-li">
+              <a class="footer-li-a" href="#faq">F.A.Q</a>
             </li>
-            <li class="footer-li" >
-             <a class="footer-li-a"  href="#cookies-policy">Cookies Policy</a>
+            <li class="footer-li">
+              <a class="footer-li-a" href="#cookies-policy">Cookies Policy</a>
             </li>
-            <li class="footer-li" >
-            <a  class="footer-li-a" href="#terms-of-services">Terms Of Service</a>
+            <li class="footer-li">
+              <a class="footer-li-a" href="#terms-of-services"
+                >Terms Of Service</a
+              >
             </li>
-            <li class="footer-li" >
-            <a  class="footer-li-a" href="#support">Support</a>
+            <li class="footer-li">
+              <a class="footer-li-a" href="#support">Support</a>
             </li>
           </ul>
         </div>
-        
-    
-        
+
+        <div class="column links">
+          <h3 class="footer-h3">Some Links</h3>
+          <ul class="footer-ul">
+            <li class="footer-li">
+              <a class="footer-li-a" href="#faq">F.A.Q</a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-li-a" href="#cookies-policy">Cookies Policy</a>
+            </li>
+            <li class="footer-li">
+              <a class="footer-li-a" href="#terms-of-services"
+                >Terms Of Service</a
+              >
+            </li>
+            <li class="footer-li">
+              <a class="footer-li-a" href="#support">Support</a>
+            </li>
+          </ul>
         </div>
-        
-        <div class="row copyright">
-          <div class="footer-menu">
-        
+      </div>
+
+      <div class="row copyright">
+        <div class="footer-menu">
           <a href="">Home</a>
           <a href="">About</a>
           <a href="">Contact</a>
           <a href="">Blog</a>
           <a href="">Social</a>
-        
-          </div>
-           <p style="text-align: center;">Copyright &copy; 2021 Foolish Developer</p>
         </div>
-        </footer>
+        <p style="text-align: center">
+          Copyright &copy; 2021 Foolish Developer
+        </p>
+      </div>
+    </footer>
     <!-- Js Files -->
     <script src="../../Main/global.js"></script>
 
-
-</body>
-</html> 
+    <script type="module" src="./add-product.js"></script>
+  </body>
+</html>
