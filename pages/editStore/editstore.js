@@ -17,3 +17,13 @@ function importData() {
   input.click();
 
 }
+const walletBtn = document.querySelector(".wallet-button");
+const closePopup = document.querySelector(".close-popup");
+
+walletBtn.addEventListener("click", () => {
+  document.querySelector(".premium-popup").style.display = "block"
+})
+
+closePopup.addEventListener("click" ,() => {
+  document.querySelector(".premium-popup").style.display = "none"
+})

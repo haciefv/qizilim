@@ -88,3 +88,27 @@ $(document).ready(function () {
 document.querySelectorAll(".add_wishlist_btn").forEach(btn => {
   btn.addEventListener('click', () => btn.classList.toggle('active'))
 })
+
+const bePremimumBtn = document.getElementById("be-premium");
+const popupBtns = document.querySelectorAll(".premium-popup");
+const closePopUps = document.querySelectorAll(".close-popup");
+const beFirst = document.getElementById("be-first");
+const beDelete = document.getElementById("be-delete");
+
+beDelete.addEventListener("click", () => {
+  popupBtns[2].style.display = "block";
+})
+beFirst.addEventListener("click", () => {
+  popupBtns[1].style.display = "block"
+})
+bePremimumBtn.addEventListener("click", (e) => {
+  
+  popupBtns[0].style.display = "block"
+
+})
+
+closePopUps.forEach((closepopup, index) => {
+  closepopup.addEventListener("click", () => {
+    popupBtns[index].style.display = "none"
+  })
+})
