@@ -62,26 +62,6 @@ function filterShower() {
   }
 
 }
-const mediaQuery = window.matchMedia('(max-width: 571px)')
-
-if (mediaQuery.matches) {
-  window.addEventListener('click', (e) => {
-    console.log(e.target.id)
-    if (e.target.id !== "search_button" && e.target.id !== "search_input" && e.target.id !== "reset_button") {
-      document.querySelector('.sbx-custom__input').style.width = "0px"
-      document.querySelector('.sbx-custom__input').style.paddingLeft = "0px"
-      document.getElementById("loginRegister").style.display = "none";
-      document.getElementById("info_user").style.display = "flex"
-    }
-  })
-  twitterWrapper.addEventListener('click', (event) => {
-    console.log(event.target)
-    document.querySelector(".sbx-custom__input").style.width = "120px";
-    document.querySelector('.sbx-custom__input').style.paddingLeft = "8px";
-    document.getElementById("loginRegister").style.display = "block";
-    document.getElementById("info_user").style.display = "none"
-  })
-}
 
 searchBtn.addEventListener("click", () => {
 if(searchInput.value.length !== 0) {

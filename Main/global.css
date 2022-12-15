@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 @import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
 :root {
   --heart: #f43965;
@@ -153,6 +146,19 @@ fieldset {
   padding: 0px;
   margin: 5px 0 6px 0;
   font-family: "Cabin", Sans-serif;
+  background: -o-linear-gradient(
+    top,
+    #c1957c,
+    #c1957c 20%,
+    rgba(255, 255, 255, 0) 20%,
+    rgba(255, 255, 255, 0) 40%,
+    #c1957c 40%,
+    #c1957c 60%,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(255, 255, 255, 0) 80%,
+    #c1957c 80%,
+    #c1957c 100%
+  );
   background: -webkit-gradient(
     linear,
     left top, left bottom,
@@ -166,19 +172,6 @@ fieldset {
     color-stop(80%, rgba(255, 255, 255, 0)),
     color-stop(80%, #c1957c),
     to(#c1957c)
-  );
-  background: -o-linear-gradient(
-    top,
-    #c1957c,
-    #c1957c 20%,
-    rgba(255, 255, 255, 0) 20%,
-    rgba(255, 255, 255, 0) 40%,
-    #c1957c 40%,
-    #c1957c 60%,
-    rgba(255, 255, 255, 0) 60%,
-    rgba(255, 255, 255, 0) 80%,
-    #c1957c 80%,
-    #c1957c 100%
   );
   background: linear-gradient(
     to bottom,
@@ -301,9 +294,16 @@ tbody tr {
   padding-left: 0px;
 }
 .cover_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .do_cover {
   margin-top: 8px;
@@ -314,6 +314,8 @@ tbody tr {
   color: #fff;
   cursor: pointer;
   outline: none;
+  -webkit-transition: background .4s linear;
+  -o-transition: background .4s linear;
   transition: background .4s linear;
 }
 .do_cover:hover {
@@ -1135,6 +1137,10 @@ input[type=number] {
   font-size: 14px;
   width:-webkit-fit-content ;
   width:-moz-fit-content ;
+  width:-webkit-fit-content ;
+  width:-moz-fit-content ;
+  width:-webkit-fit-content ;
+  width:-moz-fit-content ;
   width:fit-content ;
   padding: 5px;
   background-color: #F0DBDB;
@@ -1570,15 +1576,15 @@ input[type=number] {
 	overflow: hidden;
 	font-family: Arial;
 	font-weight: bold;
-	background: -webkit-gradient(linear, left bottom, left top, color-stop(100%, #c1957c), to(#468CCF));
 	background: -o-linear-gradient(bottom, #c1957c 100%, #468CCF 100%);
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(100%, #c1957c), to(#468CCF));
 	background: linear-gradient(360deg, #c1957c 100%, #468CCF 100%);
 	display: inline-block;
 	vertical-align: middle;
 }
 .accept-btn:hover {
-	background: -webkit-gradient(linear, left bottom, left top, color-stop(100%, #be7a6d), to(#be7a6d));
 	background: -o-linear-gradient(bottom, #be7a6d 100%, #be7a6d 100%);
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(100%, #be7a6d), to(#be7a6d));
 	background: linear-gradient(360deg, #be7a6d 100%, #be7a6d 100%);
 }
 .accept-btn-text {
@@ -1587,13 +1593,13 @@ input[type=number] {
 
 }
 .buttont-delete .accept-btn{
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(100%, #b71b1b), to(#468CCF));
   background: -o-linear-gradient(bottom, #b71b1b 100%, #468CCF 100%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(100%, #b71b1b), to(#468CCF));
   background: linear-gradient(360deg, #b71b1b 100%, #468CCF 100%); 
 }
 .accept-btn:hover {
-	background: -webkit-gradient(linear, left bottom, left top, color-stop(100%, #7a0c0c), to(#be7a6d));
 	background: -o-linear-gradient(bottom, #7a0c0c 100%, #be7a6d 100%);
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(100%, #7a0c0c), to(#be7a6d));
 	background: linear-gradient(360deg, #7a0c0c 100%, #be7a6d 100%);
 }
 .product-details {
@@ -1945,9 +1951,20 @@ input[type=number] {
   .logo:nth-child(1) a {
     font-size: 26px;
   }
+  .sbx-custom__submit {
+    padding-right: 8px !important;
+  }
+  .search:hover .sbx-custom__input {
+    width: 120px;
+  }
+ .search:hover ~ .user_info {
+  display: none !important;
+ }
+ .search:hover ~ #loginRegister {
+  display: block !important;
+ }
   .sbx-twitter__wrapper .sbx-custom__input {
     width: 0px;
-    padding: 0;
   }
   .contact-info {
     text-align: center;
@@ -2209,6 +2226,8 @@ input[type=number] {
 .image img {
   width: 100%;
   height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .like {
@@ -2967,6 +2986,7 @@ font-size: 0.8rem;
   max-width: 940px;
   margin: 20px auto;
   overflow-x: hidden;
+  cursor: -webkit-grab;
   cursor: grab;
 }
 
@@ -4426,8 +4446,8 @@ gap: 15px;
 	position: relative;
 	overflow: hidden;
 	font-family: Arial;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #c7bca1), to(#c7bca1));
 	background: -o-linear-gradient(top, #c7bca1 10%, #c7bca1 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #c7bca1), to(#c7bca1));
 	background: linear-gradient(180deg, #c7bca1 10%, #c7bca1 100%);
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
@@ -4445,11 +4465,11 @@ gap: 15px;
           transition-duration: .3s;
 }
 .css-button:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #9a917b), to(#c7bca1));
   background: -o-linear-gradient(top, #9a917b 10%, #c7bca1 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #9a917b), to(#c7bca1));
   background: linear-gradient(180deg, #9a917b 10%, #c7bca1 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #c7bca1), to(#978f7a));
 	background: -o-linear-gradient(top, #c7bca1 10%, #978f7a 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #c7bca1), to(#978f7a));
 	background: linear-gradient(180deg, #c7bca1 10%, #978f7a 100%);
 }
 .css-button-text {
@@ -4566,8 +4586,8 @@ gap: 15px;
 	padding: 10px 5px;
 }
 .css-button-verfiy:hover {
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #c1957c), to(#c07a51));
 	background: -o-linear-gradient(top, #c1957c 10%, #c07a51 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #c1957c), to(#c07a51));
 	background: linear-gradient(180deg, #c1957c 10%, #c07a51 100%);
 }
 .css-button-text {
@@ -4707,8 +4727,8 @@ gap: 15px;
 	position: relative;
 	overflow: hidden;
 	font-family: Arial;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #82CD47), to(#379237));
 	background: -o-linear-gradient(top, #82CD47 10%, #379237 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #82CD47), to(#379237));
 	background: linear-gradient(180deg, #82CD47 10%, #379237 100%);
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
@@ -4719,8 +4739,8 @@ gap: 15px;
 	padding: 0;
 }
 .wallet-button:hover {
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #379237), to(#82CD47));
 	background: -o-linear-gradient(top, #379237 10%, #82CD47 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #379237), to(#82CD47));
 	background: linear-gradient(180deg, #379237 10%, #82CD47 100%);
 }
 .wallet-button-text {
