@@ -3778,7 +3778,7 @@ input[type="submit"]:hover{
 
 details {
 	position: relative;
-	width: fit-content;
+	width: 200px;
 	margin-right: 1rem;
 }
 
