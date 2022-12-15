@@ -194,7 +194,7 @@ fieldset {
   border: none;
   outline: none;
   background: none;
-  width: 30px;
+  width: 45px;
   height: 30px;
   cursor: pointer;
 }
@@ -1954,10 +1954,10 @@ input[type=number] {
   .sbx-custom__submit {
     padding-right: 8px !important;
   }
-  .search:focus .sbx-custom__input {
+  .search:focus-within .sbx-custom__input {
     width: 120px;
   }
- .search:focus ~ .user_info {
+ .search:focus-within ~ .user_info {
   display: none !important;
  }
  .search:hover ~ #loginRegister {
