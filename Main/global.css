@@ -1954,10 +1954,10 @@ input[type=number] {
   .sbx-custom__submit {
     padding-right: 8px !important;
   }
-  .search:hover .sbx-custom__input {
+  .search:focus .sbx-custom__input {
     width: 120px;
   }
- .search:hover ~ .user_info {
+ .search:focus ~ .user_info {
   display: none !important;
  }
  .search:hover ~ #loginRegister {
@@ -3776,17 +3776,9 @@ input[type="submit"]:hover{
   background: rgb(187, 187, 187);
 }
 
-
-
-
-
-
-
-
-
 details {
 	position: relative;
-	width: 300px;
+	width: fit-content;
 	margin-right: 1rem;
 }
 
@@ -3795,7 +3787,7 @@ details[open] {
 }
 
 summary {
-  height: 15px;
+  height: fit-content;
   margin: 10px 0;
 	padding: 1rem;
 	cursor: pointer;
