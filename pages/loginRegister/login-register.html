@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../Main/global.css">
+  <!-- <link rel="stylesheet" href="../../Main/search.css"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qızılım.az</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight&family=Raleway:ital,wght@0,800;1,300&family=Ubuntu:wght@500&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <link rel="stylesheet" href="../../Main/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+  <!-- <div class="search-container">
+    <button class="close-search">
+      <i class="fa-solid fa-xmark" style="font-size: 40px; color: #fff;"></i>
+    </button>
+    <form class="search-box">
+      <button style="background: none; border: none; padding: 0"><i class="fa-solid fa-magnifying-glass" style="font-size: 30px;"></i></button>
+      <input style="vertical-align: 4px; width: 255px;" type="search" name="focus" placeholder="Search" id="search-input" value="">
+    </form>
+  </div> -->
+
+  
+<div class="login_register_forgot">
+
+      <div class="center">
+        <h1>Daxil ol</h1>
+        <form method="post">
+          <div class="txt_field">
+            <input class="txt-field-input" id="emailText" type="text" required>
+            <span></span>
+            <label class="txt-field-label">Email ünvanı</label>
+          </div>
+          <div class="txt_field">
+            <input class="txt-field-input" type="password" required>
+            <span></span>
+            <label class="txt-field-label">Şifrə</label>
+          </div>
+          <div class="pass">
+            <a href="#" id="forgot_password">
+              Şifrəni unutdum
+            </a>
+          </div>
+          <input type="submit" id="submit" value="Daxil ol">
+          <div class="signup_link">
+            Hesabin yoxdur? <a href="#" class="register-btn">Qeydiyyatdan kec</a>
+          </div>
+        </form>
+      </div>
+      <div id="center" class="center">
+        <h1>Şifrəni bərpa et</h1>
+        <form method="post" action="recover-number.html">
+          <div class="txt_field">
+            <input class="txt-field-input" type="text" required>
+            <span></span>
+            <label class="txt-field-label">Telefon nömrəsi</label>
+          </div>
+
+          <input id="psswrd-recover-btn"  type="submit" value="Bərpa mesajı al">
+          <div class="signup_link">
+            Hesabin yoxdur? <a href="#" class="register-btn">Qeydiyyatdan kec</a>
+          </div>
+        </form>
+      </div>
+      <div class="center">
+        <h1>Qeydiyyat</h1>
+        <form method="post">
+          <div class="txt_field">
+            <input class="txt-field-input"  type="text" required>
+            <span></span>
+            <label class="txt-field-label" >Istifadəçi adı</label>
+        </div>
+        <label class="busy-user" style="display: none;"  >Bu istifadeci adi basqa istifaci terefinden istifaed olunur</label>
+          <div class="txt_field">
+            <input class="txt-field-input" id="email" type="email" required>
+            <span></span>
+            <label class="txt-field-label" id="email_txt" >E-mail</label>
+          </div>
+          <div class="txt_field">
+            <input class="txt-field-input"  type="tel" required>
+            <span></span>
+            <label class="txt-field-label" >Telefon nömrəsi</label>
+          </div>
+          <div class="txt_field">
+            <input class="txt-field-input"  type="password" required>
+            <span></span>
+            <label class="txt-field-label" >Şifrə</label>
+          </div>
+          <div class="txt_field">
+            <input class="txt-field-input"  type="password" required>
+            <span></span>
+            <label class="txt-field-label" >Şifrə təkrar</label>
+          </div>
+
+          <div class="shop-checkbox">
+            <input   type="checkbox" name="shopInfoRegister" id="shopCheckbox" onclick=shopInfoDetails() value="0" ><label class="shop-checkbox-label" >Mağaza kimi qeydiyyatdan keç</label>
+          </div>
+
+          
+          <div class="txt-field-shop-div" id="shopInfoRegister"  >
+            <details class="custom-select reg-loc">
+            	<summary class="radios">
+            		<input type="radio" name="item" id="default" reg-loc-title="Ticarət Mərkəzi" checked>
+            		<input type="radio" name="item" id="item111" reg-loc-title="Ticarət mərkəzləri">
+            		<input type="radio" name="item" id="item112" reg-loc-title="Moska T/M">
+            		<input type="radio" name="item" id="item113" reg-loc-title="Mərkəzi Univermaq T/M">
+            		<input type="radio" name="item" id="item114" reg-loc-title="Laçın T/M">
+            		<input type="radio" name="item" id="item115" reg-loc-title="Diger
+                ">
+            	</summary>
+            	<ul class="selector-list">
+              
+            		<li>
+            			<label class="selector-label" for="item112">Moska T/M</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item113">Mərkəzi Univermaq T/M</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item114">Laçın T/M</label>
+            		</li>
+            		<li>
+            			<label class="selector-label" for="item115">Diger</label>
+            		</li>
+            	</ul>
+            </details>
+            <div class="txt_field">
+              <input class="txt-field-input"  type="text" required>
+              <span></span>
+              <label class="txt-field-label" >Mağaza adı</label>
+            </div>
+            <div class="txt_field">
+              <input class="txt-field-input"  type="tel" required>
+              <span></span>
+              <label class="txt-field-label" >Mağaza əlaqə nömrəsi</label>
+            </div>
+          </div>
+
+
+          <!-- <div class="pass">Şifrəni unutdum</div> -->
+          <input type="submit" value="İrəli">
+          <div class="signup_link">
+            Hesabin var? <a href="#" class="signin-btn">Daxil ol</a>
+          </div>
+        </form>
+      </div>
+    </div>
+      <footer>
+        <div class="row primary">
+          <div class="column about">
+        
+          <h3>Foolish Developer</h3>
+        
+           <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+              voluptatem corporis error non,
+          </p>
+        
+          <div class="social">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-instagram-square"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+            <i class="fa-brands fa-youtube-square"></i>
+            <i class="fa-brands fa-whatsapp-square"></i>
+          </div>
+        </div>
+        
+        <div class="column links">
+        <h3>Some Links</h3>
+        
+         <ul class="footer-ul" >
+        
+          <li class="footer-li" >
+           <a class="footer-li-a"  href="#faq">F.A.Q</a>
+          </li>
+          <li class="footer-li" >
+           <a class="footer-li-a"  href="#cookies-policy">Cookies Policy</a>
+          </li>
+          <li class="footer-li" >
+           <a class="footer-li-a"  href="#terms-of-services">Terms Of Service</a>
+          </li>
+          <li class="footer-li" >
+           <a class="footer-li-a"  href="#support">Support</a>
+          </li>
+         </ul>
+        
+        </div>
+        
+        
+        <div class="column links">
+          <h3>Some Links</h3>
+           <ul class="footer-ul" >
+            <li class="footer-li" >
+             <a class="footer-li-a"  href="#faq">F.A.Q</a>
+            </li>
+            <li class="footer-li" >
+             <a class="footer-li-a"  href="#cookies-policy">Cookies Policy</a>
+            </li>
+            <li class="footer-li" >
+            <a  class="footer-li-a" href="#terms-of-services">Terms Of Service</a>
+            </li>
+            <li class="footer-li" >
+            <a  class="footer-li-a" href="#support">Support</a>
+            </li>
+          </ul>
+        </div>
+        
+    
+        
+        </div>
+        
+        <div class="row copyright">
+          <div class="footer-menu">
+        
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+          <a href="">Blog</a>
+          <a href="">Social</a>
+        
+          </div>
+           <p>Copyright &copy; 2021 Foolish Developer</p>
+        </div>
+        </footer>
+      <script src="./login-regitser.js"></script>
+</body>
+</html>
